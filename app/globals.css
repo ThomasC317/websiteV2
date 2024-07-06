@@ -16,18 +16,38 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.gap-main-page {
+  gap: 10rem;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+body {
+  background-image: url('../public/BlackBackground.png'); /* Replace with the path to your image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.text-gray-700 {
+  color: rgba(55, 65, 81, 1);
+}
+
+.bg-opacity-80 {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.bg-opacity-90 {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.techno-align {
+  align-items: first baseline;
+}
+
+.border-color-lightgray {
+  border-color: lightgray;
 }
