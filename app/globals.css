@@ -61,3 +61,31 @@ body {
 .app-align {
   align-items: center;
 }
+
+.px-16 {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.text-gray-200 {
+  --tw-text-opacity: 1;
+  color: rgb(229 231 235/var(--tw-text-opacity));
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.bg-gray-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(55 65 81/var(--tw-bg-opacity));
+}
+
+.text-xs {
+  font-size: .75rem;
+  line-height: 1rem;
+}
+
+.rounded-lg {
+  border-radius: .5rem;
+}

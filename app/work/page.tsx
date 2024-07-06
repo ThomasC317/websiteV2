@@ -15,7 +15,7 @@ const projects = [
     - Recherche d'inspiration pour voir les modes des sites.<br/>
     - Mise en place des pages/ composants.<br/>
     - Responsivité.`,
-    tags: ["JavaScript", "React"]
+    tags: ["React", "JavaScript"]
   },
   {
     title: "Recherche IA pour l'entreprise",
@@ -24,7 +24,7 @@ const projects = [
     - Recherche sur les avancées les plus récentes.<br/>
     - Analyse des possibilités pour l'entreprise.<br/>
     - Développement une interface de Chatbot avec une direction artistique proche de celle de l'entreprise.`,
-    tags: ["JavaScript", "React"]
+    tags: ["Skywise", "JavaScript", "Pyspark"]
   },
   {
     title: "MRDB",
@@ -33,7 +33,7 @@ const projects = [
     - Analyse du code déjà présent.<br/>
     - Analyse des besoins du client.<br/>
     - Ajout des nouvelles features et tests.`,
-    tags: ["JavaScript", "React"]
+    tags: ["Skywise", "JavaScript", "Pyspark"]
   },
   {
     title: "Athenaa",
@@ -42,7 +42,7 @@ const projects = [
     - Analyse des datas en entrée.<br/>
     - Transformation des datas pour retourner les colonnes voulues.<br/>
     - Importation dans le front et test.`,
-    tags: ["JavaScript", "React"]
+    tags: ["Skywise", "JavaScript", "Pyspark"]
   },
   {
     title: "Madness",
@@ -52,7 +52,7 @@ const projects = [
     - Proposition d’optimisations sur les transformations.<br/>
     - Rédaction de documentation.<br/>
     - Chiffrage pour créer un vrai back au projet.`,
-    tags: ["JavaScript", "React"]
+    tags: ["Skywise", "JavaScript", "Pyspark"]
   },
   {
     title: "Airframe Services",
@@ -62,7 +62,7 @@ const projects = [
     - Mise en place des calculs des KPI avec la valeur mensuelle et annuelle côté Front.<br/>
     - Optimisation des requêtes (Nombre de lignes retournées, découpage par calcul).<br/>
     - Création de fichier fusion pour le stockage en dur de données insérables par le client.`,
-    tags: ["JavaScript", "React"]
+    tags: ["Skywise", "JavaScript", "Pyspark"]
   },
   {
     title: "ASN/AOG",
@@ -71,7 +71,7 @@ const projects = [
     - Mise à niveau de la DB pour les besoins de ma partie.<br/>
     - Ajout d'une nouvelle partie permettant le filtrage des informations envoyées aux utilisateurs. Grâce à cela, les utilisateurs abonnées à la compagnie "ABC" recevront seulement les mails liés à cette compagnie.<br/>
     - Gestion de rôles. Les utilisateurs dit "managers" peuvent valider, éditer ou refuser l'ajout d'un incident, et gérer les abonnements des autres utilisateurs. Les utilisateurs basiques peuvent seulement faire la demande pour l'ajout ou la suppression d'incident et l'utilisateur "Lecteur" voit seulement la liste des incidents.`,
-    tags: ["JavaScript", "React"]
+    tags: ["Angular", "C#", "Gitlab", "JIRA", "SQL Server"]
   },
   {
     title: "LP ADV",
@@ -84,7 +84,7 @@ const projects = [
     - Refonte d'un microservice embarquant la génération, la preview & l'envoi d'un courrier recommandé papier ou numérique (AR24).<br/>
     - Optimisation des appels à l'API pour réduire la consommation de ressources.<br/>
     - Tests fonctionnels & Utilisateurs.`,
-    tags: ["JavaScript", "React"]
+    tags: ["Blazor", "C#", "Azure AD", "Docker", "SQL Server"]
   },
   {
     title: "LP WORKPLACE",
@@ -96,7 +96,7 @@ const projects = [
     - Ajout d'un système de favoris permettant de garder certains process ou documents faciles d'accès.<br/>
     - Tests fonctionnels en continue.<br/>
     - Tests avec différents utilisateurs.`,
-    tags: ["JavaScript", "React"]
+    tags: ["Blazor", "C#", "Azure AD", "Docker", "SQL Server"]
   },
   {
     title: "Ui Framework",
@@ -107,7 +107,7 @@ const projects = [
     - Mise en place de généricité sur certains composants pour être utilisés dans différents contextes.<br/>
     - Mise en place de variables CSS pour permettre une customisation des styles pour être en adéquation avec la charte graphique de chaque projet.<br/>
     - Mise en place d'un site documentation des composants avec différents cas d'utilisations, une liste des paramètres et un tuto pour l'importation dans les projets.`,
-    tags: ["JavaScript", "React"]
+    tags: ["Blazor", "C#", "Azure AD", "SQL Server"]
   },
   {
     title: "LP INSIDE",
@@ -120,7 +120,7 @@ const projects = [
     - Process de qualité du code (Policies de branch, conventions de nommage, Quality gate de sonarCloud).<br/>
     - Communication avec le service UX/UI pour mieux répondre aux besoins des services cibles.<br/>
     - Architecture de la communication entre les différents microservices & les SPA.`,
-    tags: ["JavaScript", "React"]
+    tags: ["Blazor", "C#", "Azure AD", "Docker", "SQL Server"]
   },
   {
     title: "Flux Partenaire V3",
@@ -132,7 +132,7 @@ const projects = [
     - Ajout d'envoi de flux via FTP ou sFTP.<br/>
     - Ajout d'une fonctionnalité d'édition des noms de balises des fichiers XML pour répondre aux besoins spécifiques de chaque client.<br/>
     - Mise en place d'une gestion d'erreur avec vérification des balises et gestion d'erreurs.`,
-    tags: ["C#"]
+    tags: ["C#", "JavaScript", "SQL Server"]
   }
 ];
 
@@ -151,7 +151,7 @@ const handleCompanyChange = (e) => {
   return (
     <div className="min-h-screen bg-white">
       <Navbar />
-      <main className="mx-auto py-12 mt-16">
+      <main className="mx-auto px-16  py-12 mt-16">
         <div>
           <div className="px-8">
             <h2 className="text-2xl mb-4">Technologies</h2>
@@ -214,7 +214,7 @@ const handleCompanyChange = (e) => {
         }
 
         return (
-          <div key={index} className="bg-gray-100 rounded-lg px-8 py-6 border-b border-color-lightgray">
+          <div key={index} className={`bg-gray-100 rounded-lg px-8 py-6 border-b border-color-lightgray`}>
             <div className="relative w-full left-1/2 transform -translate-x-1/2">
               <h3 className="text-xl font-bold mb-2">{project.title}</h3>
               <p className="text-sm text-gray-600 mb-2">{project.company}</p>
@@ -226,7 +226,7 @@ const handleCompanyChange = (e) => {
                 {project.tags.map((tech, index) => (
                   <span
                     key={index}
-                    className="inline-block bg-blue-200 text-blue-800 text-xs px-2 py-1 rounded-full"
+                    className="bg-gray-700 px-3 py-1 rounded-lg text-xs font-medium text-gray-200"
                   >
                     {tech}
                   </span>
