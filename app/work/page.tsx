@@ -4,6 +4,8 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import Navbar from "@/components/component/navbar";
 import React, { useState } from 'react';
+import Footer from "@/components/component/footer/footer";
+import Trema from "@/components/component/trema";
 
 const Experiences = () => {
   
@@ -337,13 +339,9 @@ const handleCompanyChange = (e) => {
           </div>
         </div>
       </main>
+      <Footer></Footer>
     </div>
   );
 };
 
 export default Experiences;
-
-
-const Trema = () => {
-  return (<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256" class="mt-1 shrink-0"><path d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128Z"></path></svg>)
-}

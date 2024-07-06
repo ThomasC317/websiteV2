@@ -1,60 +1,35 @@
-# Dependencies
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
 /node_modules
+/.pnp
+.pnp.js
+.yarn/install-state.gz
 
-# Production build
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
 /build
-/.next
 
-# Static files
-/out
-/public
+# misc
+.DS_Store
+*.pem
 
-# Next.js build output
-.next
-out
-
-# Logs
+# debug
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# OS generated files
-.DS_Store
-Thumbs.db
+# local env files
+.env*.local
 
-# IDEs and editors
-.vscode/
-.idea/
-*.sublime-project
-*.sublime-workspace
-
-# Optional npm cache directory
-.npm
-
-# dotenv environment variables file
-.env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-
-# Next.js specific
-.env.build.local
-
-# Miscellaneous
-*.log
-*.lock
-*.lock.*
-*.swp
-*.swm
-*.swo
-*.swn
-*.DS_Store
-
-# MacOS specific
-._*
-.Spotlight-V100
-.Trashes
+# vercel
+.vercel
 
 # typescript
 *.tsbuildinfo

@@ -13,7 +13,7 @@ const Navbar = () => {
           <Link href="/work" className="hover:underline" prefetch={false}>
             Mon Travail
           </Link>
-          <Link href="#" className="hover:underline" prefetch={false}>
+          <Link href="/blog" className="hover:underline" prefetch={false}>
             Blog
           </Link>
           <Link href="#" className="hover:underline" prefetch={false}>
