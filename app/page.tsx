@@ -36,7 +36,13 @@ useEffect(() => {
                     'CERD', 500,
                     'CERDE', 500,
                     'CERDER', 500,
-                    'CERDERA', 500,
+                    'CERDERA', 5000,
+                    'CERDER', 500,
+                    'CERDE', 500,
+                    'CERD', 500,
+                    'CER', 500,
+                    'CE', 500,
+                    'C', 5000
                   ]}
                   loop={1}
                   wrapper="span"
