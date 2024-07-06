@@ -147,7 +147,39 @@ const Experiences = () => {
     </div>
   </div>
 </div>
-
+<div className="px-8">
+            <h2 className="text-2xl font-bold mb-4">Technologies</h2>
+              <div  className="mb-4 flex techno-align">
+                <h3 className="text-lg font-bold">Frontend: </h3>
+                    <p className="ml-2">
+                      React, Blazor, Angular, JS
+                    </p>
+              </div>
+              <div  className="mb-4 flex techno-align">
+                <h3 className="text-lg font-bold">Backend: </h3>
+                    <p className="ml-2">
+                      C#, Express/Nodejs
+                    </p>
+              </div>
+              <div  className="mb-4 flex techno-align">
+                <h3 className="text-lg font-bold">UI/Styling/Animations: </h3>
+                    <p className="ml-2">
+                    shadcn/ui, TailwindCSS, framer-motion
+                    </p>
+              </div>
+              <div  className="mb-4 flex techno-align">
+                <h3 className="text-lg font-bold">Databases: </h3>
+                    <p className="ml-2">
+                      MySql, SqlServer
+                    </p>
+              </div>
+              <div  className="mb-4 flex techno-align">
+                <h3 className="text-lg font-bold">Langages de programmation: </h3>
+                    <p className="ml-2">
+                      C#, Typescript, JavaScript
+                    </p>
+              </div>
+          </div>
         </div>
       </main>
     </div>

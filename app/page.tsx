@@ -1,16 +1,25 @@
 "use client"
-import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { Label } from "@/components/ui/label"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
+import Typical from 'react-typical';
 import Navbar from "@/components/component/navbar"
 import CommandPrompt from "@/components/component/commandPrompt"
+import React, { useState, useEffect } from 'react';
+
+
+const Home = () => {
 const handleButtonClick = () => {
   window.location.href = '/work';
 };
+const [isTyping, setIsTyping] = useState(true);
 
-export default function Home() {
+useEffect(() => {
+  const typingInterval = setInterval(() => {
+    setIsTyping(prev => !prev);
+  }, 9000); // Adjust this timing to match the total duration of the typing animation
+
+  return () => clearInterval(typingInterval);
+}, []);
+
   return (
     <div className="min-h-screen flex gap-main-page items-center justify-center py-12 bg-gray-100">
       <Navbar/>
@@ -18,7 +27,20 @@ export default function Home() {
         <main className="flex flex-col gap-8">
           <div className="space-y-4">
             <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
-              Bonjour, je m'appelle Thomas CERDERA
+              Bonjour, je m'appelle Thomas {' '}
+                <Typical
+                  steps={[
+                    'C', 500,
+                    'CE', 500,
+                    'CER', 500,
+                    'CERD', 500,
+                    'CERDE', 500,
+                    'CERDER', 500,
+                    'CERDERA', 500,
+                  ]}
+                  loop={1}
+                  wrapper="span"
+                />
             </h1>
             <p className="text-lg text-gray-700 md:text-xl lg:text-2xl">
               Je suis un développeur Full-Stack, actuellement très intéressé pour développer mes compétences en Front.
@@ -40,4 +62,7 @@ export default function Home() {
         </div>
       </div>
     </div>);
+
+
 }
+export default Home;
