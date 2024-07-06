@@ -10,6 +10,7 @@ const Experiences = () => {
 const projects = [
   {
     title: "Ce site web",
+    year:"Juillet 2024",
     company: "Projet Personnel",
     description: `Création d'un nouveau site Portfolio.<br/>
     - Recherche d'inspiration pour voir les modes des sites.<br/>
@@ -20,6 +21,7 @@ const projects = [
   {
     title: "Recherche IA pour l'entreprise",
     company: "Infotel Blagnac",
+    year:"Mai 2024 - Maintenant",
     description: `Recherches pour la mise en place de l'IA dans le contexte de l'entrepise.<br/>
     - Recherche sur les avancées les plus récentes.<br/>
     - Analyse des possibilités pour l'entreprise.<br/>
@@ -29,6 +31,7 @@ const projects = [
   {
     title: "MRDB",
     company: "Infotel Blagnac",
+    year:"Avril - Mai 2024",
     description: `Développement d’évolutions sur le projet MRDB.<br/>
     - Analyse du code déjà présent.<br/>
     - Analyse des besoins du client.<br/>
@@ -38,6 +41,7 @@ const projects = [
   {
     title: "Athenaa",
     company: "Infotel Blagnac",
+    year:"Mars - Avril 2024",
     description: `Développement d’une application datas retournant des moyennes d’heures et de cycles de vol pour une liste de MSN<br/>
     - Analyse des datas en entrée.<br/>
     - Transformation des datas pour retourner les colonnes voulues.<br/>
@@ -47,6 +51,7 @@ const projects = [
   {
     title: "Madness",
     company: "Infotel Blagnac",
+    year:"Février - Mars 2024",
     description: `Etude d’une analyse Contour (Outil visuel permettant d’interagir et transformer des datas) pour la rédaction d’une documentation et de spécifications projet :<br/>
     - Analyse des différentes transformations.<br/>
     - Proposition d’optimisations sur les transformations.<br/>
@@ -57,6 +62,7 @@ const projects = [
   {
     title: "Airframe Services",
     company: "Infotel Blagnac",
+    year:"Décembre - Février 2024",
     description: `Mise en place d’une application Slate permettant le suivi de KPIs mensuels et annuels :<br/>
     - Création d’une application data en pyspark retournant les informations nécessaires au suivi des KPI<br/>
     - Mise en place des calculs des KPI avec la valeur mensuelle et annuelle côté Front.<br/>
@@ -67,6 +73,7 @@ const projects = [
   {
     title: "ASN/AOG",
     company: "Infotel Blagnac",
+    year:"Septembre - Décembre 2023",
     description: `Mise à niveau d'une application permettant le suivi des incidents liés aux avions de la flotte du client :<br/>
     - Mise à niveau de la DB pour les besoins de ma partie.<br/>
     - Ajout d'une nouvelle partie permettant le filtrage des informations envoyées aux utilisateurs. Grâce à cela, les utilisateurs abonnées à la compagnie "ABC" recevront seulement les mails liés à cette compagnie.<br/>
@@ -76,6 +83,7 @@ const projects = [
   {
     title: "LP ADV",
     company: "LP Promotion",
+    year:"2022 - Mai 2023",
     description: `Refonte de l'outil de l'administration des ventes simplifiant la gestion des étapes d'un dossier :<br/>
     - Analyse de l'ancienne DB pour produire un schéma pour la nouvelle database, permettant aussi une synchronisation avec les anciennes données.<br/>
     - Aide à la mise en place des étapes du projet (architecture, création des repos, back, front).<br/>
@@ -89,6 +97,7 @@ const projects = [
   {
     title: "LP WORKPLACE",
     company: "LP Promotion",
+    year:"Juin - Décembre 2021",
     description: `Création du premier outil de la plateforme LP INSIDE, simplifiant le travail inter service grâce au rassemblement des process,du vocabulaire métier & d'un organigramme sous la même application Web.<br/>
     - Aide à la mise en place des étapes du projet (architecture, création des repos, back, front).<br/>
     - Développement d'une page Glossaire avec filtrage des entités par paramètres via LinQ.<br/>
@@ -101,6 +110,7 @@ const projects = [
   {
     title: "Ui Framework",
     company: "LP Promotion",
+    year:"Octobre 2020 - Mai 2023",
     description: `Développement d'une librairie Blazor de composants réutilisables et customisables à destination des futurs projets à venir : <br/>
     - Analyse des projets legacy & WIP pour lister tous les composants à développer/ inclure dans la librairie.<br/>
     - Remplacement des composants sur les projets récents.<br/>
@@ -112,6 +122,7 @@ const projects = [
   {
     title: "LP INSIDE",
     company: "LP Promotion",
+    year:"Octobre 2020 - Mai 2023",
     description: `Mise en place d'une plateforme qui va recenser tous les nouveaux & futurs projets sous forme de modules :<br/>
     - Aide à la mise en place des méthodes agiles (SCRUM) dans le service.<br/>
     - Passage sous Azure AD pour la gestion des projets.<br/>
@@ -125,6 +136,7 @@ const projects = [
   {
     title: "Flux Partenaire V3",
     company: "LP Promotion",
+    year:"Octobre 2019 - Septembre 2020",
     description: `Refonte globale d'un projet de génération de flux XML contenant les informations des résidences et des appartements à louer :<br/>
     - Mise en place d'une architecture microservice multicouches.<br/>
     - Conception & modélisation d'une API REST.<br/>
@@ -192,7 +204,7 @@ const handleCompanyChange = (e) => {
                     </p>
               </div>
           </div>
-          <div className="px-8 py-4 flex items-center gap-2">
+          <div className="px-8 pt-4 flex items-center gap-2">
   <h2 className="text-2xl">Projets</h2>
   <select
     id="companyFilter"
@@ -217,7 +229,8 @@ const handleCompanyChange = (e) => {
           <div key={index} className={`bg-gray-100 rounded-lg px-8 py-6 border-b border-color-lightgray`}>
             <div className="relative w-full left-1/2 transform -translate-x-1/2">
               <h3 className="text-xl font-bold mb-2">{project.title}</h3>
-              <p className="text-sm text-gray-600 mb-2">{project.company}</p>
+                <p className="text-sm text-gray-600 mb-2">{project.company}</p>
+                <p className="text-sm text-gray-300 mb-2">{project.year}</p>
               <p
                 className="text-base text-gray-700"
                 dangerouslySetInnerHTML={{ __html: project.description }}
