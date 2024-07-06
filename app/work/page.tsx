@@ -151,7 +151,7 @@ const handleCompanyChange = (e) => {
   return (
     <div className="min-h-screen bg-white">
       <Navbar />
-      <main className="mx-auto px-16  py-12 mt-16">
+      <main className="mx-auto px-24 py-12 mt-16">
         <div>
           <div className="px-8">
             <h2 className="text-2xl mb-4">Technologies</h2>

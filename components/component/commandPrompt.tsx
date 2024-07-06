@@ -49,15 +49,17 @@ const CommandPrompt = () => {
   };
 
   const processCommand = (command) => {
-    let newOutput = [];
     let result;
-
+  
     switch (command) {
       case 'hello':
         result = '> Hello, World!';
         break;
       case 'presentation':
         result = `> Je m'appelle Thomas, j'ai 27 ans et je suis Ingénieur développeur. \n > J'aime la photographie, la musique, le cinéma, les voyages...`;
+        break;
+      case 'experiences':
+        result = `> Je suis actuellement chez Infotel en tant qu'ingénieur développeur, et ceci depuis Septembre 2023. Avant cela j'ai travaillé pour LP Promotion, 2 ans en tant qu'alternant en Ingénierie logicielle et Chiefferie de projet, et deux ans en CDI en tant qu'ingénieur développeur. Vous pouvez trouver plus de détails dans la partie "Mon Travail"`;
         break;
       case 'technologies':
         result = `> J'ai récemment découvert le React, avec du Next.js et j'ai beaucoup apprécié, d'où la création de ce site. En dehors de ça, je maîtrise (plus ou moins) l'Angular, les technologies .NET... Vous pouvez trouver plus de détails dans la partie "Mon Travail".`;
@@ -72,14 +74,14 @@ const CommandPrompt = () => {
         result = `> Vous pouvez trouver toutes les infos pour me contacter dans la partie "Contact".`;
         break;
       case 'command':
-        result = `> Voici la liste des commandes : \n > - hello \n > - date \n > - presentation \n > - technologies \n > - animals \n > - travels \n > - contact \n > - clear`;
+        result = `> Voici la liste des commandes : \n > - hello \n > - presentation \n > - experiences \n > - technologies \n > - animals \n > - travels \n > - contact`;
         break;
       default:
         result = `> Commande non reconnue: ${command}`;
     }
-
+  
     // Update the output state
-    setOutput([...newOutput, { command, result }]);
+    setOutput((prevOutput) => [...prevOutput, { command, result }]);
   };
 
   const renderOutput = (text) => {
