@@ -215,7 +215,7 @@ const handleCompanyChange = (e) => {
     value={selectedCompany}
     onChange={handleCompanyChange}
   >
-    <option value="All">Tout</option>
+    <option value="All">Entreprise</option>
     {uniqueCompanyNames.map((company, index) => (
       <option key={index} value={company}>{company}</option>
     ))}

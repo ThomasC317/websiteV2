@@ -8,7 +8,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-content">
         <div className="footer-left">
-          <p>©2024 All Rights Reserved</p>
+          <p>©2024 tous droits réservés</p>
         </div>
         <div className="footer-right">
           <a href="https://www.linkedin.com/in/thomas-cerdera-305ab3153/" target="_blank" rel="noopener noreferrer">
