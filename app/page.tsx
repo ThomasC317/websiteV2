@@ -1,5 +1,6 @@
 "use client"
 import { Button } from "@/components/ui/button"
+// @ts-ignore
 import Typical from 'react-typical';
 import Navbar from "@/components/component/navbar"
 import CommandPrompt from "@/components/component/commandPrompt"
