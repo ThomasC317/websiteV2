@@ -3,7 +3,7 @@
     "lib": ["dom", "dom.iterable", "esnext"],
     "noImplicitAny": false,
     "allowJs": true,
-    "suppressImplicitAnyIndexErrors": true,
+    "downlevelIteration": true,
     "skipLibCheck": true,
     "strict": true,
     "noEmit": true,
