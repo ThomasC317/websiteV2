@@ -163,85 +163,85 @@ const handleCompanyChange = (e) => {
 };
 
   return (
-    <div className="min-h-screen ">
+    <div className="min-h-screen bg-white">
       <Navbar />
       <main className="mx-auto px-24 py-12 mt-16">
         <div>
           <div className="px-8">
-            <h2 className="text-2xl mb-4 color-white">Technologies</h2>
+            <h2 className="text-2xl mb-4">Technologies</h2>
               <div  className="mb-4 flex techno-align">
-                <h3 className="text-lg font-bold color-white">Frontend: </h3>
-                    <p className="ml-2 color-white">
+                <h3 className="text-lg font-bold">Frontend: </h3>
+                    <p className="ml-2">
                       React, .NET, Angular, JS.
                     </p>
               </div>
               <div  className="mb-4 flex techno-align">
-                <h3 className="text-lg font-bold color-white">Backend: </h3>
-                    <p className="ml-2 color-white">
+                <h3 className="text-lg font-bold">Backend: </h3>
+                    <p className="ml-2">
                       .NET, Express/Nodejs.
                     </p>
               </div>
               <div  className="mb-4 flex techno-align">
-                <h3 className="text-lg font-bold color-white">UI/Styling/Animations: </h3>
-                    <p className="ml-2 color-white">
+                <h3 className="text-lg font-bold">UI/Styling/Animations: </h3>
+                    <p className="ml-2">
                     shadcn/ui, TailwindCSS, framer-motion.
                     </p>
               </div>
               <div  className="mb-4 flex techno-align">
-                <h3 className="text-lg font-bold color-white">Databases: </h3>
-                    <p className="ml-2 color-white">
+                <h3 className="text-lg font-bold">Databases: </h3>
+                    <p className="ml-2">
                       MySql, SqlServer.
                     </p>
               </div>
               <div  className="mb-4 flex techno-align">
-                <h3 className="text-lg font-bold color-white">Langages de programmation: </h3>
-                    <p className="ml-2 color-white">
+                <h3 className="text-lg font-bold">Langages de programmation: </h3>
+                    <p className="ml-2">
                       C#, Typescript, JavaScript.
                     </p>
               </div>
               <div  className="mb-4 flex techno-align">
-                <h3 className="text-lg font-bold color-white">Versionning: </h3>
-                    <p className="ml-2 color-white">
+                <h3 className="text-lg font-bold">Versionning: </h3>
+                    <p className="ml-2">
                     Git (Gitlab & Github).
                     </p>
               </div>
           </div>
           <div className="px-8 py-4">
-            <h2 className="text-2xl mb-4 color-white">Compétences métier</h2>
+            <h2 className="text-2xl mb-4">Compétences métier</h2>
             <div  className="mb-4 flex techno-align">
-                <h3 className="text-lg font-bold color-white">Méthodologies: </h3>
-                    <p className="ml-2 color-white">
+                <h3 className="text-lg font-bold">Méthodologies: </h3>
+                    <p className="ml-2">
                       Méthodologies Agile (Scrum, Kanban).
                     </p>
               </div>
               <div  className="mb-4 flex techno-align">
-                <h3 className="text-lg font-bold color-white">Documentation: </h3>
-                    <p className="ml-2 color-white">
+                <h3 className="text-lg font-bold">Documentation: </h3>
+                    <p className="ml-2">
                       Rédaction de documentation utilisateur, de tests, de light ARD.
                     </p>
               </div>
               <div  className="mb-4 flex techno-align">
-                <h3 className="text-lg font-bold color-white">Optimisation: </h3>
-                    <p className="ml-2 color-white">
+                <h3 className="text-lg font-bold">Optimisation: </h3>
+                    <p className="ml-2">
                       Réduction des temps de récupération des datas.
                     </p>
               </div>
               <div  className="mb-4 flex techno-align">
-                <h3 className="text-lg font-bold color-white">Esprit d’analyse : </h3>
-                    <p className="ml-2 color-white">
+                <h3 className="text-lg font-bold  ">Esprit d’analyse : </h3>
+                    <p className="ml-2">
                       Analyse des besoins et/ou des problèmes.
                     </p>
               </div>
               <div  className="mb-4 flex techno-align">
-                <h3 className="text-lg font-bold color-white">Travail: </h3>
-                    <p className="ml-2 color-white">
+                <h3 className="text-lg font-bold  ">Travail: </h3>
+                    <p className="ml-2">
                       Autonomie, collaboration, gestion du stress, adaptabilité.
                     </p>
               </div>
 
           </div>
           <div className="px-8 pt-4 flex items-center gap-2">
-  <h2 className="text-2xl color-white">Projets</h2>
+  <h2 className="text-2xl">Projets</h2>
   <select
     id="companyFilter"
     name="companyFilter"
@@ -264,18 +264,18 @@ const handleCompanyChange = (e) => {
         return (
           <div key={index} className={`bg-gray-100 rounded-lg px-8 py-6 border-b border-color-lightgray`}>
             <div className="relative w-full left-1/2 transform -translate-x-1/2">
-              <h3 className="text-xl font-bold mb-2 color-white">{project.title}</h3>
-                <p className="text-sm text-gray-600 mb-2 color-white">{project.company}</p>
-                <p className="text-sm text-gray-300 mb-2 color-white">{project.year}</p>
+              <h3 className="text-xl font-bold mb-2">{project.title}</h3>
+                <p className="text-sm text-gray-600 mb-2">{project.company}</p>
+                <p className="text-sm text-gray-300 mb-2">{project.year}</p>
               <p
-                className="text-base text-gray-700 color-white"
+                className="text-base text-gray-700"
                 dangerouslySetInnerHTML={{ __html: project.description }}
               />
-              <div className="mt-4 flex flex-wrap gap-2 ">
+              <div className="mt-4 flex flex-wrap gap-2">
                 {project.tags.map((tech, index) => (
                   <span
                     key={index}
-                    className="bg-gray-700 px-3 py-1 rounded-lg text-xs font-medium text-gray-200 color-white"
+                    className="bg-gray-700 px-3 py-1 rounded-lg text-xs font-medium text-gray-200"
                   >
                     {tech}
                   </span>
@@ -288,51 +288,51 @@ const handleCompanyChange = (e) => {
           <div className="px-8 py-4">
             <h2 className="text-2xl mb-4">Applications/Outils</h2>
             <div  className="mb-4 flex">
-                <a href="https://code.visualstudio.com/" className="underline-link color-white">VS Code </a>
+                <a href="https://code.visualstudio.com/" className="underline-link">VS Code </a>
                 <Trema/>
-                    <p className="ml-2 color-white">
+                    <p className="ml-2">
                       Un des meilleurs éditeurs de code que j'ai pu tester, très customisable.
                     </p>
               </div>
               <div  className="mb-4 flex">
-                <a href="https://github.com/" className="underline-link color-white">GitHub </a>
+                <a href="https://github.com/" className="underline-link">GitHub </a>
                 <Trema/>
-                    <p className="ml-2 color-white">
+                    <p className="ml-2">
                       La feature des pages est assez folle pour hoster des sites facilement, très pratique pour les portfolios notamment.
                     </p>
               </div>
-              <div  className="mb-4 flex ">
-                <a href="https://www.sonarsource.com/" className="underline-link color-white">Sonarlint/Cloud </a>
+              <div  className="mb-4 flex">
+                <a href="https://www.sonarsource.com/" className="underline-link">Sonarlint/Cloud </a>
                 <Trema/>
-                    <p className="ml-2 color-white">
+                    <p className="ml-2">
                       J'ai beau avoir travaillé peu avec, l'utilité est impressionante. Très simple à installer et la qualité de code est rapidement améliorée.
                     </p>
               </div>
               <div  className="mb-4 flex">
-                <a href="https://azure.microsoft.com/fr-fr/products/devops" className="underline-link color-white">Azure Devops </a>
+                <a href="https://azure.microsoft.com/fr-fr/products/devops" className="underline-link">Azure Devops </a>
                 <Trema/>
-                    <p className="ml-2 color-white">
+                    <p className="ml-2">
                       L'ensemble des features est très appréciable. Avoir accès au Kanban, aux repositories, a la création d'artifacts et aux pipelines sur la même plateforme... ça m'a été très utile.
                     </p>
               </div>
               <div  className="mb-4 flex">
-                <a href="https://www.google.com/intl/fr/drive/" className="underline-link color-white">Google Workspace </a>
+                <a href="https://www.google.com/intl/fr/drive/" className="underline-link">Google Workspace </a>
                 <Trema/>
-                    <p className="ml-2 color-white">
+                    <p className="ml-2">
                       Gratuit & très complet, pas besoin de dire grand chose de plus.
                     </p>
               </div>
               <div  className="mb-4 flex">
-                <a href="https://www.canva.com/" className="underline-link color-white">Canva </a>
+                <a href="https://www.canva.com/" className="underline-link">Canva </a>
                 <Trema/>
-                    <p className="ml-2 color-white">
+                    <p className="ml-2">
                       Très utile pour créer des schémas, des documents textes en tout genre, ou même des présentations. Je ne suis pas fan de la disparition des applications tierces cependant.
                     </p>
               </div>
               <div className="mb-4 flex">
-                <a href="https://v0.dev/" className="underline-link color-white">V0 Dev </a>
+                <a href="https://v0.dev/" className="underline-link">V0 Dev </a>
                 <Trema/>
-                    <p className="ml-2 color-white">
+                    <p className="ml-2">
                       Génération par IA d'interfaces simples. Très utile pour générer des composants en React.
                     </p>
               </div>
