@@ -98,8 +98,8 @@ const CommandPrompt = () => {
     <div style={styles.container}>
       <div style={styles.output}>
         <div>
-          > Bonjour et bienvenue sur mon site Web ! <br />
-          > {currentTime}
+          {'>'} Bonjour et bienvenue sur mon site Web ! <br />
+          {'>'} {currentTime}
         </div>
         {output.map((entry, index) => (
           <div key={index}>
