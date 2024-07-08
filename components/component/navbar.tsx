@@ -16,7 +16,7 @@ const Navbar = () => {
           <Link href="/blog" className="hover:underline" prefetch={false}>
             Blog
           </Link>
-          <Link href="#" className="hover:underline" prefetch={false}>
+          <Link href="/about" className="hover:underline" prefetch={false}>
             À propos
           </Link>
         </nav>
