@@ -1,8 +1,46 @@
 import React, { useState, useEffect } from 'react';
+import { Properties } from 'csstype';
 
 const CommandPrompt = () => {
   const [input, setInput] = useState('');
-  const [output, setOutput] = useState([]);
+  const [output, setOutput] = useState<any[]>([]);
+
+  type Styles = {
+    container: Properties;
+    output: Properties;
+    form: Properties;
+    input: Properties;
+  };
+
+  const styles: Styles = {
+    container: {
+      display: 'flex',
+      flexDirection: 'column',
+      justifyContent: 'space-between',
+      fontFamily: 'monospace',
+      backgroundColor: '#000',
+      color: '#fff',
+      padding: '10px',
+      borderRadius: '5px',
+      height: '40rem',
+    },
+    output: {
+      flex: 1,
+      overflowY: 'auto',
+      marginBottom: '10px'
+    },
+    form: {
+      display: 'flex'
+    },
+    input: {
+      flex: 1,
+      padding: '10px',
+      backgroundColor: '#000',
+      color: '#fff',
+      border: '1px solid #fff',
+      borderRadius: '5px'
+    }
+  };
 
   const getFormattedDate = () => {
     const months = [
@@ -120,34 +158,6 @@ const CommandPrompt = () => {
   );
 };
 
-const styles = {
-  container: {
-    display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'space-between',
-    fontFamily: 'monospace',
-    backgroundColor: '#000',
-    color: '#fff',
-    padding: '10px',
-    borderRadius: '5px',
-    height: '40rem',
-  },
-  output: {
-    flex: 1,
-    overflowY: 'auto',
-    marginBottom: '10px'
-  },
-  form: {
-    display: 'flex'
-  },
-  input: {
-    flex: 1,
-    padding: '10px',
-    backgroundColor: '#000',
-    color: '#fff',
-    border: '1px solid #fff',
-    borderRadius: '5px'
-  }
-};
+
 
 export default CommandPrompt;
