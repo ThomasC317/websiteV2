@@ -2,6 +2,7 @@
 "use client"
 import React, { useState } from 'react';
 import { Button } from "@/components/ui/button"
+import Trema from './trema';
 
 const BlogPost = () => {
   const [isVisible, setIsVisible] = useState(true);
@@ -15,12 +16,8 @@ const BlogPost = () => {
         <div className="text-sm text-muted-foreground">C:\Users\YourUsername\Documents\Blog</div>
         <div className="flex items-center gap-2">
           <Button variant="ghost" size="icon" onClick={() => setIsOpen(!isOpen)}>
-            <MinimizeIcon className="h-4 w-4" />
+            <Trema></Trema>
             <span className="sr-only">Minimize</span>
-          </Button>
-          <Button variant="ghost" size="icon">
-            <MaximizeIcon className="h-4 w-4" />
-            <span className="sr-only">Maximize</span>
           </Button>
           <Button variant="ghost" size="icon" onClick={() => setIsVisible(false)}>
             <XIcon className="h-4 w-4" />
