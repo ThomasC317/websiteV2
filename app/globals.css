@@ -44,6 +44,10 @@ body {
   background-color: white;
 }
 
+.bg-transparent {
+  background-color: transparent;
+}
+
 .techno-align {
   align-items: first baseline;
 }
@@ -94,6 +98,10 @@ body {
   padding-top: 1.5rem;
 }
 
+.pb-4 {
+  padding-bottom: 1.5rem;
+}
+
 .form-container {
   display: flex;
   justify-content: center;
@@ -133,3 +141,4 @@ body {
 .color-white {
   color: white;
 }
+

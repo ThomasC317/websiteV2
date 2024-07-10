@@ -72,7 +72,13 @@ const config: Config = {
               }
             }
           }
+},  variants: {
+  extend: {
+    backgroundColor: ['hover'],
+    textColor: ['hover'],
+  },
 },
+
   plugins: [require("tailwindcss-animate")],
 };
 export default config;

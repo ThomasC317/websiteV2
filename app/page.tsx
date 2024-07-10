@@ -23,7 +23,7 @@ useEffect(() => {
 
   return (
     <div className="min-h-screen flex gap-main-page items-center justify-center py-12 bg-gray-100">
-      <Navbar/>
+      <Navbar isMainPage={true}/>
       <div className="w-full max-w-4xl bg-white bg-opacity-80 p-8 md:p-12 lg:p-16 rounded-lg shadow-lg mt-24">
         <main className="flex flex-col gap-8">
           <div className="space-y-4">
