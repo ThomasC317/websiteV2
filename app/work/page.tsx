@@ -266,37 +266,37 @@ const handleCompanyChange = (e) => {
                 <div className="px-8 py-4">
                     <h2 className="text-2xl mb-4">Applications/Outils</h2>
                     <div className="mb-4 flex">
-                        <a href="https://code.visualstudio.com/" className="underline-link">VS Code </a>
+                        <a href="https://code.visualstudio.com/" className="underline-link whitespace-nowrap">VS Code </a>
                         <Trema />
                         <p className="ml-2">Un des meilleurs éditeurs de code que j'ai pu tester, très customisable.</p>
                     </div>
                     <div className="mb-4 flex">
-                        <a href="https://github.com/" className="underline-link">GitHub </a>
+                        <a href="https://github.com/" className="underline-link whitespace-nowrap">GitHub </a>
                         <Trema />
                         <p className="ml-2">La feature des pages est assez folle pour hoster des sites facilement, très pratique pour les portfolios notamment.</p>
                     </div>
                     <div className="mb-4 flex">
-                        <a href="https://www.sonarsource.com/" className="underline-link">Sonarlint/Cloud </a>
+                        <a href="https://www.sonarsource.com/" className="underline-link whitespace-nowrap">Sonarlint/Cloud </a>
                         <Trema />
                         <p className="ml-2">J'ai beau avoir travaillé peu avec, l'utilité est impressionante. Très simple à installer et la qualité de code est rapidement améliorée.</p>
                     </div>
                     <div className="mb-4 flex">
-                        <a href="https://azure.microsoft.com/fr-fr/products/devops" className="underline-link">Azure Devops </a>
+                        <a href="https://azure.microsoft.com/fr-fr/products/devops" className="underline-link whitespace-nowrap">Azure Devops </a>
                         <Trema />
                         <p className="ml-2">L'ensemble des features est très appréciable. Avoir accès au Kanban, aux repositories, a la création d'artifacts et aux pipelines sur la même plateforme... ça m'a été très utile.</p>
                     </div>
                     <div className="mb-4 flex">
-                        <a href="https://www.google.com/intl/fr/drive/" className="underline-link">Google Workspace </a>
+                        <a href="https://www.google.com/intl/fr/drive/" className="underline-link whitespace-nowrap">Google Workspace </a>
                         <Trema />
                         <p className="ml-2">Gratuit & très complet, pas besoin de dire grand chose de plus.</p>
                     </div>
                     <div className="mb-4 flex">
-                        <a href="https://www.canva.com/" className="underline-link">Canva </a>
+                        <a href="https://www.canva.com/" className="underline-link whitespace-nowrap">Canva </a>
                         <Trema />
                         <p className="ml-2">Très utile pour créer des schémas, des documents textes en tout genre, ou même des présentations. Je ne suis pas fan de la disparition des applications tierces cependant.</p>
                     </div>
                     <div className="mb-4 flex">
-                        <a href="https://v0.dev/" className="underline-link">V0 Dev </a>
+                        <a href="https://v0.dev/" className="underline-link whitespace-nowrap">V0 Dev </a>
                         <Trema />
                         <p className="ml-2">Génération par IA d'interfaces simples. Très utile pour générer des composants en React.</p>
                     </div>

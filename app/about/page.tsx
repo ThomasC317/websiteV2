@@ -11,7 +11,7 @@ const About = () => {
         <Navbar isMainPage={false} />
         <div style={{ position: "relative" }}>
         <ParticleBackground/>
-        <main className="w-full max-w-4xl bg-transparent bg-opacity-80 mx-auto rounded-lg px-24 py-12 mt-16" style={{"position":"relative", "zIndex":1}}>
+        <main className="w-full max-w-4xl bg-transparent bg-opacity-80 mx-auto rounded-lg px-24 py-12 mt-24" style={{"position":"relative", "zIndex":1}}>
             <div  className="mb-4 flex">
             <p className="">
               Je m'appelle Thomas CERDERA, j'ai 27 ans. J'ai commencé ma carrière en tant qu'alternant développeur Windev en License, mais la technologie ne m'a pas absolument pas plu. (grande surprise pour les développeurs qui me liront)<br/><br/>
