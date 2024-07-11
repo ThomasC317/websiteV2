@@ -11,17 +11,13 @@ const BlogComponent= ()=> {
       <div className="flex h-full w-64 flex-col border-r bg-background p-4">
         <div className="mb-4 flex items-center justify-between">
           <h2 className="text-lg font-semibold">Blog</h2>
-          <Button variant="ghost" size="icon">
-            <PlusIcon className="h-5 w-5" />
-            <span className="sr-only">Add new post</span>
-          </Button>
         </div>
         <div className="flex-1 overflow-auto">
           <Collapsible className="space-y-1">
             <CollapsibleTrigger className="flex w-full items-center justify-between rounded-md px-2 py-1 text-sm font-medium transition-colors hover:bg-muted">
               <div className="flex items-center gap-2">
                 <FolderIcon className="h-4 w-4" />
-                <span>Design</span>
+                <span>Centres d'intérêts</span>
               </div>
               <ChevronRightIcon className="h-4 w-4 transition-transform group-[data-state=open]:rotate-90" />
             </CollapsibleTrigger>
@@ -32,7 +28,7 @@ const BlogComponent= ()=> {
                 prefetch={false}
               >
                 <FileIcon className="h-4 w-4" />
-                <span>Designing for the Future</span>
+                <span>Voyage</span>
               </Link>
               <Link
                 href="#"
@@ -40,7 +36,7 @@ const BlogComponent= ()=> {
                 prefetch={false}
               >
                 <FileIcon className="h-4 w-4" />
-                <span>Minimalism in Web Design</span>
+                <span>Séries/films</span>
               </Link>
               <Link
                 href="#"
@@ -48,7 +44,31 @@ const BlogComponent= ()=> {
                 prefetch={false}
               >
                 <FileIcon className="h-4 w-4" />
-                <span>Color Theory for Designers</span>
+                <span>Jeux vidéos</span>
+              </Link>
+              <Link
+                href="#"
+                className="flex items-center gap-2 rounded-md px-2 py-1 text-sm font-medium transition-colors hover:bg-muted"
+                prefetch={false}
+              >
+                <FileIcon className="h-4 w-4" />
+                <span>Cuisine</span>
+              </Link>
+              <Link
+                href="#"
+                className="flex items-center gap-2 rounded-md px-2 py-1 text-sm font-medium transition-colors hover:bg-muted"
+                prefetch={false}
+              >
+                <FileIcon className="h-4 w-4" />
+                <span>Science Fiction</span>
+              </Link>
+              <Link
+                href="#"
+                className="flex items-center gap-2 rounded-md px-2 py-1 text-sm font-medium transition-colors hover:bg-muted"
+                prefetch={false}
+              >
+                <FileIcon className="h-4 w-4" />
+                <span>Océan</span>
               </Link>
             </CollapsibleContent>
           </Collapsible>
@@ -56,7 +76,7 @@ const BlogComponent= ()=> {
             <CollapsibleTrigger className="flex w-full items-center justify-between rounded-md px-2 py-1 text-sm font-medium transition-colors hover:bg-muted">
               <div className="flex items-center gap-2">
                 <FolderIcon className="h-4 w-4" />
-                <span>Development</span>
+                <span>Musique</span>
               </div>
               <ChevronRightIcon className="h-4 w-4 transition-transform group-[data-state=open]:rotate-90" />
             </CollapsibleTrigger>
@@ -67,7 +87,7 @@ const BlogComponent= ()=> {
                 prefetch={false}
               >
                 <FileIcon className="h-4 w-4" />
-                <span>React Hooks: A Deep Dive</span>
+                <span>Production</span>
               </Link>
               <Link
                 href="#"
@@ -75,7 +95,7 @@ const BlogComponent= ()=> {
                 prefetch={false}
               >
                 <FileIcon className="h-4 w-4" />
-                <span>Building a RESTful API with Node.js</span>
+                <span>Mes goûts</span>
               </Link>
               <Link
                 href="#"
@@ -83,7 +103,7 @@ const BlogComponent= ()=> {
                 prefetch={false}
               >
                 <FileIcon className="h-4 w-4" />
-                <span>Mastering TypeScript for Enterprise Applications</span>
+                <span>Ce que ça m'a apporté</span>
               </Link>
             </CollapsibleContent>
           </Collapsible>
@@ -91,7 +111,7 @@ const BlogComponent= ()=> {
             <CollapsibleTrigger className="flex w-full items-center justify-between rounded-md px-2 py-1 text-sm font-medium transition-colors hover:bg-muted">
               <div className="flex items-center gap-2">
                 <FolderIcon className="h-4 w-4" />
-                <span>Marketing</span>
+                <span>Développement</span>
               </div>
               <ChevronRightIcon className="h-4 w-4 transition-transform group-[data-state=open]:rotate-90" />
             </CollapsibleTrigger>
@@ -102,7 +122,7 @@ const BlogComponent= ()=> {
                 prefetch={false}
               >
                 <FileIcon className="h-4 w-4" />
-                <span>Effective Social Media Strategies</span>
+                <span>Carrière</span>
               </Link>
               <Link
                 href="#"
@@ -110,7 +130,7 @@ const BlogComponent= ()=> {
                 prefetch={false}
               >
                 <FileIcon className="h-4 w-4" />
-                <span>Content Marketing: Telling Your Brand's Story</span>
+                <span>Intérêts actuels</span>
               </Link>
               <Link
                 href="#"
@@ -118,42 +138,7 @@ const BlogComponent= ()=> {
                 prefetch={false}
               >
                 <FileIcon className="h-4 w-4" />
-                <span>Email Marketing Best Practices</span>
-              </Link>
-            </CollapsibleContent>
-          </Collapsible>
-          <Collapsible className="space-y-1">
-            <CollapsibleTrigger className="flex w-full items-center justify-between rounded-md px-2 py-1 text-sm font-medium transition-colors hover:bg-muted">
-              <div className="flex items-center gap-2">
-                <FolderIcon className="h-4 w-4" />
-                <span>Entrepreneurship</span>
-              </div>
-              <ChevronRightIcon className="h-4 w-4 transition-transform group-[data-state=open]:rotate-90" />
-            </CollapsibleTrigger>
-            <CollapsibleContent className="pl-4 space-y-1">
-              <Link
-                href="#"
-                className="flex items-center gap-2 rounded-md px-2 py-1 text-sm font-medium transition-colors hover:bg-muted"
-                prefetch={false}
-              >
-                <FileIcon className="h-4 w-4" />
-                <span>Bootstrapping Your Startup</span>
-              </Link>
-              <Link
-                href="#"
-                className="flex items-center gap-2 rounded-md px-2 py-1 text-sm font-medium transition-colors hover:bg-muted"
-                prefetch={false}
-              >
-                <FileIcon className="h-4 w-4" />
-                <span>Scaling Your Business: Strategies and Challenges</span>
-              </Link>
-              <Link
-                href="#"
-                className="flex items-center gap-2 rounded-md px-2 py-1 text-sm font-medium transition-colors hover:bg-muted"
-                prefetch={false}
-              >
-                <FileIcon className="h-4 w-4" />
-                <span>Cultivating a Successful Mindset</span>
+                <span>Projets personnel</span>
               </Link>
             </CollapsibleContent>
           </Collapsible>

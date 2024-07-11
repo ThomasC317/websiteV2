@@ -170,58 +170,60 @@ const handleCompanyChange = (e) => {
         <ParticleBackground />
         <main className="mx-auto px-24 py-12 my-16" style={{ position: "relative", zIndex: 1 }}>
             <div>
-                <div className="pt-8">
-                <div className="px-8">
-          <h2 className="text-2xl mb-4">Technologies</h2>
-          <div className="mb-4 flex items-center">
-            <h3 className="text-lg font-bold text-blue-500">Frontend:</h3>
-            <p className="ml-2 text-lg">React, .NET, Angular, JS.</p>
-          </div>
-          <div className="mb-4 flex items-center">
-            <h3 className="text-lg font-bold text-blue-500">Backend:</h3>
-            <p className="ml-2 text-lg">.NET, Express/Nodejs.</p>
-          </div>
-          <div className="mb-4 flex items-center">
-            <h3 className="text-lg font-bold text-blue-500">UI/Styling/Animations:</h3>
-            <p className="ml-2 text-lg">shadcn/ui, TailwindCSS, framer-motion.</p>
-          </div>
-          <div className="mb-4 flex items-center">
-            <h3 className="text-lg font-bold text-blue-500">Databases:</h3>
-            <p className="ml-2 text-lg">MySql, SqlServer.</p>
-          </div>
-          <div className="mb-4 flex items-center">
-            <h3 className="text-lg font-bold text-blue-500">Langages de programmation:</h3>
-            <p className="ml-2 text-lg">C#, Typescript, JavaScript.</p>
-          </div>
-          <div className="mb-4 flex items-center">
-            <h3 className="text-lg font-bold text-blue-500">Versionning:</h3>
-            <p className="ml-2 text-lg">Git (Gitlab & Github).</p>
-          </div>
-        </div>
-        <div className="px-8 py-4">
-          <h2 className="text-2xl mb-4">Compétences métier</h2>
-          <div className="mb-4 flex items-center">
-            <h3 className="text-lg font-bold text-blue-500">Méthodologies:</h3>
-            <p className="ml-2 text-lg">Méthodologies Agile (Scrum, Kanban).</p>
-          </div>
-          <div className="mb-4 flex items-center">
-            <h3 className="text-lg font-bold text-blue-500">Documentation:</h3>
-            <p className="ml-2 text-lg">Rédaction de documentation utilisateur, de tests, de light ARD.</p>
-          </div>
-          <div className="mb-4 flex items-center">
-            <h3 className="text-lg font-bold text-blue-500">Optimisation:</h3>
-            <p className="ml-2 text-lg">Réduction des temps de récupération des datas.</p>
-          </div>
-          <div className="mb-4 flex items-center">
-            <h3 className="text-lg font-bold text-blue-500">Esprit d’analyse:</h3>
-            <p className="ml-2 text-lg">Analyse des besoins et/ou des problèmes.</p>
-          </div>
-          <div className="mb-4 flex items-center">
-            <h3 className="text-lg font-bold text-blue-500">Travail:</h3>
-            <p className="ml-2 text-lg">Autonomie, collaboration, gestion du stress, adaptabilité.</p>
-          </div>
-        </div>
-        </div>
+            <div className="pt-8">
+  <div className="px-8">
+    <div className="flex" style={{alignItems:"baseline"}}> <Trema />    <h2 className="text-2xl mb-4 ml-4">Technologies</h2></div>
+
+    <div className="mb-4 flex items-center">
+      <h3 className="text-lg font-bold text-blue-500">Frontend:</h3>
+      <p className="ml-2 text-lg">React, .NET, Angular.</p>
+    </div>
+    <div className="mb-4 flex items-center">
+      <h3 className="text-lg font-bold text-blue-500">Backend:</h3>
+      <p className="ml-2 text-lg">.NET, Express/Nodejs.</p>
+    </div>
+    <div className="mb-4 flex items-center">
+      <h3 className="text-lg font-bold text-blue-500">UI/Styling/Animations:</h3>
+      <p className="ml-2 text-lg">shadcn/ui, TailwindCSS, framer-motion.</p>
+    </div>
+    <div className="mb-4 flex items-center">
+      <h3 className="text-lg font-bold text-blue-500">Databases:</h3>
+      <p className="ml-2 text-lg">MySql, SqlServer.</p>
+    </div>
+    <div className="mb-4 flex items-center">
+      <h3 className="text-lg font-bold text-blue-500">Langages de programmation:</h3>
+      <p className="ml-2 text-lg">C#, Typescript.</p>
+    </div>
+    <div className="mb-4 flex items-center">
+      <h3 className="text-lg font-bold text-blue-500">Versionning:</h3>
+      <p className="ml-2 text-lg">Git (Gitlab & Github).</p>
+    </div>
+  </div>
+  <div className="px-8 py-4">
+  <div className="flex" style={{alignItems:"baseline"}}> <Trema />    <h2 className="text-2xl mb-4 ml-4">Compétences métier</h2></div>
+
+    <div className="mb-4 flex items-center">
+      <h3 className="text-lg font-bold text-blue-500">Méthodologies:</h3>
+      <p className="ml-2 text-lg">Méthodologies Agile (Scrum, Kanban).</p>
+    </div>
+    <div className="mb-4 flex items-center">
+      <h3 className="text-lg font-bold text-blue-500">Documentation:</h3>
+      <p className="ml-2 text-lg">Rédaction de documentation utilisateur, de tests, de light ARD.</p>
+    </div>
+    <div className="mb-4 flex items-center">
+      <h3 className="text-lg font-bold text-blue-500">Optimisation:</h3>
+      <p className="ml-2 text-lg">Réduction des temps de récupération des datas.</p>
+    </div>
+    <div className="mb-4 flex items-center">
+      <h3 className="text-lg font-bold text-blue-500">Esprit d’analyse:</h3>
+      <p className="ml-2 text-lg">Analyse des besoins et/ou des problèmes.</p>
+    </div>
+    <div className="mb-4 flex items-center">
+      <h3 className="text-lg font-bold text-blue-500">Travail:</h3>
+      <p className="ml-2 text-lg">Autonomie, collaboration, gestion du stress, adaptabilité.</p>
+    </div>
+  </div>
+</div>
                 <div className="px-8 pt-4 flex items-center gap-2 pb-4 ">
                     <h2 className="text-2xl">Projets</h2>
                     <select
@@ -253,7 +255,7 @@ const handleCompanyChange = (e) => {
                                     {project.tags.map((tech, index) => (
                                         <span
                                             key={index}
-                                            className="bg-gray-700 px-3 py-1 rounded-lg text-xs font-medium text-gray-200"
+                                            className="background-blue-500  px-3 py-1 rounded-lg text-xs font-medium text-gray-200"
                                         >
                                             {tech}
                                         </span>
@@ -264,7 +266,7 @@ const handleCompanyChange = (e) => {
                     );
                 })}
                 <div className="px-8 py-4">
-                    <h2 className="text-2xl mb-4">Applications/Outils</h2>
+                <div className="flex" style={{alignItems:"baseline"}}> <Trema />    <h2 className="text-2xl mb-4 ml-4">Applications/Outils</h2></div>
                     <div className="mb-4 flex">
                         <a href="https://code.visualstudio.com/" className="underline-link whitespace-nowrap">VS Code </a>
                         <Trema />

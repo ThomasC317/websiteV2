@@ -11,8 +11,8 @@ const BlogPost = () => {
   if (!isVisible) return null;
 
   return (
-    <div className="relative max-w-3xl mx-auto p-6 shadow-lg  border">
-      <div className="absolute top-0 left-0 right-0 h-12 bg-muted flex items-center justify-between p-4">
+    <div className="relative max-w-3xl mx-auto p-6 shadow-lg border bg-white mb-16">
+      <div className="absolute top-0 left-0 right-0 h-12 bg-white flex items-center justify-between p-4">
         <div className="text-sm text-muted-foreground">C:\Users\YourUsername\Documents\Blog</div>
         <div className="flex items-center gap-2">
           <Button variant="ghost" size="icon" onClick={() => setIsOpen(!isOpen)}>
@@ -25,7 +25,7 @@ const BlogPost = () => {
           </Button>
         </div>
       </div>
-      <div className={`pt-6 ${isOpen ? "hidden" : "block"}`}>
+      <div className={`pt-6 ${isOpen ? "blog-opened-state" : "blog-closed-state"}`}>
         <div className="bg-primary rounded-lg px-4 py-2 text-primary-foreground inline-block mb-4">Featured Post</div>
         <h1>Designing for the Future</h1>
         <p>
