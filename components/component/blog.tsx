@@ -132,6 +132,8 @@ const blogs = [
 
 const [selectedBlog, setSelectedBlog] = useState(blogs[0]);
 const [selectedCategory, setSelectedCategory] = useState(blogs[0].category);
+const [openCategories, setOpenCategories] = useState([]);
+
 const groupedBlogs = blogs.reduce((acc, blog) => {
   if (!acc[blog.category]) {
     acc[blog.category] = [];
@@ -145,6 +147,16 @@ const SetBlog = (index) => {
     setSelectedCategory(blogs[index].category)
 };
 
+const handleCategoryClick = (category) => {
+  setOpenCategories(prev => {
+    if (prev.includes(category)) {
+      return prev.filter(cat => cat !== category);
+    } else {
+      return [...prev, category];
+    }
+  });
+};
+
 const SetLastBlog = (index) => {
   if(!(index <= 0))
     setSelectedBlog(blogs[index-1])
@@ -156,10 +168,11 @@ const SetNextBlog = (index) => {
 };
 
 useEffect(() => {
-  if (selectedBlog.category != selectedCategory) {
-    setSelectedCategory(selectedBlog.category)
+  if (!openCategories.includes(selectedBlog.category)) {
+    setOpenCategories(prev => [...prev, selectedBlog.category]);
   }
 }, [selectedBlog]);
+
   return (
     <div className="flex min-h-screen w-full">
       <div className="flex h-full w-64 flex-col border-r bg-background p-4 bg-white">
@@ -169,8 +182,8 @@ useEffect(() => {
         <div className="flex-1 overflow-auto">
         {Object.keys(groupedBlogs).map((category, index) => {
   return (
-    <Collapsible className="space-y-1" key={index} open={selectedCategory == category}>
-      <CollapsibleTrigger className="flex w-full items-center justify-between rounded-md px-2 py-1 text-sm font-medium transition-colors hover:bg-muted">
+    <Collapsible className="space-y-1" key={index} open={openCategories.includes(category)}>
+      <CollapsibleTrigger className="flex w-full items-center justify-between rounded-md px-2 py-1 text-sm font-medium transition-colors hover:bg-muted"   onClick={() => handleCategoryClick(category)}>
         <div className="flex items-center gap-2">
           <FolderIcon className="h-4 w-4" />
           <span>{category}</span>
