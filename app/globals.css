@@ -218,3 +218,9 @@ body {
                 opacity .5s .25s;
 }
 
+.selected-blog {
+  text-decoration: underline;
+  color: rgba(59, 130, 246, 1);
+  transition: color 0.3s;
+}
+
