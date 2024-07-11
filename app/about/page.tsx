@@ -8,11 +8,10 @@ const About = () => {
 
     return (  
     <div className="min-h-screen bg-white">
-    <div className="flex gap-main-page items-center justify-center py-12 bg-gray-100">
         <Navbar isMainPage={false} />
-        <div style={{ position: "relative", height: "100vh" }}>
+        <div style={{ position: "relative" }}>
         <ParticleBackground/>
-        <main className="w-full max-w-4xl bg-white bg-opacity-80 mx-auto mt-16 rounded-lg" style={{"position":"relative", "zIndex":1}}>
+        <main className="w-full max-w-4xl bg-transparent bg-opacity-80 mx-auto rounded-lg px-24 py-12 mt-16" style={{"position":"relative", "zIndex":1}}>
             <div  className="mb-4 flex">
             <p className="">
               Je m'appelle Thomas CERDERA, j'ai 27 ans. J'ai commencé ma carrière en tant qu'alternant développeur Windev en License, mais la technologie ne m'a pas absolument pas plu. (grande surprise pour les développeurs qui me liront)<br/><br/>
@@ -30,9 +29,8 @@ const About = () => {
         <h2>Vous pouvez aussi me contacter directement ici :</h2>
         <Contact></Contact>
         </main>
-        </div>
-        </div>
         <Footer></Footer>
+        </div>
         </div>);
   
   };
