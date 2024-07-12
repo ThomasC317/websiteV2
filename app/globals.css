@@ -199,6 +199,15 @@ body {
 }
 
 .blog-opened-state {
+      /* unshrink, then fade in */
+      transition: font-size .25s,
+      margin .25s,
+      padding .25s,
+      opacity .5s .25s;
+
+}
+
+.blog-closed-state {
   font-size: 0;
   margin: 0;
   opacity: 0;
@@ -208,14 +217,6 @@ body {
               font-size .5s .25s,
               margin .5s .25s,
               padding .5s .25s;
-}
-
-.blog-closed-state {
-    /* unshrink, then fade in */
-    transition: font-size .25s,
-                margin .25s,
-                padding .25s,
-                opacity .5s .25s;
 }
 
 .selected-blog {

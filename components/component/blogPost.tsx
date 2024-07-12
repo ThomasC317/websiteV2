@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import { Button } from "@/components/ui/button"
 import Trema from './trema';
 
-const BlogPost = ({selectedBlog, goToLastBlog, goToNextBlog}) => {
+const BlogPost = ({selectedBlog, goToLastBlog, goToNextBlog, isFirstBlog, isLastBlog}) => {
   const [isVisible, setIsVisible] = useState(true);
   const [isOpen, setIsOpen] = useState(true);
   console.log(selectedBlog)
@@ -20,11 +20,11 @@ const BlogPost = ({selectedBlog, goToLastBlog, goToNextBlog}) => {
       <div className="absolute top-0 left-0 right-0 h-12 bg-white flex items-center justify-between p-4">
         <div className="text-sm text-muted-foreground">C:\Users\ThomasCerdera\{selectedBlog.category}\{selectedBlog.title}</div>
         <div className="flex items-center gap-2">
-        <Button variant="ghost" size="icon" onClick={() => goToLastBlog(selectedBlog.id)}>
+        <Button variant="ghost" size="icon" onClick={() => goToLastBlog(selectedBlog.id)} disabled={isFirstBlog}>
             <LessThanIcon></LessThanIcon>
             <span className="sr-only">Minimize</span>
           </Button>
-        <Button variant="ghost" size="icon" onClick={() => goToNextBlog(selectedBlog.id)}>
+        <Button variant="ghost" size="icon" onClick={() => goToNextBlog(selectedBlog.id)} disabled={isLastBlog}>
             <GreaterThanIcon></GreaterThanIcon>
             <span className="sr-only">Minimize</span>
           </Button>

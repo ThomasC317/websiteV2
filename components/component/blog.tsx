@@ -133,6 +133,8 @@ const blogs = [
 const [selectedBlog, setSelectedBlog] = useState(blogs[0]);
 const [selectedCategory, setSelectedCategory] = useState(blogs[0].category);
 const [openCategories, setOpenCategories] = useState([]);
+const [isFirstBlog, setIsFirstBlog] = useState(true);
+const [isLastBlog, setIsLastBlog] = useState(false);
 
 const groupedBlogs = blogs.reduce((acc, blog) => {
   if (!acc[blog.category]) {
@@ -171,6 +173,14 @@ useEffect(() => {
   if (!openCategories.includes(selectedBlog.category)) {
     setOpenCategories(prev => [...prev, selectedBlog.category]);
   }
+  if(selectedBlog.title == blogs[0].title)
+    setIsFirstBlog(true);
+  else
+    setIsFirstBlog(false);
+  if(selectedBlog.title == blogs[blogs.length-1].title)
+    setIsLastBlog(true);
+  else
+    setIsLastBlog(false);
 }, [selectedBlog]);
 
   return (
@@ -215,7 +225,7 @@ useEffect(() => {
         </div>
       </div>
       <div className="flex-1">
-      <BlogPost selectedBlog={selectedBlog} goToLastBlog={SetLastBlog} goToNextBlog={SetNextBlog}></BlogPost>
+      <BlogPost selectedBlog={selectedBlog} goToLastBlog={SetLastBlog} goToNextBlog={SetNextBlog} isFirstBlog={isFirstBlog} isLastBlog={isLastBlog}></BlogPost>
       </div>
     </div>
   );
