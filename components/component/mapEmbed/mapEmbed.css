@@ -1,0 +1,11 @@
+.map-container {
+    width: 100%;
+    max-width: 640px;
+    height: 480px;
+    position: relative;
+  }
+  
+  .no-pointer-events {
+    pointer-events: none;
+  }
+  

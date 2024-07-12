@@ -4,132 +4,12 @@ import React, { useState,useEffect  } from 'react';
 import { Collapsible, CollapsibleTrigger, CollapsibleContent } from "@/components/ui/collapsible"
 import Link from "next/link"
 import BlogPost from "./blogPost";
+import MapEmbed from "./mapEmbed/mapEmbed";
+import jsonData from '../../public/blog.json';
 
 const BlogComponent= ()=> {
-const blogs = [
-  {
-    id:0,
-    title: "Voyage",
-    date:"Juillet 2024",
-    category: "Centres d'intérêts",
-    content: `Création d'un nouveau site Portfolio.<br/>
-    - Recherche d'inspiration pour voir les modes des sites.<br/>
-    - Mise en place des pages/ composants.<br/>
-    - Responsivité.`
-  },
-  {
-    id:1,
-    title: "Séries & films",
-    date:"Juillet 2024",
-    category: "Centres d'intérêts",
-    content: `Création d'un nouveau site Portfolio.<br/>
-    - Recherche d'inspiration pour voir les modes des sites.<br/>
-    - Mise en place des pages/ composants.<br/>
-    - Responsivité.`
-  },
-  {
-    id:2,
-    title: "Jeux vidéos",
-    date:"Juillet 2024",
-    category: "Centres d'intérêts",
-    content: `Création d'un nouveau site Portfolio.<br/>
-    - Recherche d'inspiration pour voir les modes des sites.<br/>
-    - Mise en place des pages/ composants.<br/>
-    - Responsivité.`
-  },
-  {
-    id:3,
-    title: "Cuisine",
-    date:"Juillet 2024",
-    category: "Centres d'intérêts",
-    content: `Création d'un nouveau site Portfolio.<br/>
-    - Recherche d'inspiration pour voir les modes des sites.<br/>
-    - Mise en place des pages/ composants.<br/>
-    - Responsivité.`
-  },
-  {
-    id:4,
-    title: "Science Fiction",
-    date:"Juillet 2024",
-    category: "Centres d'intérêts",
-    content: `Création d'un nouveau site Portfolio.<br/>
-    - Recherche d'inspiration pour voir les modes des sites.<br/>
-    - Mise en place des pages/ composants.<br/>
-    - Responsivité.`
-  },
-  {
-    id:5,
-    title: "Océan",
-    date:"Juillet 2024",
-    category: "Centres d'intérêts",
-    content: `Création d'un nouveau site Portfolio.<br/>
-    - Recherche d'inspiration pour voir les modes des sites.<br/>
-    - Mise en place des pages/ composants.<br/>
-    - Responsivité.`
-  },
-  {
-    id:6,
-    title: "Production",
-    date:"Juillet 2024",
-    category: "Musique",
-    content: `Création d'un nouveau site Portfolio.<br/>
-    - Recherche d'inspiration pour voir les modes des sites.<br/>
-    - Mise en place des pages/ composants.<br/>
-    - Responsivité.`
-  },
-  {
-    id:7,
-    title: "Mes goûts",
-    date:"Juillet 2024",
-    category: "Musique",
-    content: `Création d'un nouveau site Portfolio.<br/>
-    - Recherche d'inspiration pour voir les modes des sites.<br/>
-    - Mise en place des pages/ composants.<br/>
-    - Responsivité.`
-  },
-  {
-    id:8,
-    title: "Ce que ça m'a apporté",
-    date:"Juillet 2024",
-    category: "Musique",
-    content: `Création d'un nouveau site Portfolio.<br/>
-    - Recherche d'inspiration pour voir les modes des sites.<br/>
-    - Mise en place des pages/ composants.<br/>
-    - Responsivité.`
-  },
-  {
-    id:9,
-    title: "Carrière",
-    date:"Juillet 2024",
-    category: "Développement",
-    content: `Création d'un nouveau site Portfolio.<br/>
-    - Recherche d'inspiration pour voir les modes des sites.<br/>
-    - Mise en place des pages/ composants.<br/>
-    - Responsivité.`
-  },
-  {
-    id:10,
-    title: "Intérêts actuels",
-    date:"Juillet 2024",
-    category: "Développement",
-    content: `Création d'un nouveau site Portfolio.<br/>
-    - Recherche d'inspiration pour voir les modes des sites.<br/>
-    - Mise en place des pages/ composants.<br/>
-    - Responsivité.`
-  },
-  {
-    id:11,
-    title: "Projets personnel",
-    date:"Juillet 2024",
-    category: "Développement",
-    content: `Création d'un nouveau site Portfolio.<br/>
-    - Recherche d'inspiration pour voir les modes des sites.<br/>
-    - Mise en place des pages/ composants.<br/>
-    - Responsivité.`
-  }
-]
 
-
+const blogs = jsonData.blogs;
 const [selectedBlog, setSelectedBlog] = useState(blogs[0]);
 const [selectedCategory, setSelectedCategory] = useState(blogs[0].category);
 const [openCategories, setOpenCategories] = useState([]);
@@ -150,9 +30,9 @@ const SetBlog = (index) => {
 };
 
 const handleCategoryClick = (category) => {
-  setOpenCategories(prev => {
+  setOpenCategories((prev) => {
     if (prev.includes(category)) {
-      return prev.filter(cat => cat !== category);
+      return prev.filter((cat) => cat !== category);
     } else {
       return [...prev, category];
     }
@@ -182,6 +62,10 @@ useEffect(() => {
   else
     setIsLastBlog(false);
 }, [selectedBlog]);
+
+useEffect(() => {
+  setOpenCategories(prev => [...prev, selectedBlog.category]);
+}, []);
 
   return (
     <div className="flex min-h-screen w-full">

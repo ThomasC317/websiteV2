@@ -3,6 +3,8 @@
 import React, { useState } from 'react';
 import { Button } from "@/components/ui/button"
 import Trema from './trema';
+import htmlReactParser, { domToReact } from 'html-react-parser';
+import MapEmbed from './mapEmbed/mapEmbed';
 
 const BlogPost = ({selectedBlog, goToLastBlog, goToNextBlog, isFirstBlog, isLastBlog}) => {
   const [isVisible, setIsVisible] = useState(true);
@@ -14,6 +16,20 @@ const BlogPost = ({selectedBlog, goToLastBlog, goToNextBlog, isFirstBlog, isLast
     console.log("selectedBlog is not defined or title is missing");
   }
   if (!isVisible) return null;
+
+  const replace = ({ attribs, name }) => {
+    if (name === 'mapembed') {
+      return (
+        <MapEmbed
+          iframeUrl={attribs.iframeurl}
+        />
+      );
+    }
+  };
+  
+  const BlogContent = ({ content }) => {
+    return <div>{htmlReactParser(content, { replace })}</div>;
+  };
 
   return (
     <div className="relative max-w-3xl mx-auto p-6 shadow-lg border bg-white mb-16">
@@ -39,9 +55,8 @@ const BlogPost = ({selectedBlog, goToLastBlog, goToNextBlog, isFirstBlog, isLast
         </div>
       </div>
       <div className={`pt-6 ${isOpen ? "blog-opened-state" : "blog-closed-state"}`}>
-        <div className="bg-primary rounded-lg px-4 py-2 text-primary-foreground inline-block mb-4">{selectedBlog.title}</div>
-        <div dangerouslySetInnerHTML={{ __html: selectedBlog.content }}>
-        </div>
+      <div className="flex" style={{alignItems:"baseline"}}> <Trema />    <h2 className="text-2xl mb-4 ml-4">{selectedBlog.title}</h2></div>
+      <BlogContent content={selectedBlog.content} />
       </div>
     </div>
   );
