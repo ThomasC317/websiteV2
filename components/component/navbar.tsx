@@ -13,9 +13,6 @@ const Navbar = ( {isMainPage} ) => {
           <Link href="/work" className="hover:underline" prefetch={false}>
             Mon Travail
           </Link>
-          <Link href="/blog" className="hover:underline" prefetch={false}>
-            Blog
-          </Link>
           <Link href="/about" className="hover:underline" prefetch={false}>
             À propos
           </Link>

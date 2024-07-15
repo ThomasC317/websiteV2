@@ -12,23 +12,19 @@ const About = () => {
         <div style={{ position: "relative" }}>
         <ParticleBackground/>
         <main className="w-full max-w-4xl bg-transparent bg-opacity-80 mx-auto rounded-lg px-24 py-12 mt-24" style={{"position":"relative", "zIndex":1}}>
-            <div  className="mb-4 flex">
-            <p className="">
-              Je m'appelle Thomas CERDERA, j'ai 27 ans. J'ai commencé ma carrière en tant qu'alternant développeur Windev en License, mais la technologie ne m'a pas absolument pas plu. (grande surprise pour les développeurs qui me liront)<br/><br/>
-              J'ai malgré tout réussi à avoir ma license et j'ai trouvé une alternance pour suivre le master Chef de projet ingénierie Logicielle à l'IPI de Blagnac, branche informatique
-              du groupe IGS. Durant ces deux années, j'ai appris énormément, j'ai pris confiance en moi et j'ai pu travailler sur des projets intéressants. <br/><br/>
-
-              Je suis maintenant ingénieur Développeur Web, actuellement chez Infotel, ESN travaillant avec de gros clients, et j'ai déjà réalisés quelques projets pour cette entreprise.<br/>
-
-              En dehors de cela, j'ai une bonne maîtrise de l'anglais (920 au TOEIC), j'ai regardé beaucoup de séries en anglais et j'ai été aidé par mes différents voyages.<br/><br/>
-
-              J'apprécie beaucoup le travail en équipe, mais quand il le faut je sais aussi travailler en autonomie. Je suis aussi minutieux et créatif, 
-              et j'ai acquis des compétences, qui, j'en suis certain, vous seront très utiles.
-            </p>
-          </div>
-        <h2>Vous pouvez aussi me contacter directement ici :</h2>
-        <Contact></Contact>
-        </main>
+  <div className="mb-4 flex">
+    <h1 className="text-3xl font-bold mb-4 text-azure-radiance-950">Bonjour, je suis Thomas. Heureux de vous voir sur mon site !</h1>
+    <p className="text-lg">
+      Fort de 6 années d'expérience, je suis actuellement ingénieur Développeur Web chez Infotel.<br/>
+      J'ai une bonne maîtrise de l'anglais (920 au TOEIC), j'apprécie beaucoup le travail en équipe, et je sais travailler en autonomie. 
+      Je suis quelqu'un de minutieux et créatif, et j'ai acquis des compétences, qui, j'en suis certain, vous seront très utiles. <br/><br/>
+      En dehors de ça, je peux ajouter que j'ai un Master en ingénierie logicielle et Chefferie de projet, obtenu à l'IPI de Blagnac en 2021.
+      J'ai mon permis B et je suis situé sur Toulouse.
+    </p>
+  </div>
+  <h2 className="text-xl font-bold mb-2">Vous avez une question, ou une demande ? N'hésitez pas :</h2>
+  <Contact></Contact>
+</main>
         <Footer></Footer>
         </div>
         </div>);

@@ -84,7 +84,7 @@ const Contact = ()=> {
             required
           />
         </div>
-        <Button variant="outline" type="submit" className="w-full" style={{ backgroundColor: 'black', color: 'white' }}>
+        <Button variant="outline" type="submit" className="w-full bg-azure-radiance-950" style={{color: 'white' }}>
           Envoi du message
         </Button>
       </form>

@@ -175,27 +175,27 @@ const handleCompanyChange = (e) => {
     <div className="flex" style={{alignItems:"baseline"}}> <Trema />    <h2 className="text-2xl mb-4 ml-4">Technologies</h2></div>
 
     <div className="mb-4 flex items-center">
-      <h3 className="text-lg font-bold text-blue-500">Frontend:</h3>
+      <h3 className="text-lg font-bold text-azure-radiance-500">Frontend:</h3>
       <p className="ml-2 text-lg">React, .NET, Angular.</p>
     </div>
     <div className="mb-4 flex items-center">
-      <h3 className="text-lg font-bold text-blue-500">Backend:</h3>
+      <h3 className="text-lg font-bold text-azure-radiance-500">Backend:</h3>
       <p className="ml-2 text-lg">.NET, Express/Nodejs.</p>
     </div>
     <div className="mb-4 flex items-center">
-      <h3 className="text-lg font-bold text-blue-500">UI/Styling/Animations:</h3>
+      <h3 className="text-lg font-bold text-azure-radiance-500">UI/Styling/Animations:</h3>
       <p className="ml-2 text-lg">shadcn/ui, TailwindCSS, framer-motion.</p>
     </div>
     <div className="mb-4 flex items-center">
-      <h3 className="text-lg font-bold text-blue-500">Databases:</h3>
+      <h3 className="text-lg font-bold text-azure-radiance-500">Databases:</h3>
       <p className="ml-2 text-lg">MySql, SqlServer.</p>
     </div>
     <div className="mb-4 flex items-center">
-      <h3 className="text-lg font-bold text-blue-500">Langages de programmation:</h3>
+      <h3 className="text-lg font-bold text-azure-radiance-500">Langages de programmation:</h3>
       <p className="ml-2 text-lg">C#, Typescript.</p>
     </div>
     <div className="mb-4 flex items-center">
-      <h3 className="text-lg font-bold text-blue-500">Versionning:</h3>
+      <h3 className="text-lg font-bold text-azure-radiance-500">Versionning:</h3>
       <p className="ml-2 text-lg">Git (Gitlab & Github).</p>
     </div>
   </div>
@@ -203,23 +203,23 @@ const handleCompanyChange = (e) => {
   <div className="flex" style={{alignItems:"baseline"}}> <Trema />    <h2 className="text-2xl mb-4 ml-4">Compétences métier</h2></div>
 
     <div className="mb-4 flex items-center">
-      <h3 className="text-lg font-bold text-blue-500">Méthodologies:</h3>
+      <h3 className="text-lg font-bold text-azure-radiance-500">Méthodologies:</h3>
       <p className="ml-2 text-lg">Méthodologies Agile (Scrum, Kanban).</p>
     </div>
     <div className="mb-4 flex items-center">
-      <h3 className="text-lg font-bold text-blue-500">Documentation:</h3>
+      <h3 className="text-lg font-bold text-azure-radiance-500">Documentation:</h3>
       <p className="ml-2 text-lg">Rédaction de documentation utilisateur, de tests, de light ARD.</p>
     </div>
     <div className="mb-4 flex items-center">
-      <h3 className="text-lg font-bold text-blue-500">Optimisation:</h3>
+      <h3 className="text-lg font-bold text-azure-radiance-500">Optimisation:</h3>
       <p className="ml-2 text-lg">Réduction des temps de récupération des datas.</p>
     </div>
     <div className="mb-4 flex items-center">
-      <h3 className="text-lg font-bold text-blue-500">Esprit d’analyse:</h3>
+      <h3 className="text-lg font-bold text-azure-radiance-500">Esprit d’analyse:</h3>
       <p className="ml-2 text-lg">Analyse des besoins et/ou des problèmes.</p>
     </div>
     <div className="mb-4 flex items-center">
-      <h3 className="text-lg font-bold text-blue-500">Travail:</h3>
+      <h3 className="text-lg font-bold text-azure-radiance-500">Travail:</h3>
       <p className="ml-2 text-lg">Autonomie, collaboration, gestion du stress, adaptabilité.</p>
     </div>
   </div>
@@ -255,7 +255,7 @@ const handleCompanyChange = (e) => {
                                     {project.tags.map((tech, index) => (
                                         <span
                                             key={index}
-                                            className="background-blue-500  px-3 py-1 rounded-lg text-xs font-medium text-gray-200"
+                                            className="bg-azure-radiance-500  px-3 py-1 rounded-lg text-xs font-medium text-gray-200"
                                         >
                                             {tech}
                                         </span>
@@ -268,37 +268,37 @@ const handleCompanyChange = (e) => {
                 <div className="px-8 py-4">
                 <div className="flex" style={{alignItems:"baseline"}}> <Trema />    <h2 className="text-2xl mb-4 ml-4">Applications/Outils</h2></div>
                     <div className="mb-4 flex">
-                        <a href="https://code.visualstudio.com/" className="underline-link whitespace-nowrap">VS Code </a>
+                        <a href="https://code.visualstudio.com/" className="underline-link whitespace-nowrap text-azure-radiance-500">VS Code </a>
                         <Trema />
                         <p className="ml-2">Un des meilleurs éditeurs de code que j'ai pu tester, très customisable.</p>
                     </div>
                     <div className="mb-4 flex">
-                        <a href="https://github.com/" className="underline-link whitespace-nowrap">GitHub </a>
+                        <a href="https://github.com/" className="underline-link whitespace-nowrap text-azure-radiance-500">GitHub </a>
                         <Trema />
                         <p className="ml-2">La feature des pages est assez folle pour hoster des sites facilement, très pratique pour les portfolios notamment.</p>
                     </div>
                     <div className="mb-4 flex">
-                        <a href="https://www.sonarsource.com/" className="underline-link whitespace-nowrap">Sonarlint/Cloud </a>
+                        <a href="https://www.sonarsource.com/" className="underline-link whitespace-nowrap text-azure-radiance-500">Sonarlint/Cloud </a>
                         <Trema />
                         <p className="ml-2">J'ai beau avoir travaillé peu avec, l'utilité est impressionante. Très simple à installer et la qualité de code est rapidement améliorée.</p>
                     </div>
                     <div className="mb-4 flex">
-                        <a href="https://azure.microsoft.com/fr-fr/products/devops" className="underline-link whitespace-nowrap">Azure Devops </a>
+                        <a href="https://azure.microsoft.com/fr-fr/products/devops" className="underline-link whitespace-nowrap text-azure-radiance-500">Azure Devops </a>
                         <Trema />
                         <p className="ml-2">L'ensemble des features est très appréciable. Avoir accès au Kanban, aux repositories, a la création d'artifacts et aux pipelines sur la même plateforme... ça m'a été très utile.</p>
                     </div>
                     <div className="mb-4 flex">
-                        <a href="https://www.google.com/intl/fr/drive/" className="underline-link whitespace-nowrap">Google Workspace </a>
+                        <a href="https://www.google.com/intl/fr/drive/" className="underline-link whitespace-nowrap text-azure-radiance-500">Google Workspace </a>
                         <Trema />
                         <p className="ml-2">Gratuit & très complet, pas besoin de dire grand chose de plus.</p>
                     </div>
                     <div className="mb-4 flex">
-                        <a href="https://www.canva.com/" className="underline-link whitespace-nowrap">Canva </a>
+                        <a href="https://www.canva.com/" className="underline-link whitespace-nowrap text-azure-radiance-500">Canva </a>
                         <Trema />
                         <p className="ml-2">Très utile pour créer des schémas, des documents textes en tout genre, ou même des présentations. Je ne suis pas fan de la disparition des applications tierces cependant.</p>
                     </div>
                     <div className="mb-4 flex">
-                        <a href="https://v0.dev/" className="underline-link whitespace-nowrap">V0 Dev </a>
+                        <a href="https://v0.dev/" className="underline-link whitespace-nowrap text-azure-radiance-500">V0 Dev </a>
                         <Trema />
                         <p className="ml-2">Génération par IA d'interfaces simples. Très utile pour générer des composants en React.</p>
                     </div>
