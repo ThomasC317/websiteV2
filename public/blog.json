@@ -5,35 +5,49 @@
       "title":"Séries & films",
       "date":"Juillet 2024",
       "category":"Centres d'intérêts",
-      "content":"Création d'un nouveau site Portfolio.<br/> - Recherche d'inspiration pour voir les modes des sites.<br/> - Mise en place des pages/ composants.<br/> - Responsivité."
+      "content":
+      [
+         "Création d'un nouveau site Portfolio.<br/> - Recherche d'inspiration pour voir les modes des sites.<br/> - Mise en place des pages/ composants.<br/> - Responsivité."
+      ]
    },
    {
       "id":1,
       "title":"Jeux vidéos",
       "date":"Juillet 2024",
       "category":"Centres d'intérêts",
-      "content":"Création d'un nouveau site Portfolio.<br/> - Recherche d'inspiration pour voir les modes des sites.<br/> - Mise en place des pages/ composants.<br/>- Responsivité."
+      "content":
+      [
+      "Création d'un nouveau site Portfolio.<br/> - Recherche d'inspiration pour voir les modes des sites.<br/> - Mise en place des pages/ composants.<br/>- Responsivité."
+      ]
    },
    {
       "id":2,
       "title":"Cuisine",
       "date":"Juillet 2024",
       "category":"Centres d'intérêts",
-      "content":"Création d'un nouveau site Portfolio.<br/> - Recherche d'inspiration pour voir les modes des sites.<br/> - Mise en place des pages/ composants.<br/>- Responsivité."  
+      "content":
+      [
+         "Création d'un nouveau site Portfolio.<br/> - Recherche d'inspiration pour voir les modes des sites.<br/> - Mise en place des pages/ composants.<br/>- Responsivité."
+      ] 
    },
    {
       "id":3,
       "title":"Science Fiction",
       "date":"Juillet 2024",
       "category":"Centres d'intérêts",
-      "content":"Création d'un nouveau site Portfolio.<br/> - Recherche d'inspiration pour voir les modes des sites.<br/> - Mise en place des pages/ composants.<br/>- Responsivité." 
+      "content":
+      [
+         "Création d'un nouveau site Portfolio.<br/> - Recherche d'inspiration pour voir les modes des sites.<br/> - Mise en place des pages/ composants.<br/>- Responsivité." 
+      ]
    },
    {
       "id":4,
       "title":"Océan",
       "date":"Juillet 2024",
       "category":"Centres d'intérêts",
-      "content":"Création d'un nouveau site Portfolio.<br/> - Recherche d'inspiration pour voir les modes des sites.<br/> - Mise en place des pages/ composants.<br/>- Responsivité."
+      "content":[
+"Création d'un nouveau site Portfolio.<br/> - Recherche d'inspiration pour voir les modes des sites.<br/> - Mise en place des pages/ composants.<br/>- Responsivité."
+      ]
 
    },
    {
@@ -41,63 +55,106 @@
       "title":"Photographie",
       "date":"Juillet 2024",
       "category":"Centres d'intérêts",
-      "content":"Création d'un nouveau site Portfolio.<br/> - Recherche d'inspiration pour voir les modes des sites.<br/> - Mise en place des pages/ composants.<br/>- Responsivité."
+      "content":[
+         "Création d'un nouveau site Portfolio.<br/> - Recherche d'inspiration pour voir les modes des sites.<br/> - Mise en place des pages/ composants.<br/>- Responsivité."
+               ]
    },
    {
       "id":6,
       "title":"Norvège",
       "date":"Juillet 2024",
       "category":"Voyages",
- "content": "Le premier centre d'intérêt dont je vais parler est le voyage. D'après moi il n'y a rien de mieux pour se ressourcer. Mon dernier déplacement s'est déroulé en Norvège, durant l'été 2023.<br/><br/> J'y suis allé assez naivement, car oui même en été il ne fait pas chaud la-bas. Qui aurait pu prévoir que prendre un seul pull n'était pas la meilleure idée ?<br/><br/> Ce point mis de côté, je pense que c'était un des meilleurs voyages que j'ai pu faire de ma vie. Vous savez, ces voyages où, pour une fois, il n'y a aucune mauvaise surprise ? Aucun bébé qui tape dans le siège de l'avion. Aucun soucis pour récupérer ses valises, la voiture de location, l'accès aux différents logements. <br/><br/> Voici l'itinéraire que nous avons suivi :<br/><br/><MapEmbed iframeUrl=\"https://www.google.com/maps/d/embed?mid=1hE6P44ydCtCYdjXZNaqNHE_zbKJ5VIo&ehbc=2E312F\" disableInteraction=false></MapEmbed><br/><br/>Notre voyage a duré 10 jours et je dirais que, moins de jours, ça aurait été compliqué de profiter, tellement le pays est grand et vaste.<br/><br/>Mes villes/coins/moments préférés du voyage ont été les suivants :<br/><br/>- Oslo, une très belle capitale avec un air frais et beaucoup de choses à faire/voir.<br/><br/><img src=\"https://www.visitonsoslo.com/f/noruega/oslo/guia/opera-oslo.jpg\" /> <br/><br/>- Bergen, magnifique ville cotière. Nous avons mangé sur le port, vu des maisons colorées, visiter le chateau, et nous avons même pu voir un aquarium (grand plaisir personnel).<br/><br/><img src=\"https://res.cloudinary.com/simpleview/image/upload/v1574085889/clients/norway/bryggen_wharf_bergen_hordaland_fjord_norway_photo_florian_olbrechts_34ad36ea-f7bc-4150-b48b-af2c2c14628f.jpg\"/><br/>- Sognefjord, probablement la plus grande claque de ma vie. Un Fjord, que nous avons traversé en ferry. Le décor était simplement lunaire. J'ai du mal à trouver les mots mais c'est un secteur que je recommande.<br/><br/><img src=\"https://en.visitbergen.com/imageresizer/?image=%2Fdbimgs%2Fsognefjorden-aulandsfjorden-bergen.jpg&action=Background_Overlay\" /> <br/><br/>- Storseisundet Bridge, un très beau point de vue sur la route entre Alesund et Tronheim, donnat directement sur la Mer de Norvège. <br/><br/><img src=\"https://a.broer.no/data/b/b66_1.jpg\"/><br/><br/>- Tronheim, ville de taille moyenne assez calme. Le centre ville est très charmant, avec beaucoup de petits restaurants. <br/><br/><img src=\"https://www.norvege-inedite.com/app/uploads/sites/32/2019/12/adobestock_199822781.jpeg\"/><br/><br/>- Snøhetta, un sommet de Norvège. Après une randonnée moyennement abrupte, vous arrivez sur un pavillon qui a des airs un peu futuristes. Il permet de se reposer en observant derrière lui le désert, qui s'étend sur des kilomètres. Il est possible de monter encore un peu plus pour profiter encore mieux de la vue. <br/><br/><img src=\"https://assets.simpleviewcms.com/simpleview/image/fetch/c_fill,h_1080,w_1920/f_jpg/q_65/https://images.citybreakcdn.com/image.aspx%3FImageId%3D6969254\"/><br/>Vous l'aurez surement compris, c'était un voyage incroyable. Je recommande !"
+      "content": [
+      "Mon dernier voyage s'est déroulé en Norvège, durant l'été 2023.<br/><br/>",
+      "J'y suis allé assez naivement, car oui même en été il ne fait pas chaud la-bas, surtout à cause du vent. Qui aurait pu prévoir que prendre un seul pull n'était pas la meilleure idée ?<br/><br/>",
+      "Ce point mis de côté, je pense que c'était un des meilleurs voyages que j'ai pu faire de ma vie. Vous savez, ces voyages où, pour une fois, il n'y a aucune mauvaise surprise ? Aucun bébé qui tape dans le siège de l'avion. Aucun soucis pour récupérer ses valises, la voiture de location, l'accès aux différents logements. <br/><br/>",
+      "Voici l'itinéraire que nous avons suivi :<br/><br/>",
+      "<MapEmbed iframeUrl=\"https://www.google.com/maps/d/embed?mid=1hE6P44ydCtCYdjXZNaqNHE_zbKJ5VIo&ehbc=2E312F\" disableInteraction=false></MapEmbed><br/><br/>",
+      "Notre voyage a duré 10 jours et je dirais que, moins de jours, ça aurait été compliqué de profiter, tellement le pays est grand et vaste.<br/><br/>",
+      "Mes villes/coins/moments préférés du voyage ont été les suivants :<br/><br/>- Oslo, une très belle capitale avec un air frais et beaucoup de choses à faire/voir.<br/><br/>",
+      "<img src=\"https://www.visitonsoslo.com/f/noruega/oslo/guia/opera-oslo.jpg\" /> <br/>",
+      "- Bergen, magnifique ville cotière. Nous avons mangé sur le port, vu des maisons colorées, visiter le chateau, et nous avons même pu voir un aquarium (grand plaisir personnel).<br/><br/>",
+      "<img src=\"https://res.cloudinary.com/simpleview/image/upload/v1574085889/clients/norway/bryggen_wharf_bergen_hordaland_fjord_norway_photo_florian_olbrechts_34ad36ea-f7bc-4150-b48b-af2c2c14628f.jpg\"/><br/>",
+      "- Sognefjord, probablement la plus grande claque de ma vie. Un Fjord, que nous avons traversé en ferry. Le décor était simplement lunaire. J'ai du mal à trouver les mots mais c'est un secteur que je recommande.<br/><br/>",
+      "<img src=\"https://en.visitbergen.com/imageresizer/?image=%2Fdbimgs%2Fsognefjorden-aulandsfjorden-bergen.jpg&action=Background_Overlay\" /> <br/>",
+      "- Storseisundet Bridge, un très beau point de vue sur la route entre Alesund et Tronheim, donnat directement sur la Mer de Norvège. <br/><br/>",
+      "<img src=\"https://a.broer.no/data/b/b66_1.jpg\"/><br/>",
+      "- Tronheim, ville de taille moyenne assez calme. Le centre ville est très charmant, avec beaucoup de petits restaurants. <br/><br/>",
+      "<img src=\"https://www.norvege-inedite.com/app/uploads/sites/32/2019/12/adobestock_199822781.jpeg\"/><br/>",
+      "- Snøhetta, un sommet de Norvège. Après une randonnée moyennement abrupte, vous arrivez sur un pavillon qui a des airs un peu futuristes. Il permet de se reposer en observant derrière lui le désert, qui s'étend sur des kilomètres. Il est possible de monter encore un peu plus pour profiter encore mieux de la vue. <br/><br/>",
+      "<img src=\"https://assets.simpleviewcms.com/simpleview/image/fetch/c_fill,h_1080,w_1920/f_jpg/q_65/https://images.citybreakcdn.com/image.aspx%3FImageId%3D6969254\"/><br/>",
+      "Vous l'aurez surement compris, c'était un voyage incroyable. Je recommande !"
+      ]
    },
    {
       "id":7,
       "title":"Croatie",
       "date":"Aout 2023",
       "category":"Voyages",
-      "content":"Création d'un nouveau site Portfolio.<br/> - Recherche d'inspiration pour voir les modes des sites.<br/> - Mise en place des pages/ composants.<br/>- Responsivité."
+      "content":
+      [
+         "Création d'un nouveau site Portfolio.<br/> - Recherche d'inspiration pour voir les modes des sites.<br/> - Mise en place des pages/ composants.<br/>- Responsivité."
+      ]
    },
    {
       "id":8,
       "title":"Malte",
       "date":"Juin 2023",
       "category":"Voyages",
-      "content":"Création d'un nouveau site Portfolio.<br/> - Recherche d'inspiration pour voir les modes des sites.<br/> - Mise en place des pages/ composants.<br/>- Responsivité."
+      "content":
+      [
+         "Création d'un nouveau site Portfolio.<br/> - Recherche d'inspiration pour voir les modes des sites.<br/> - Mise en place des pages/ composants.<br/>- Responsivité."
+      ]
    },
    {
       "id":9,
       "title":"Ténérife",
       "date":"Aout 2023",
       "category":"Voyages",
-      "content":"Création d'un nouveau site Portfolio.<br/> - Recherche d'inspiration pour voir les modes des sites.<br/> - Mise en place des pages/ composants.<br/>- Responsivité."
+      "content":
+      [
+         "Création d'un nouveau site Portfolio.<br/> - Recherche d'inspiration pour voir les modes des sites.<br/> - Mise en place des pages/ composants.<br/>- Responsivité."
+      ]
    },
    {
       "id":10,
       "title":"Les Sables-d'Olonne / La Rochelle / Marais Poitevin / Puy du fou",
       "date":"Aout 2023",
       "category":"Voyages",
-      "content":"Création d'un nouveau site Portfolio.<br/> - Recherche d'inspiration pour voir les modes des sites.<br/> - Mise en place des pages/ composants.<br/>- Responsivité."
+      "content":
+      [
+         "Création d'un nouveau site Portfolio.<br/> - Recherche d'inspiration pour voir les modes des sites.<br/> - Mise en place des pages/ composants.<br/>- Responsivité."
+      ]
    },
    {
       "id":11,
       "title":"Etats-unis (Côte ouest)",
       "date":"Aout 2023",
       "category":"Voyages",
-      "content":"Création d'un nouveau site Portfolio.<br/> - Recherche d'inspiration pour voir les modes des sites.<br/> - Mise en place des pages/ composants.<br/>- Responsivité."
+      "content":
+      [
+         "Création d'un nouveau site Portfolio.<br/> - Recherche d'inspiration pour voir les modes des sites.<br/> - Mise en place des pages/ composants.<br/>- Responsivité."
+      ]
    },
    {
       "id":12,
       "title":"République Dominicaine",
       "date":"Aout 2023",
       "category":"Voyages",
-      "content":"Création d'un nouveau site Portfolio.<br/> - Recherche d'inspiration pour voir les modes des sites.<br/> - Mise en place des pages/ composants.<br/>- Responsivité."
+      "content":
+      [
+         "Création d'un nouveau site Portfolio.<br/> - Recherche d'inspiration pour voir les modes des sites.<br/> - Mise en place des pages/ composants.<br/>- Responsivité."
+      ]
    },
    {
       "id":13,
       "title":"Etats-unis (Côte Est)",
       "date":"Aout 2023",
       "category":"Voyages",
-      "content":"Création d'un nouveau site Portfolio.<br/> - Recherche d'inspiration pour voir les modes des sites.<br/> - Mise en place des pages/ composants.<br/>- Responsivité."
+      "content":
+      [
+         "Création d'un nouveau site Portfolio.<br/> - Recherche d'inspiration pour voir les modes des sites.<br/> - Mise en place des pages/ composants.<br/>- Responsivité."
+      ]
 
    },
    {
@@ -105,49 +162,70 @@
       "title":"Egypte",
       "date":"Aout 2023",
       "category":"Voyages",
-      "content":"Création d'un nouveau site Portfolio.<br/> - Recherche d'inspiration pour voir les modes des sites.<br/> - Mise en place des pages/ composants.<br/>- Responsivité."
+      "content":
+      [
+         "Création d'un nouveau site Portfolio.<br/> - Recherche d'inspiration pour voir les modes des sites.<br/> - Mise en place des pages/ composants.<br/>- Responsivité."
+      ]
    },
    {
       "id":15,
       "title":"Production",
       "date":"Juillet 2024",
       "category":"Musique",
-      "content":"Création d'un nouveau site Portfolio.<br/> - Recherche d'inspiration pour voir les modes des sites.<br/> - Mise en place des pages/ composants.<br/>- Responsivité."
+      "content":
+      [
+         "Création d'un nouveau site Portfolio.<br/> - Recherche d'inspiration pour voir les modes des sites.<br/> - Mise en place des pages/ composants.<br/>- Responsivité."
+      ]
    },
    {
       "id":16,
       "title":"Mes goûts",
       "date":"Juillet 2024",
       "category":"Musique",
-      "content":"Création d'un nouveau site Portfolio.<br/> - Recherche d'inspiration pour voir les modes des sites.<br/> - Mise en place des pages/ composants.<br/>- Responsivité."
+      "content":
+      [
+         "Création d'un nouveau site Portfolio.<br/> - Recherche d'inspiration pour voir les modes des sites.<br/> - Mise en place des pages/ composants.<br/>- Responsivité."
+      ]
    },
    {
       "id":17,
       "title":"Ce que ça m'a apporté",
       "date":"Juillet 2024",
       "category":"Musique",
-      "content":"Création d'un nouveau site Portfolio.<br/> - Recherche d'inspiration pour voir les modes des sites.<br/> - Mise en place des pages/ composants.<br/>- Responsivité."
+      "content":
+      [
+         "Création d'un nouveau site Portfolio.<br/> - Recherche d'inspiration pour voir les modes des sites.<br/> - Mise en place des pages/ composants.<br/>- Responsivité."
+      ]
    },
    {
       "id":18,
       "title":"Carrière",
       "date":"Juillet 2024",
       "category":"Développement",
-      "content":"Création d'un nouveau site Portfolio.<br/> - Recherche d'inspiration pour voir les modes des sites.<br/> - Mise en place des pages/ composants.<br/>- Responsivité."
+      "content":
+      [
+         "Création d'un nouveau site Portfolio.<br/> - Recherche d'inspiration pour voir les modes des sites.<br/> - Mise en place des pages/ composants.<br/>- Responsivité."
+      ]
    },
    {
       "id":19,
       "title":"Intérêts actuels",
       "date":"Juillet 2024",
       "category":"Développement",
-      "content":"Création d'un nouveau site Portfolio.<br/> - Recherche d'inspiration pour voir les modes des sites.<br/> - Mise en place des pages/ composants.<br/>- Responsivité."
+      "content":
+      [
+         "Création d'un nouveau site Portfolio.<br/> - Recherche d'inspiration pour voir les modes des sites.<br/> - Mise en place des pages/ composants.<br/>- Responsivité."
+      ]
    },
    {
       "id":20,
       "title":"Projets personnel",
       "date":"Juillet 2024",
       "category":"Développement",
-      "content":"Création d'un nouveau site Portfolio.<br/> - Recherche d'inspiration pour voir les modes des sites.<br/> - Mise en place des pages/ composants.<br/>- Responsivité."
+      "content":
+      [
+         "Création d'un nouveau site Portfolio.<br/> - Recherche d'inspiration pour voir les modes des sites.<br/> - Mise en place des pages/ composants.<br/>- Responsivité."
+      ]
    }
 ]
 }

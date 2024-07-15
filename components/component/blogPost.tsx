@@ -9,7 +9,7 @@ import MapEmbed from './mapEmbed/mapEmbed';
 const BlogPost = ({selectedBlog, goToLastBlog, goToNextBlog, isFirstBlog, isLastBlog}) => {
   const [isVisible, setIsVisible] = useState(true);
   const [isOpen, setIsOpen] = useState(true);
-  console.log(selectedBlog)
+  console.log(selectedBlog.content[0])
   if (selectedBlog && selectedBlog.title) {
     console.log(selectedBlog.title);
   } else {
@@ -56,7 +56,8 @@ const BlogPost = ({selectedBlog, goToLastBlog, goToNextBlog, isFirstBlog, isLast
       </div>
       <div className={`pt-6 ${isOpen ? "blog-opened-state" : "blog-closed-state"}`}>
       <div className="flex" style={{alignItems:"baseline"}}> <Trema />    <h2 className="text-2xl mb-4 ml-4">{selectedBlog.title}</h2></div>
-      <BlogContent content={selectedBlog.content} />
+      {selectedBlog.content.map((content) => (<BlogContent content={content} />))}
+      
       </div>
     </div>
   );
