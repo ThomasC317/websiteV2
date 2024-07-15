@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Properties } from 'csstype';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 const CommandPrompt = () => {
   const [input, setInput] = useState('');
@@ -7,10 +10,17 @@ const CommandPrompt = () => {
 
   type Styles = {
     container: Properties;
+    outputContainer: Properties;
     output: Properties;
+    outputEntry: Properties;
+    command: Properties;
     form: Properties;
     input: Properties;
+    button: Properties;
+    iconWrapper: Properties;
+    icon: Properties;
   };
+
 
   const styles: Styles = {
     container: {
@@ -18,28 +28,69 @@ const CommandPrompt = () => {
       flexDirection: 'column',
       justifyContent: 'space-between',
       fontFamily: 'monospace',
-      backgroundColor: '#000',
-      color: '#fff',
-      padding: '10px',
-      borderRadius: '5px',
+      backgroundColor: '#1e1e1e',
+      color: '#dcdcdc',
+      padding: '20px',
+      borderRadius: '10px',
       height: '40rem',
+      border: '1px solid #333',
+      boxShadow: '0 0 10px rgba(0, 0, 0, 0.5)',
     },
-    output: {
+    outputContainer: {
       flex: 1,
       overflowY: 'auto',
-      marginBottom: '10px'
+      marginBottom: '20px',
+    },
+    output: {
+      display: 'flex',
+      flexDirection: 'column',
+    },
+    outputEntry: {
+      marginBottom: '10px',
+    },
+    command: {
+      color: '#00ff00',
     },
     form: {
-      display: 'flex'
+      display: 'flex',
+      alignItems: 'center',
     },
     input: {
       flex: 1,
       padding: '10px',
       backgroundColor: '#000',
       color: '#fff',
-      border: '1px solid #fff',
-      borderRadius: '5px'
-    }
+      border: '1px solid #00ff00',
+      borderRadius: '5px',
+      fontSize: '16px',
+      outline: 'none',
+    },
+    button: {
+      position: 'absolute',
+      right: '10px',
+      top: '50%',
+      transform: 'translateY(-50%)',
+      backgroundColor: 'transparent',
+      border: 'none',
+      cursor: 'pointer',
+      padding: '0',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
+    iconWrapper: {
+      border: '1px solid #00ff00',
+      borderRadius: '50%',
+      padding: '5px',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
+    icon: {
+      border: '1px solid #00ff00',
+      borderRadius: '50%',
+      padding: '5px',
+    },
   };
 
   const getFormattedDate = () => {
@@ -134,30 +185,38 @@ const CommandPrompt = () => {
 
   return (
     <div style={styles.container}>
-      <div style={styles.output}>
-        <div>
-          {'>'} Bonjour et bienvenue sur mon site Web ! <br />
-          {'>'} {currentTime}
-        </div>
-        {output.map((entry, index) => (
-          <div key={index}>
-            <div>{entry.command ? `> ${entry.command}` : ''}</div>
-            <div>{renderOutput(entry.result)}</div>
+      <div style={styles.outputContainer}>
+        <div style={styles.output}>
+          <div style={styles.outputEntry}>
+            {'>'} Bonjour et bienvenue sur mon site Web ! <br />
+            {'>'} {currentTime}
           </div>
-        ))}
+          {output.map((entry, index) => (
+            <div key={index} style={styles.outputEntry}>
+              <div style={styles.command}>{entry.command ? `> ${entry.command}` : ''}</div>
+              <div>{renderOutput(entry.result)}</div>
+            </div>
+          ))}
+        </div>
       </div>
       <form onSubmit={handleInputSubmit} style={styles.form}>
-        <input
-          type="text"
-          value={input}
-          onChange={handleInputChange}
-          style={styles.input}
-        />
-      </form>
+  <div style={{ position: 'relative', width: '100%' }}>
+    <input
+      type="text"
+      value={input}
+      onChange={handleInputChange}
+      style={{ ...styles.input, paddingRight: '40px', width: '100%' }}
+    />
+    <button type="submit" style={{ ...styles.button, position: 'absolute', right: '10px', top: '50%', transform: 'translateY(-50%)', backgroundColor: 'transparent', border: 'none', padding: '0', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+      <span style={{marginRight:"0.5rem"}}>
+        <FontAwesomeIcon icon={faArrowRight}  />
+      </span>
+    </button>
+  </div>
+</form>
+
     </div>
   );
 };
-
-
 
 export default CommandPrompt;
