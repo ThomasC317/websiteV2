@@ -156,7 +156,6 @@ const companyNames = projects.map(project => project.company);
 const uniqueCompanyNames = [...new Set(companyNames)];
 
 const date = new Date();
-const year = date.getFullYear();
 
 const [selectedCompany, setSelectedCompany] = useState('All');
 

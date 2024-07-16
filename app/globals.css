@@ -225,3 +225,14 @@ body {
   transition: color 0.3s;
 }
 
+.navbar-link {
+  background-color:white;
+  padding:4px 12px;
+}
+
+.navbar-link:hover {
+  background-color: #f3f4f693;
+  border-radius: 0.5rem;
+  padding:4px 12px;
+}
+
