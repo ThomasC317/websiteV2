@@ -219,7 +219,7 @@ h3 {
 }
 
 .bg-hover-transition {
-    background-color: transparent; /* initial background color, for example, light gray */
+    background-color: white; /* initial background color, for example, light gray */
     transition: background-color 0.3s ease; /* smooth transition */
   }
   

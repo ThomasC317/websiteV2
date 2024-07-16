@@ -4,16 +4,24 @@ import Link from "next/link";
 import { Button } from "../ui/button";
 import { useState } from 'react';
 
-const Navbar = () => {
+type MyComponentProps = {
+  isOnMainPage?: boolean | null;
+};
+
+const Navbar: React.FC<MyComponentProps> = ({ isOnMainPage = null }) => {
+  if (isOnMainPage === null) {
+    // Handle the specific case when isOnMainPage is null
+    isOnMainPage = false;
+  }
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
-
+  console.log(isOnMainPage)
   return (
   
-    <header className="w-full bg-white bg-opacity-90 shadow-lg absolute top-0 left-0 z-50">
+    <header className={`w-full ${isOnMainPage ? "bg-white" : "bg-transparent"} bg-opacity-90 absolute top-0 left-0 z-50`}>
       <div className="max-w-7xl mx-auto px-8 py-4 flex items-center justify-between">
         <nav className="hidden md:flex items-center gap-4 text-sm font-medium">
           <Link href="/" className="navbar-link" prefetch={false}>
