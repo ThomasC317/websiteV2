@@ -37,19 +37,14 @@ const Contact = ()=> {
     const serviceID = 'service_uyz2ik9';
     const templateID = 'template_d0tm9og';
     const userID = 'v-idG3pMsjd8JrlQl';
-    console.log(formData)
-    setIsSent(true)
-    window.alert('Votre mail a bien été envoyé ! Je reviens vers vous au plus vite !');
-
-    
-    // emailjs.send(serviceID, templateID, formData, userID)
-    //   .then(() => {
-    //     window.alert('Votre mail a bien été envoyé ! Je reviens vers vous au plus vite !');
-    //     setIsSent(true)
-    //   }, () => {
-    //     window.alert(`Echec de l'envoi du mail. Veuillez réessayer plus tard.`);
-    //     setIsSent(true)
-    //   });
+    emailjs.send(serviceID, templateID, formData, userID)
+      .then(() => {
+        window.alert('Votre mail a bien été envoyé ! Je reviens vers vous au plus vite !');
+        setIsSent(true)
+      }, () => {
+        window.alert(`Echec de l'envoi du mail. Veuillez réessayer plus tard.`);
+        setIsSent(true)
+      });
   };
 
 
