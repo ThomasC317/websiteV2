@@ -1,7 +1,8 @@
 "use client";
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import emailjs from 'emailjs-com';
 import { Button } from "../ui/button";
+import { AnimatedButton } from './animatedButton';
 const Contact = ()=> {
   const [formData, setFormData] = useState({
     name: '',
@@ -9,6 +10,17 @@ const Contact = ()=> {
     subject: '',
     message: ''
   });
+
+  const [isSent, setIsSent] = useState(false);
+
+  useEffect(() => {
+    if(isSent)
+    {
+    setInterval(() => {
+      setIsSent(false);
+    }, 10000);
+  }
+}, [isSent]);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -26,18 +38,24 @@ const Contact = ()=> {
     const templateID = 'template_d0tm9og';
     const userID = 'v-idG3pMsjd8JrlQl';
     console.log(formData)
-    emailjs.send(serviceID, templateID, formData, userID)
-      .then(() => {
-        window.alert('Votre mail a bien été envoyé ! Je reviens vers vous au plus vite !');
-      }, () => {
-        window.alert(`Echec de l'envoi du mail. Veuillez réessayer plus tard.`);
-      });
+    setIsSent(true)
+    window.alert('Votre mail a bien été envoyé ! Je reviens vers vous au plus vite !');
+
+    
+    // emailjs.send(serviceID, templateID, formData, userID)
+    //   .then(() => {
+    //     window.alert('Votre mail a bien été envoyé ! Je reviens vers vous au plus vite !');
+    //     setIsSent(true)
+    //   }, () => {
+    //     window.alert(`Echec de l'envoi du mail. Veuillez réessayer plus tard.`);
+    //     setIsSent(true)
+    //   });
   };
 
 
   return (
-    <div className="form-container">
-      <form className="contact-form grid gap-4" onSubmit={handleSubmit}>
+    <div className="form-container" onSubmit={handleSubmit}>
+      <form className="contact-form grid gap-4">
         <div className="grid gap-2">
           <label htmlFor="name">Votre Nom</label>
           <input
@@ -84,9 +102,7 @@ const Contact = ()=> {
             required
           />
         </div>
-        <Button variant="outline" type="submit" className="w-full bg-azure-radiance-950" style={{color: 'white' }}>
-          Envoi du message
-        </Button>
+        <AnimatedButton buttonTextColor='white' className='bg-azure-radiance-950 w-full' initialText={"Envoi du message"} changeText={"message envoyé !"} buttonType="submit" clickStatus={isSent} />
       </form>
     </div>
   );
