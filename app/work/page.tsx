@@ -165,7 +165,7 @@ const handleCompanyChange = (e) => {
 };
 
   return (<div className="min-h-screen flex flex-col bg-white">
-    <Navbar isMainPage={false} />
+    <Navbar />
     <div className="flex-grow" style={{ position: "relative"}}>
         <ParticleBackground />
         <main className="mx-auto px-24 py-12 my-16" style={{ position: "relative", zIndex: 1 }}>

@@ -9,8 +9,8 @@ const About = () => {
 
     return (  
     <div className="min-h-screen flex flex-col bg-white">
-        <Navbar isMainPage={false} />
-        <div>
+        <Navbar />
+        <div className="flex-grow" style={{ position: "relative"}}>
             <ParticleBackground />
             <main className="w-full bg-transparent bg-opacity-80 mx-auto rounded-lg px-24 py-12 mt-24 relative z-10">
                 <div className="mb-4 flex flex-col">

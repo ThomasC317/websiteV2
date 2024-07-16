@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { Button } from "../ui/button";
 
-const Navbar = ( {isMainPage} ) => {
+const Navbar = () => {
   return (
     <header className={`w-full bg-white bg-opacity-90 shadow-lg absolute top-0 left-0 z-50`}>
       <div className="max-w-7xl mx-auto px-8 py-4 flex items-center justify-between">
