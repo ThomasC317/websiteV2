@@ -17,9 +17,9 @@ const About = () => {
                     <h1 className="text-3xl font-bold mb-4 text-azure-radiance-950 flex">
                         Thomas CERDERA <Trema/> Ingénieur développeur Web 
                     </h1>
-                    <p className="text-lg">
-                        Ingénieur développeur Full-stack situé sur Toulouse, France.<br/><br/>
-                        je travaille actuellement chez Infotel Conseil à Blagnac. J'ai choisi cette agence car elle m'a permis de réaliser des projets dans le domaine de l'aéronautique.<br/><br/>
+                    <p className="text-2xl">
+                    Ingénieur développeur Full-stack situé sur Toulouse, France.<br/><br/> Je suis un développeur full stack passionné travaillant actuellement chez Infotel. 
+                    Mon rôle me permet de me concentrer pleinement sur la création de solutions web perfommantes qui répondront à vos besoins.<br/><br/>
                         J'ai une bonne maîtrise de l'anglais (920 au toeic), je suis créatif, curieux, et minutieux.
                     </p>
                 </div>

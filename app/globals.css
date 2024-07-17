@@ -232,7 +232,7 @@ body {
 
 .navbar-link:hover {
   background-color: #f3f4f693;
-  border-radius: 0.5rem;
+  border-radius: 1rem;
   padding:4px 12px;
 }
 
@@ -241,4 +241,12 @@ body {
 }
 .w-3\/8 {
   width: 37.5%;
+}
+
+.w-1\/16 {
+  width: 6.25%;
+}
+
+.w-1\/12 {
+  width: 6.25%;
 }
