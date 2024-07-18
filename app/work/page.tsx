@@ -405,99 +405,92 @@ const Experiences = () => {
                   </select>
                 </div>
               </div>
-              <div className="w-full">
-                {projects.map((project, index) => {
-                  if (
-                    project.company !== selectedCompany &&
-                    selectedCompany !== "All"
-                  ) {
-                    return null;
-                  }
+              <div className="container">
+      {projects.map((project, index) => {
+        if (project.company !== selectedCompany && selectedCompany !== "All") {
+          return null;
+        }
 
-                  const isExpanded = expandedIndices.includes(index);
+        const isExpanded = expandedIndices.includes(index);
 
-                  return (
-                    <div
-                      key={index}
-                      className={`bg-hover-transition px-4 py-2 ${
-                        isExpanded ? "border-b" : ""
-                      } border-color-lightgray cursor-pointer relative`}
-                      onClick={() => handleToggle(index)}
-                    >
-                      <div className="relative">
-                        <table className="w-full">
-                          <tbody>
-                            <tr>
-                              <td className="w-1/16 text-sm xl:text-lg">
-                                {project.finishYear}
-                              </td>
-                              <td className="w-1/4 text-sm xl:text-lg">
-                                {project.title}
-                              </td>
-                              <td className="w-1/4 text-sm xl:text-lg">
-                                {project.company}
-                              </td>
-                              <td colSpan={3} className="mt-2 w-3/8">
-                                <div className="flex gap-2 flex-wrap">
-                                  {project.tags.map((tech, techIndex) => (
-                                    <span
-                                      key={techIndex}
-                                      className="bg-azure-radiance-500 px-3 py-1 rounded-lg text-sm xl:text-lg font-medium text-gray-200"
-                                    >
-                                      {tech}
-                                    </span>
-                                  ))}
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                        <CSSTransition
-                          in={isExpanded}
-                          timeout={1000}
-                          classNames="fade-enlarge"
-                          unmountOnExit
+        return (
+          <div
+            key={index}
+            className={`bg-hover-transition px-4 py-2 ${isExpanded ? "border-b" : ""
+              } border-color-lightgray cursor-pointer relative`}
+            onClick={() => handleToggle(index)}
+          >
+            <div className="relative">
+              <div className="block sm:table w-full">
+                <div className="block sm:table-row">
+                  <div className="block sm:table-cell sm:w-1/4 text-xs sm:text-sm lg:text-lg font-medium">
+                    {project.title}
+                  </div>
+                  <div className="block sm:table-cell sm:w-1/16 text-xs sm:text-sm lg:text-lg">
+                    {project.finishYear}
+                  </div>
+                  <div className="block sm:table-cell sm:w-1/4 text-xs sm:text-sm lg:text-lg">
+                    {project.company}
+                  </div>
+                  <div className="block sm:table-cell sm:w-3/8 mt-2 sm:mt-0">
+                    <div className="flex flex-wrap gap-2">
+                      {project.tags.map((tech, techIndex) => (
+                        <span
+                          key={techIndex}
+                          className="bg-azure-radiance-500 px-2 py-1 rounded-lg text-xs sm:text-sm lg:text-lg font-medium text-gray-200"
                         >
-                          <div className="py-4 expanded-card">
-                            <span className="text-md sm:text-lg text-gray-300">
-                              {project.year}
-                            </span>
-                            <p
-                              className="text-gray-700 text-md sm:text-lg"
-                              dangerouslySetInnerHTML={{
-                                __html: project.description,
-                              }}
-                            />
-                          </div>
-                        </CSSTransition>
-                      </div>
-                      <div
-                        className="absolute right-0 transform -translate-x-1/2 -translate-y-1/2 transition-transform"
-                        style={{ top: "22px" }}
-                      >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          className={`h-6 w-6 cursor-pointer ${
-                            isExpanded ? "rotate-180" : "rotate-0"
-                          }`}
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                          onClick={() => handleToggle(index)}
-                          style={{ transition: "transform 0.3s ease" }}
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M19 9l-7 7-7-7"
-                          />
-                        </svg>
-                      </div>
+                          {tech}
+                        </span>
+                      ))}
                     </div>
-                  );
-                })}
+                  </div>
+                </div>
+                <CSSTransition
+                  in={isExpanded}
+                  timeout={1000}
+                  classNames="fade-enlarge"
+                  unmountOnExit
+                >
+                  <div className="py-4 expanded-card">
+                    <span className="text-xs sm:text-md lg:text-lg text-gray-300">
+                      {project.year}
+                    </span>
+                    <p
+                      className="text-gray-700 text-xs sm:text-md lg:text-lg mt-2"
+                      dangerouslySetInnerHTML={{
+                        __html: project.description,
+                      }}
+                    />
+                  </div>
+                </CSSTransition>
               </div>
+            </div>
+            <div
+              className="absolute right-0 transform -translate-x-1/2 -translate-y-1/2 transition-transform"
+              style={{ top: "22px" }}
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className={`h-6 w-6 cursor-pointer ${isExpanded ? "rotate-180" : "rotate-0"
+                  }`}
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                onClick={() => handleToggle(index)}
+                style={{ transition: "transform 0.3s ease" }}
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </div>
+          </div>
+        );
+      })}
+    </div>
               <div className="py-4">
                 <div className="flex items-baseline">
                   <Trema />
