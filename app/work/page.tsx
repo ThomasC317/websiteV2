@@ -277,53 +277,53 @@ const Experiences = () => {
                     Technologies
                   </h2>
                 </div>
-                <table className="w-full text-left">
+                <table className="w-full text-left table-fixed">
                   <thead>
                     <tr>
-                      <th className="py-2 whitespace-nowrap text-sm xl:text-lg text-azure-radiance-500">
+                      <th className="th-width py-2 text-sm xl:text-lg text-azure-radiance-500">
                         Frontend:
                       </th>
-                      <td className="py-2 px-2 text-sm xl:text-lg">
+                      <td className="td-width py-2 px-2 text-sm xl:text-lg">
                         React, .NET, Angular.
                       </td>
                     </tr>
                     <tr>
-                      <th className="py-2 text-sm xl:text-lg text-azure-radiance-500">
+                      <th className="th-width py-2 text-sm xl:text-lg text-azure-radiance-500">
                         Backend:
                       </th>
-                      <td className="py-2 px-2 text-sm xl:text-lg">
+                      <td className="td-width py-2 px-2 text-sm xl:text-lg">
                         .NET, Express/Nodejs.
                       </td>
                     </tr>
                     <tr>
-                      <th className="py-2 text-sm xl:text-lg text-azure-radiance-500">
+                      <th className="th-width py-2 text-sm xl:text-lg text-azure-radiance-500">
                         UI/Styling/Animations:
                       </th>
-                      <td className="py-2 px-2 text-sm xl:text-lg">
+                      <td className="td-width py-2 px-2 text-sm xl:text-lg">
                         shadcn/ui, TailwindCSS, framer-motion.
                       </td>
                     </tr>
                     <tr>
-                      <th className="py-2 whitespace-nowrap text-sm xl:text-lg text-azure-radiance-500">
+                      <th className="th-width py-2 text-sm xl:text-lg text-azure-radiance-500">
                         Databases:
                       </th>
-                      <td className="py-2 px-2 text-sm xl:text-lg">
+                      <td className="td-width py-2 px-2 text-sm xl:text-lg">
                         MySql, SqlServer.
                       </td>
                     </tr>
                     <tr>
-                      <th className="py-2 text-sm xl:text-lg text-azure-radiance-500">
+                      <th className="th-width py-2 text-sm xl:text-lg text-azure-radiance-500">
                         Langages de programmation:
                       </th>
-                      <td className="py-2 px-2 text-sm xl:text-lg">
+                      <td className="td-width py-2 px-2 text-sm xl:text-lg">
                         C#, Typescript.
                       </td>
-                    </tr>
+                    </tr> 
                     <tr>
-                      <th className="py-2 whitespace-nowrap text-sm xl:text-lg text-azure-radiance-500">
+                      <th className="th-width py-2 text-sm xl:text-lg text-azure-radiance-500">
                         Versionning:
                       </th>
-                      <td className="py-2 px-2 text-sm xl:text-lg">
+                      <td className="td-width py-2 px-2 text-sm xl:text-lg">
                         Git (Gitlab & Github).
                       </td>
                     </tr>
@@ -337,321 +337,284 @@ const Experiences = () => {
                     Compétences métier
                   </h2>
                 </div>
-                <table className="w-full text-left">
+                <table className="w-full text-left table-fixed">
                   <thead>
                     <tr>
-                      <th className="py-2 whitespace-nowrap text-sm xl:text-lg text-azure-radiance-500">
-                      Méthodologies:
+                      <th className="th-width py-2 text-sm xl:text-lg text-azure-radiance-500">
+                        Méthodologies:
                       </th>
-                      <td className="py-2 px-2 text-sm xl:text-lg">
-                      Méthodologies Agile (Scrum, Kanban).
+                      <td className="td-width py-2 px-2 text-sm xl:text-lg">
+                        Méthodologies Agile (Scrum, Kanban).
                       </td>
                     </tr>
                     <tr>
-                      <th className="py-2 whitespace-nowrap text-sm xl:text-lg text-azure-radiance-500">
-                      Documentation:
+                      <th className="th-width py-2 text-sm xl:text-lg text-azure-radiance-500">
+                        Documentation:
                       </th>
-                      <td className="py-2 px-2 text-sm xl:text-lg">
-                      Rédaction de documentation utilisateur, de tests, de light
-                      ARD.
+                      <td className="td-width py-2 px-2 text-sm xl:text-lg">
+                        Rédaction de documentation utilisateur, de tests, de
+                        light ARD.
                       </td>
                     </tr>
                     <tr>
-                      <th className="py-2 whitespace-nowrap text-sm xl:text-lg text-azure-radiance-500">
-                      Optimisation:
+                      <th className="th-width py-2 text-sm xl:text-lg text-azure-radiance-500">
+                        Optimisation:
                       </th>
-                      <td className="py-2 px-2 text-sm xl:text-lg">
-                      Réduction des temps de récupération des datas.
+                      <td className="td-width py-2 px-2 text-sm xl:text-lg">
+                        Réduction des temps de récupération des datas.
                       </td>
                     </tr>
                     <tr>
-                      <th className="py-2 whitespace-nowrap text-sm xl:text-lg text-azure-radiance-500">
-                      Esprit d’analyse:
+                      <th className="th-width py-2  text-sm xl:text-lg text-azure-radiance-500">
+                        Esprit d’analyse:
                       </th>
-                      <td className="py-2 px-2 text-sm xl:text-lg">
-                      Analyse des besoins et/ou des problèmes.
+                      <td className="td-width py-2 px-2 text-sm xl:text-lg">
+                        Analyse des besoins et/ou des problèmes.
                       </td>
                     </tr>
                     <tr>
-                      <th className="py-2 whitespace-nowrap text-sm xl:text-lg text-azure-radiance-500">
-                      Travail:
+                      <th className="th-width py-2 text-sm xl:text-lg text-azure-radiance-500">
+                        Travail:
                       </th>
-                      <td className="py-2 px-2 text-sm xl:text-lg">
-                      Autonomie, collaboration, gestion du stress, adaptabilité.
+                      <td className="td-width py-2 px-2 text-sm xl:text-lg">
+                        Autonomie, collaboration, gestion du stress,
+                        adaptabilité.
                       </td>
                     </tr>
                   </thead>
                 </table>
-                {/* <div className="mb-3 flex items-center">
-                  <h3 className="text-md sm:text-lg font-bold text-azure-radiance-500">
-                    Méthodologies:
-                  </h3>
-                  <p className="ml-2 text-md sm:text-lg">
-                    Méthodologies Agile (Scrum, Kanban).
-                  </p>
-                </div>
-                <div className="mb-3 flex items-center">
-                  <h3 className="text-md sm:text-lg font-bold text-azure-radiance-500">
-                    Documentation:
-                  </h3>
-                  <p className="ml-2 text-md sm:text-lg">
-                    Rédaction de documentation utilisateur, de tests, de light
-                    ARD.
-                  </p>
-                </div>
-                <div className="mb-3 flex items-center">
-                  <h3 className="text-md sm:text-lg font-bold text-azure-radiance-500">
-                    Optimisation:
-                  </h3>
-                  <p className="ml-2 text-md sm:text-lg">
-                    Réduction des temps de récupération des datas.
-                  </p>
-                </div>
-                <div className="mb-3 flex items-center">
-                  <h3 className="text-md sm:text-lg font-bold text-azure-radiance-500">
-                    Esprit d’analyse:
-                  </h3>
-                  <p className="ml-2 text-md sm:text-lg">
-                    Analyse des besoins et/ou des problèmes.
-                  </p>
-                </div>
-                <div className="mb-3 flex items-center">
-                  <h3 className="text-md sm:text-lg font-bold text-azure-radiance-500">
-                    Travail:
-                  </h3>
-                  <p className="ml-2 text-md sm:text-lg">
-                    Autonomie, collaboration, gestion du stress, adaptabilité.
-                  </p>
-                </div> */}
               </div>
-            </div>
-            <div className="px-4 sm:px-8 pt-4 flex items-center gap-2">
-              <div className="flex items-baseline">
-                <Trema />
-                <h2 className="text-xl sm:text-2xl mb-4 ml-4">Projets</h2>
-                <select
-                  id="companyFilter"
-                  name="companyFilter"
-                  className="rounded-3xl text-md sm:text-lg ml-4 px-4 py-2 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
-                  value={selectedCompany}
-                  onChange={handleCompanyChange}
-                >
-                  <option value="All">Entreprise</option>
-                  {uniqueCompanyNames.map((company, index) => (
-                    <option key={index} value={company}>
-                      {company}
-                    </option>
-                  ))}
-                </select>
-              </div>
-            </div>
-            <div className="w-full px-4 sm:px-8">
-              {projects.map((project, index) => {
-                if (
-                  project.company !== selectedCompany &&
-                  selectedCompany !== "All"
-                ) {
-                  return null;
-                }
 
-                const isExpanded = expandedIndices.includes(index);
-
-                return (
-                  <div
-                    key={index}
-                    className={`bg-hover-transition px-4 py-2 ${
-                      isExpanded ? "border-b" : ""
-                    } border-color-lightgray cursor-pointer relative`}
-                    onClick={() => handleToggle(index)}
+              <div className="pt-4 flex items-center gap-2">
+                <div className="flex items-baseline">
+                  <Trema />
+                  <h2 className="text-xl sm:text-2xl mb-4 ml-4">Projets</h2>
+                  <select
+                    id="companyFilter"
+                    name="companyFilter"
+                    className="rounded-3xl text-md sm:text-lg ml-4 px-4 py-2 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+                    value={selectedCompany}
+                    onChange={handleCompanyChange}
                   >
-                    <div className="relative">
-                      <table className="w-full">
-                        <tbody>
-                          <tr>
-                            <td className="w-1/16 text-md sm:text-lg">
-                              {project.finishYear}
-                            </td>
-                            <td className="w-1/4 text-md sm:text-lg">
-                              {project.title}
-                            </td>
-                            <td className="w-1/4 text-md sm:text-lg">
-                              {project.company}
-                            </td>
-                            <td colSpan={3} className="mt-2 w-3/8">
-                              <div className="flex gap-2 flex-wrap">
-                                {project.tags.map((tech, techIndex) => (
-                                  <span
-                                    key={techIndex}
-                                    className="bg-azure-radiance-500 px-3 py-1 rounded-lg text-xs font-medium text-gray-200"
-                                  >
-                                    {tech}
-                                  </span>
-                                ))}
-                              </div>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                      <CSSTransition
-                        in={isExpanded}
-                        timeout={1000}
-                        classNames="fade-enlarge"
-                        unmountOnExit
-                      >
-                        <div className="py-4 expanded-card">
-                          <span className="text-md sm:text-lg text-gray-300">
-                            {project.year}
-                          </span>
-                          <p
-                            className="text-gray-700 text-md sm:text-lg"
-                            dangerouslySetInnerHTML={{
-                              __html: project.description,
-                            }}
-                          />
-                        </div>
-                      </CSSTransition>
-                    </div>
-                    <div
-                      className="absolute right-0 transform -translate-x-1/2 -translate-y-1/2 transition-transform"
-                      style={{ top: "22px" }}
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className={`h-6 w-6 cursor-pointer ${
-                          isExpanded ? "rotate-180" : "rotate-0"
-                        }`}
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                        onClick={() => handleToggle(index)}
-                        style={{ transition: "transform 0.3s ease" }}
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M19 9l-7 7-7-7"
-                        />
-                      </svg>
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
-            <div className="px-4 sm:px-8 py-4">
-              <div className="flex items-baseline">
-                <Trema />
-                <h2 className="text-xl sm:text-2xl mb-4 ml-4">
-                  Applications/Outils
-                </h2>
+                    <option value="All">Entreprise</option>
+                    {uniqueCompanyNames.map((company, index) => (
+                      <option key={index} value={company}>
+                        {company}
+                      </option>
+                    ))}
+                  </select>
+                </div>
               </div>
-              <table className="w-full text-left">
-                <thead>
-                  <tr>
-                    <th className="py-2 whitespace-nowrap text-sm xl:text-lg">
-                      {" "}
-                      <a
-                        href="https://code.visualstudio.com/"
-                        className="underline-link text-azure-radiance-500"
+              <div className="w-full">
+                {projects.map((project, index) => {
+                  if (
+                    project.company !== selectedCompany &&
+                    selectedCompany !== "All"
+                  ) {
+                    return null;
+                  }
+
+                  const isExpanded = expandedIndices.includes(index);
+
+                  return (
+                    <div
+                      key={index}
+                      className={`bg-hover-transition px-4 py-2 ${
+                        isExpanded ? "border-b" : ""
+                      } border-color-lightgray cursor-pointer relative`}
+                      onClick={() => handleToggle(index)}
+                    >
+                      <div className="relative">
+                        <table className="w-full">
+                          <tbody>
+                            <tr>
+                              <td className="w-1/16 text-sm xl:text-lg">
+                                {project.finishYear}
+                              </td>
+                              <td className="w-1/4 text-sm xl:text-lg">
+                                {project.title}
+                              </td>
+                              <td className="w-1/4 text-sm xl:text-lg">
+                                {project.company}
+                              </td>
+                              <td colSpan={3} className="mt-2 w-3/8">
+                                <div className="flex gap-2 flex-wrap">
+                                  {project.tags.map((tech, techIndex) => (
+                                    <span
+                                      key={techIndex}
+                                      className="bg-azure-radiance-500 px-3 py-1 rounded-lg text-sm xl:text-lg font-medium text-gray-200"
+                                    >
+                                      {tech}
+                                    </span>
+                                  ))}
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <CSSTransition
+                          in={isExpanded}
+                          timeout={1000}
+                          classNames="fade-enlarge"
+                          unmountOnExit
+                        >
+                          <div className="py-4 expanded-card">
+                            <span className="text-md sm:text-lg text-gray-300">
+                              {project.year}
+                            </span>
+                            <p
+                              className="text-gray-700 text-md sm:text-lg"
+                              dangerouslySetInnerHTML={{
+                                __html: project.description,
+                              }}
+                            />
+                          </div>
+                        </CSSTransition>
+                      </div>
+                      <div
+                        className="absolute right-0 transform -translate-x-1/2 -translate-y-1/2 transition-transform"
+                        style={{ top: "22px" }}
                       >
-                        VS Code
-                      </a>
-                    </th>
-                    <td className="py-2 text-sm xl:text-lg">
-                      Un des meilleurs éditeurs de code que j'ai pu tester, très
-                      customisable.
-                    </td>
-                  </tr>
-                  <tr>
-                    <th className="py-2 whitespace-nowrap text-sm xl:text-lg">
-                      <a
-                        href="https://github.com/"
-                        className="underline-link text-azure-radiance-500"
-                      >
-                        GitHub
-                      </a>
-                    </th>
-                    <td className="py-2 text-sm xl:text-lg">
-                      La feature des pages est assez folle pour hoster des sites
-                      facilement, très pratique pour les portfolios notamment.
-                    </td>
-                  </tr>
-                  <tr>
-                    <th className="py-2 whitespace-nowrap text-sm xl:text-lg">
-                      <a
-                        href="https://www.sonarsource.com/"
-                        className="underline-link text-azure-radiance-500"
-                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          className={`h-6 w-6 cursor-pointer ${
+                            isExpanded ? "rotate-180" : "rotate-0"
+                          }`}
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                          onClick={() => handleToggle(index)}
+                          style={{ transition: "transform 0.3s ease" }}
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M19 9l-7 7-7-7"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+              <div className="py-4">
+                <div className="flex items-baseline">
+                  <Trema />
+                  <h2 className="text-xl sm:text-2xl mb-4 ml-4">
+                    Applications/Outils
+                  </h2>
+                </div>
+                <table className="w-full text-left table-fixed">
+                  <thead>
+                    <tr>
+                      <th className="th-width py-2 whitespace-nowrap text-sm xl:text-lg">
+                        {" "}
+                        <a
+                          href="https://code.visualstudio.com/"
+                          className="underline-link text-azure-radiance-500"
+                        >
+                          VS Code
+                        </a>
+                      </th>
+                      <td className="td-width py-2 px-2 text-sm xl:text-lg">
+                        Un des meilleurs éditeurs de code que j'ai pu tester,
+                        très customisable.
+                      </td>
+                    </tr>
+                    <tr>
+                      <th className="th-width py-2 whitespace-nowrap text-sm xl:text-lg">
+                        <a
+                          href="https://github.com/"
+                          className="underline-link text-azure-radiance-500"
+                        >
+                          GitHub
+                        </a>
+                      </th>
+                      <td className="td-width py-2 px-2 text-sm xl:text-lg">
+                        La feature des pages est assez folle pour hoster des
+                        sites facilement, très pratique pour les portfolios
+                        notamment.
+                      </td>
+                    </tr>
+                    <tr>
+                      <th className="th-width py-2 whitespace-nowrap text-sm xl:text-lg">
+                        <a
+                          href="https://www.sonarsource.com/"
+                          className="underline-link text-azure-radiance-500"
+                        >
                         Sonarlint/Cloud
-                      </a>
-                    </th>
-                    <td className="py-2 text-sm xl:text-lg">
-                      J'ai beau avoir travaillé peu avec, l'utilité est
-                      impressionante. Très simple à installer et la qualité de
-                      code est rapidement améliorée.
-                    </td>
-                  </tr>
-                  <tr>
-                    <th className="py-2 whitespace-nowrap text-sm xl:text-lg">
-                      <a
-                        href="https://azure.microsoft.com/fr-fr/products/devops"
-                        className="underline-link text-azure-radiance-500"
-                      >
-                        Azure DevOps
-                      </a>
-                    </th>
-                    <td className="py-2 text-sm xl:text-lg">
-                      L'ensemble des features est très appréciable. Avoir accès
-                      au Kanban, aux repositories, a la création d'artifacts et
-                      aux pipelines sur la même plateforme... ça m'a été très
-                      utile.
-                    </td>
-                  </tr>
-                  <tr>
-                    <th className="py-2 whitespace-nowrap text-sm xl:text-lg">
-                      <a
-                        href="https://www.google.com/intl/fr/drive/"
-                        className="underline-link text-azure-radiance-500"
-                      >
-                        Google Workspace
-                      </a>
-                    </th>
-                    <td className="py-2 text-sm xl:text-lg">
-                      Gratuit & très complet, pas besoin de dire grand chose de
-                      plus.
-                    </td>
-                  </tr>
-                  <tr>
-                    <th className="py-2 whitespace-nowrap text-sm xl:text-lg">
-                      <a
-                        href="https://www.canva.com/"
-                        className="underline-link text-azure-radiance-500"
-                      >
-                        Canva
-                      </a>
-                    </th>
-                    <td className="py-2 text-sm xl:text-lg">
-                      Très utile pour créer des schémas, des documents textes en
-                      tout genre, ou même des présentations. Je ne suis pas fan
-                      de la disparition des applications tierces cependant.
-                    </td>
-                  </tr>
-                  <tr>
-                    <th className="py-2 whitespace-nowrap text-sm xl:text-lg">
-                      <a
-                        href="https://v0.dev/"
-                        className="underline-link text-azure-radiance-500"
-                      >
-                        V0 Dev
-                      </a>
-                    </th>
-                    <td className="py-2 text-sm xl:text-lg">
-                      Génération par IA d'interfaces simples. Très utile pour
-                      générer des composants en React.
-                    </td>
-                  </tr>
-                </thead>
-              </table>
+                        </a>
+                      </th>
+                      <td className="td-width py-2 px-2 text-sm xl:text-lg">
+                        J'ai beau avoir travaillé peu avec, l'utilité est
+                        impressionante. Très simple à installer et la qualité de
+                        code est rapidement améliorée.
+                      </td>
+                    </tr>
+                    <tr>
+                      <th className="th-width py-2 whitespace-nowrap text-sm xl:text-lg">
+                        <a
+                          href="https://azure.microsoft.com/fr-fr/products/devops"
+                          className="underline-link text-azure-radiance-500"
+                        >
+                          Azure DevOps
+                        </a>
+                      </th>
+                      <td className="td-width py-2 px-2 text-sm xl:text-lg">
+                        L'ensemble des features est très appréciable. Avoir
+                        accès au Kanban, aux repositories, a la création
+                        d'artifacts et aux pipelines sur la même plateforme...
+                        ça m'a été très utile.
+                      </td>
+                    </tr>
+                    <tr>
+                      <th className="th-width py-2 whitespace-nowrap text-sm xl:text-lg">
+                        <a
+                          href="https://www.google.com/intl/fr/drive/"
+                          className="underline-link text-azure-radiance-500"
+                        >
+                          Google Workspace
+                        </a>
+                      </th>
+                      <td className="td-width py-2 px-2 text-sm xl:text-lg">
+                        Gratuit & très complet, pas besoin de dire grand chose
+                        de plus.
+                      </td>
+                    </tr>
+                    <tr>
+                      <th className="th-width py-2 whitespace-nowrap text-sm xl:text-lg">
+                        <a
+                          href="https://www.canva.com/"
+                          className="underline-link text-azure-radiance-500"
+                        >
+                          Canva
+                        </a>
+                      </th>
+                      <td className="td-width py-2 px-2 text-sm xl:text-lg">
+                        Très utile pour créer des schémas, des documents textes
+                        en tout genre, ou même des présentations. Je ne suis pas
+                        fan de la disparition des applications tierces
+                        cependant.
+                      </td>
+                    </tr>
+                    <tr>
+                      <th className="th-width py-2 whitespace-nowrap text-sm xl:text-lg">
+                        <a
+                          href="https://v0.dev/"
+                          className="underline-link text-azure-radiance-500"
+                        >
+                          V0 Dev
+                        </a>
+                      </th>
+                      <td className="td-width y-2 px-2 text-sm xl:text-lg">
+                        Génération par IA d'interfaces simples. Très utile pour
+                        générer des composants en React.
+                      </td>
+                    </tr>
+                  </thead>
+                </table>
+              </div>
             </div>
           </div>
         </main>
