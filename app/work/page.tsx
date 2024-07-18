@@ -187,7 +187,7 @@ const uniqueCompanyNames = [...new Set(companyNames)];
 const date = new Date();
 
 const [selectedCompany, setSelectedCompany] = useState('All');
-const [expandedIndices, setExpandedIndices] = useState([]);
+const [expandedIndices, setExpandedIndices] = useState<number[]>([]);
 
 
 const handleCompanyChange = (e) => {
@@ -195,7 +195,7 @@ const handleCompanyChange = (e) => {
   e.preventDefault();
 };
 
-const handleToggle = (index) => {
+const handleToggle = (index:number) => {
   setExpandedIndices(prev => {
       if (prev.includes(index)) {
           // Remove index from expandedIndices

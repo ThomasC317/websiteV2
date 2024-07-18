@@ -10,7 +10,7 @@ interface AnimatedButtonProps {
   changeText: React.ReactElement | string;
   isDisabled?: boolean;
   clickStatus:boolean
-  buttonType:"button" | "submit" | "reset" | "undefined";
+  buttonType: "button" | "submit" | "reset" | undefined;
 }
 
 export const AnimatedButton: React.FC<
@@ -28,7 +28,6 @@ AnimatedButtonProps
   
   useEffect(() => {
     setIsClicked(clickStatus);
-    console.log("envoyé")
   },[clickStatus])
 
   useEffect(() => {
