@@ -28,7 +28,6 @@ const Contact = ()=> {
       ...prevData,
       [name]: value
     }));
-    console.log(formData)
   };
 
   const handleSubmit = (e) => {

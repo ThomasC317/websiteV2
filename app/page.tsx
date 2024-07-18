@@ -48,7 +48,7 @@ const handleButtonClick = () => {
     variant="outline"
     className="w-full sm:w-auto bg-azure-radiance-950 text-white rounded-3xl flex items-center justify-center px-6 py-4 text-2xl border-0"
     onClick={handleButtonClick}
-    style={{color:"white"}}
+    style={{color:"white", backgroundColor: '#172e54' }}
 >
     Mon travail
     <svg

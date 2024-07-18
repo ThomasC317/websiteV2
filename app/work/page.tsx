@@ -220,9 +220,9 @@ const handleToggle = (index:number) => {
   <div className="flex gap-4 sm:items-center">
   <Button
     variant="outline"
-    className="w-full sm:w-auto bg-azure-radiance-950 text-white rounded-3xl flex items-center justify-center px-6 py-4 text-2xl border-0"
+    className="w-full sm:w-auto text-white rounded-3xl flex items-center justify-center px-6 py-4 text-2xl border-0"
     onClick={handleButtonClick}
-    style={{color:"white"}}
+    style={{color:"white", backgroundColor: '#172e54' }}
 >
     Plus d'infos & Contact
     <svg
@@ -358,6 +358,7 @@ const handleToggle = (index:number) => {
                 unmountOnExit
             >
                         <div className="py-4 expanded-card">
+                        <span className="text-lg text-gray-300">{project.year}</span>
                             <p className="text-gray-700 text-lg" dangerouslySetInnerHTML={{ __html: project.description }} />
                         </div>
                     </CSSTransition>
