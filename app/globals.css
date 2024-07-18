@@ -254,6 +254,9 @@ body {
 .rounded-3xl {
   border-radius: 1.5rem;
 }
+.rounded-2xl {
+  border-radius: 1rem;
+}
 
 .py-6 {
   padding-top: 1.5rem;

@@ -416,54 +416,53 @@ const Experiences = () => {
         return (
           <div
             key={index}
-            className={`bg-hover-transition px-4 py-2 ${isExpanded ? "border-b" : ""
-              } border-color-lightgray cursor-pointer relative`}
+            className={`bg-hover-transition px-4 py-2 ${
+              isExpanded ? "border-b" : ""
+            } border-color-lightgray cursor-pointer relative`}
             onClick={() => handleToggle(index)}
           >
             <div className="relative">
-              <div className="block sm:table w-full">
-                <div className="block sm:table-row">
-                  <div className="block sm:table-cell sm:w-1/4 text-xs sm:text-sm lg:text-lg font-medium">
-                    {project.title}
-                  </div>
-                  <div className="block sm:table-cell sm:w-1/16 text-xs sm:text-sm lg:text-lg">
-                    {project.finishYear}
-                  </div>
-                  <div className="block sm:table-cell sm:w-1/4 text-xs sm:text-sm lg:text-lg">
-                    {project.company}
-                  </div>
-                  <div className="block sm:table-cell sm:w-3/8 mt-2 sm:mt-0">
-                    <div className="flex flex-wrap gap-2">
-                      {project.tags.map((tech, techIndex) => (
-                        <span
-                          key={techIndex}
-                          className="bg-azure-radiance-500 px-2 py-1 rounded-lg text-xs sm:text-sm lg:text-lg font-medium text-gray-200"
-                        >
-                          {tech}
-                        </span>
-                      ))}
-                    </div>
+              <div className="block lg:grid lg:grid-cols-5 lg:gap-4 w-full">
+                <div className="block lg:col-span-1 text-xs sm:text-sm lg:text-lg font-medium">
+                  {project.title}
+                </div>
+                <div className="block lg:col-span-1 text-xs sm:text-sm lg:text-lg">
+                  {project.finishYear}
+                </div>
+                <div className="block lg:col-span-1 text-xs sm:text-sm lg:text-lg">
+                  {project.company}
+                </div>
+                <div className="block lg:col-span-2 mt-2 lg:mt-0">
+                  <div className="flex flex-wrap gap-2">
+                    {project.tags.map((tech, techIndex) => (
+                      <span
+                        key={techIndex}
+                        className="bg-azure-radiance-500 px-2 py-1 rounded-lg text-xs sm:text-sm lg:text-md font-medium text-gray-200"
+                      >
+                        {tech}
+                      </span>
+                    ))}
                   </div>
                 </div>
-                <CSSTransition
-                  in={isExpanded}
-                  timeout={1000}
-                  classNames="fade-enlarge"
-                  unmountOnExit
-                >
-                  <div className="py-4 expanded-card">
-                    <span className="text-xs sm:text-md lg:text-lg text-gray-300">
-                      {project.year}
-                    </span>
-                    <p
-                      className="text-gray-700 text-xs sm:text-md lg:text-lg mt-2"
-                      dangerouslySetInnerHTML={{
-                        __html: project.description,
-                      }}
-                    />
-                  </div>
-                </CSSTransition>
               </div>
+              <CSSTransition
+                in={isExpanded}
+                timeout={1000}
+                classNames="fade-enlarge"
+                unmountOnExit
+              >
+                <div className="py-4 expanded-card">
+                  <span className="text-xs sm:text-md lg:text-lg text-gray-300">
+                    {project.year}
+                  </span>
+                  <p
+                    className="text-gray-700 text-xs sm:text-md lg:text-lg mt-2"
+                    dangerouslySetInnerHTML={{
+                      __html: project.description,
+                    }}
+                  />
+                </div>
+              </CSSTransition>
             </div>
             <div
               className="absolute right-0 transform -translate-x-1/2 -translate-y-1/2 transition-transform"
@@ -471,8 +470,9 @@ const Experiences = () => {
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className={`h-6 w-6 cursor-pointer ${isExpanded ? "rotate-180" : "rotate-0"
-                  }`}
+                className={`h-6 w-6 cursor-pointer ${
+                  isExpanded ? "rotate-180" : "rotate-0"
+                }`}
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
