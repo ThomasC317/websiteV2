@@ -250,3 +250,12 @@ body {
 .w-1\/12 {
   width: 6.25%;
 }
+
+.rounded-3xl {
+  border-radius: 1.5rem;
+}
+
+.py-6, .py-4, .py-12 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}

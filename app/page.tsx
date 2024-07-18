@@ -12,7 +12,7 @@ const handleButtonClick = () => {
   window.location.href = '/work';
 };
   return (
-    <div className="min-h-screen flex flex-col md:flex-row items-center md:justify-center justify-between py-12 bg-gray-100">
+    <div className="min-h-screen flex xl:flex-row flex-col items-center md:justify-center justify-between py-12 bg-gray-100 xl:mt-16">
     <Navbar isOnMainPage={true} />
     <div className="w-full max-w-4xl bg-white bg-opacity-80 p-8 md:p-12 lg:p-16 rounded-lg shadow-lg mt-24 mx-4">
       <main className="flex flex-col gap-8">
