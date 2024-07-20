@@ -208,7 +208,7 @@ const Experiences = () => {
 
   return (
     <div className="min-h-screen flex flex-col bg-white">
-      <Navbar />
+      <Navbar isOnMainPage={false} />
       <div className="flex-grow" style={{ position: "relative" }}>
         <ParticleBackground />
         <main
@@ -427,7 +427,7 @@ const Experiences = () => {
                   {project.title}
                 </div>
                 <div className="block lg:col-span-1 text-xs sm:text-sm lg:text-lg">
-                  {project.finishYear}
+                  {project.year}
                 </div>
                 <div className="block lg:col-span-1 text-xs sm:text-sm lg:text-lg">
                   {project.company}
@@ -452,9 +452,6 @@ const Experiences = () => {
                 unmountOnExit
               >
                 <div className="py-4 expanded-card">
-                  <span className="text-xs sm:text-md lg:text-lg text-gray-300">
-                    {project.year}
-                  </span>
                   <p
                     className="text-gray-700 text-xs sm:text-md lg:text-lg mt-2"
                     dangerouslySetInnerHTML={{

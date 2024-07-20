@@ -8,7 +8,7 @@ import Trema from "@/components/component/trema";
 const About = () => {
   return (
 <div className="min-h-screen flex flex-col bg-white">
-  <Navbar />
+  <Navbar isOnMainPage={false} />
   <div className="flex-grow relative">
     <ParticleBackground />
     <main className="w-full bg-transparent bg-opacity-80 mx-auto rounded-lg px-4 sm:px-8 lg:px-24 py-12 mt-16 relative z-10">

@@ -2,7 +2,7 @@
 // app/components/navbar.tsx
 import Link from "next/link";
 import { Button } from "../ui/button";
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 
 type MyComponentProps = {
   isOnMainPage?: boolean | null;
@@ -10,17 +10,35 @@ type MyComponentProps = {
 
 const Navbar: React.FC<MyComponentProps> = ({ isOnMainPage = null }) => {
   if (isOnMainPage === null) {
-    // Handle the specific case when isOnMainPage is null
     isOnMainPage = false;
   }
   const [isOpen, setIsOpen] = useState(false);
+  const menuRef = useRef<HTMLDivElement>(null);
+  const buttonRef = useRef<HTMLButtonElement>(null);
 
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
+  const toggleMenu = (event: React.MouseEvent) => {
+    event.stopPropagation();
+    setIsOpen((prev) => !prev);
   };
+
+  const handleClickOutside = (event: MouseEvent) => {
+    if (
+      menuRef.current && !menuRef.current.contains(event.target as Node) &&
+      buttonRef.current && !buttonRef.current.contains(event.target as Node)
+    ) {
+      setIsOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
+
   return (
-  
-    <header className={`w-full ${isOnMainPage ? "bg-white" : "bg-transparent"} bg-opacity-90 absolute top-0 left-0 z-50`}>
+    <header className={`w-full bg-white bg-opacity-90 absolute top-0 left-0 z-50`}>
       <div className="max-w-7xl mx-auto px-8 py-4 flex items-center justify-between">
         <nav className="hidden md:flex items-center gap-4 text-sm font-medium">
           <Link href="/" className="navbar-link" prefetch={false}>
@@ -39,7 +57,7 @@ const Navbar: React.FC<MyComponentProps> = ({ isOnMainPage = null }) => {
         </nav>
  
         <div className="max-md:flex items-center hidden">
-          <button onClick={toggleMenu} className="text-gray-800 focus:outline-none">
+          <button ref={buttonRef} onClick={toggleMenu} className="text-gray-800 focus:outline-none">
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d={isOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16m-7 6h7"}></path>
             </svg>
@@ -47,7 +65,7 @@ const Navbar: React.FC<MyComponentProps> = ({ isOnMainPage = null }) => {
         </div>
       </div>
       {isOpen && (
-        <div className="md:hidden bg-white bg-opacity-90 shadow-lg">
+        <div ref={menuRef} className="md:hidden bg-white bg-opacity-90 shadow-lg menu-animation">
           <nav className="px-8 py-4 flex flex-col gap-4 text-sm font-medium">
             <Link href="/" className="navbar-link" prefetch={false}>
               Accueil
