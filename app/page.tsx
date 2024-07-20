@@ -11,10 +11,11 @@ const Home = () => {
     window.location.href = "/work";
   };
   return (
-    <div className="min-h-screen flex xl:flex-row flex-col items-center md:justify-center justify-between py-12 xl:mt-16">
+    <div className="min-h-screen">
       <Navbar isOnMainPage={true} />
+      <main className="flex xl:flex-row flex-col items-center md:justify-center justify-between py-12 xl:mt-16 px-2">
       <div className="w-full max-w-4xl bg-white bg-opacity-80 p-8 md:p-12 lg:p-16 rounded-lg shadow-lg mt-24 mx-4 xl:mt-0">
-        <main className="flex flex-col gap-8">
+        <div className="flex flex-col gap-8">
           <div className="space-y-4 text-center sm:text-left">
             <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
               Bonjour, je m'appelle Thomas{" "}
@@ -32,20 +33,7 @@ const Home = () => {
                   500,
                   "CERDER",
                   500,
-                  "CERDERA",
-                  5000,
-                  "CERDER",
-                  500,
-                  "CERDE",
-                  500,
-                  "CERD",
-                  500,
-                  "CER",
-                  500,
-                  "CE",
-                  500,
-                  "C",
-                  5000,
+                  "CERDERA"
                 ]}
                 loop={1}
                 wrapper="span"
@@ -100,13 +88,14 @@ const Home = () => {
               </svg>
             </Button>
           </div>
-        </main>
+        </div>
       </div>
       <div className="w-full max-w-2xl bg-white bg-opacity-80 p-8 md:p-12 lg:p-16 rounded-lg shadow-lg mt-12 mx-4">
         <div className="space-y-8">
           <CommandPrompt />
         </div>
       </div>
+      </main>
     </div>
   );
 };
