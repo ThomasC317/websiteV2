@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { Properties } from 'csstype';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { faPaperPlane, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 const CommandPrompt = () => {
   const [input, setInput] = useState('');
   const [output, setOutput] = useState<any[]>([]);
+  const [currentTime, setCurrentTime] = useState('');
 
   type Styles = {
     container: Properties;
@@ -20,7 +20,6 @@ const CommandPrompt = () => {
     iconWrapper: Properties;
     icon: Properties;
   };
-
 
   const styles: Styles = {
     container: {
@@ -112,9 +111,10 @@ const CommandPrompt = () => {
     return formattedDate;
   };
 
-  const [currentTime, setCurrentTime] = useState(getFormattedDate());
-
   useEffect(() => {
+    // Set the initial time once the component is mounted on the client
+    setCurrentTime(getFormattedDate());
+
     // Initialize output with the list of commands on component mount
     setOutput(prevOutput => {
       if (!prevOutput.some(entry => entry.command === 'command')) {
@@ -122,12 +122,12 @@ const CommandPrompt = () => {
       }
       return prevOutput;
     });
-  
+
     // Set interval to update current time every second
     const interval = setInterval(() => {
       setCurrentTime(getFormattedDate());
     }, 1000);
-  
+
     return () => {
       clearInterval(interval); // Cleanup interval on component unmount
     };
@@ -200,21 +200,20 @@ const CommandPrompt = () => {
         </div>
       </div>
       <form onSubmit={handleInputSubmit} style={styles.form}>
-  <div style={{ position: 'relative', width: '100%' }}>
-    <input
-      type="text"
-      value={input}
-      onChange={handleInputChange}
-      style={{ ...styles.input, paddingRight: '40px', width: '100%' }}
-    />
-    <button type="submit" style={{ ...styles.button, position: 'absolute', right: '10px', top: '50%', transform: 'translateY(-50%)', backgroundColor: 'transparent', border: 'none', padding: '0', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-      <span style={{marginRight:"0.5rem"}}>
-        <FontAwesomeIcon icon={faArrowRight}  />
-      </span>
-    </button>
-  </div>
-</form>
-
+        <div style={{ position: 'relative', width: '100%' }}>
+          <input
+            type="text"
+            value={input}
+            onChange={handleInputChange}
+            style={{ ...styles.input, paddingRight: '40px', width: '100%' }}
+          />
+          <button type="submit" style={{ ...styles.button }}>
+            <span style={{ marginRight: "0.5rem" }}>
+              <FontAwesomeIcon icon={faArrowRight} />
+            </span>
+          </button>
+        </div>
+      </form>
     </div>
   );
 };
