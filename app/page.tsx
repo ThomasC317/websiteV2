@@ -8,7 +8,7 @@ import React, { useState, useEffect } from "react";
 
 const Home = () => {
   const handleButtonClick = () => {
-    window.location.href = "/work";
+    window.location.href = "./work";
   };
   return (
     <div className="min-h-screen">
