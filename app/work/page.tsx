@@ -13,7 +13,7 @@ import { color } from "framer-motion";
 
 const Experiences = () => {
   const handleButtonClick = () => {
-    window.location.href = "/about";
+    window.location.href = "./about";
   };
 
   const projects = [
