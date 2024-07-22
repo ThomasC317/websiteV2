@@ -217,7 +217,7 @@ const Experiences = () => {
         >
           <div>
             <div className="px-4 sm:px-8">
-              <p className="text-lg sm:text-2xl">
+              <div className="text-lg sm:text-2xl">
                 Ingénieur développeur Full-stack situé sur Toulouse, France.
                 <br />
                 <br /> Je suis un développeur full stack passionné travaillant
@@ -229,7 +229,7 @@ const Experiences = () => {
                 <div className="flex md:flex-row flex-col gap-4 sm:items-center">
                   <Button
                     variant="outline"
-                    className="w-full sm:w-auto text-white rounded-3xl flex items-center justify-center px-6 py-4 text-lg sm:text-2xl border-0"
+                    className="w-full sm:w-auto text-white rounded-3xl flex items-center justify-center px-6 py-6 text-lg sm:text-2xl border-0"
                     onClick={handleButtonClick}
                     style={{ color: "white", backgroundColor: "#172e54" }}
                   >
@@ -250,7 +250,7 @@ const Experiences = () => {
                     </svg>
                   </Button>
                   <Button
-                    className="w-full sm:w-auto bg-azure-radiance-950 text-white rounded-3xl flex items-center justify-center px-6 py-4 text-lg sm:text-2xl border border-azure-radiance-950"
+                    className="w-full sm:w-auto bg-azure-radiance-950 text-white rounded-3xl flex items-center justify-center px-6 py-6 text-lg sm:text-2xl border border-azure-radiance-950"
                     style={{
                       color: "black",
                       backgroundColor: "white",
@@ -269,7 +269,7 @@ const Experiences = () => {
                     </svg>
                   </Button>
                 </div>
-              </p>
+              </div>
               <div className="pt-8">
                 <div className="flex items-baseline">
                   <Trema />
