@@ -9,7 +9,7 @@ import Trema from "@/components/component/trema";
 import ParticleBackground from "@/components/component/particleBackground";
 
 import { CSSTransition } from "react-transition-group";
-import { color } from "framer-motion";
+import Select from 'react-select';
 
 const Experiences = () => {
   const handleButtonClick = () => {
@@ -181,17 +181,20 @@ const Experiences = () => {
     },
   ];
 
-  const companyNames = projects.map((project) => project.company);
+  const companyNames = projects.map((project) =>project.company);
   const uniqueCompanyNames = [...new Set(companyNames)];
-
+  const companyOptions = uniqueCompanyNames.map((company) => ({
+    value: company,
+    label: company,
+  }));
+  companyOptions.unshift({value:"All", label:"Toute les entreprises"})
   const date = new Date();
 
   const [selectedCompany, setSelectedCompany] = useState("All");
   const [expandedIndices, setExpandedIndices] = useState<number[]>([]);
 
   const handleCompanyChange = (e) => {
-    setSelectedCompany(e.target.value);
-    e.preventDefault();
+    setSelectedCompany(e.value);
   };
 
   const handleToggle = (index: number) => {
@@ -389,20 +392,7 @@ const Experiences = () => {
                 <div className="flex items-baseline">
                   <Trema />
                   <h2 className="text-xl sm:text-2xl mb-4 ml-4">Projets</h2>
-                  <select
-                    id="companyFilter"
-                    name="companyFilter"
-                    className="rounded-3xl text-md sm:text-lg ml-4 px-4 py-2 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
-                    value={selectedCompany}
-                    onChange={handleCompanyChange}
-                  >
-                    <option value="All">Entreprise</option>
-                    {uniqueCompanyNames.map((company, index) => (
-                      <option key={index} value={company}>
-                        {company}
-                      </option>
-                    ))}
-                  </select>
+                  <Select onChange={handleCompanyChange} className="select-width rounded-3xl text-md sm:text-lg ml-4 px-4 py-2" options={companyOptions} name="company" defaultValue={companyOptions[0]}></Select>
                 </div>
               </div>
               <div className="container">
