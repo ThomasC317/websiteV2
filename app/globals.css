@@ -253,23 +253,23 @@ h3 {
 }
 
 .fade-enlarge-enter {
-  max-height: 0;
+  max-height: -200px;
   overflow: hidden;
   transition: max-height 0.5s ease-out;
 }
 
 .fade-enlarge-enter-active {
-  max-height: 500px; /* Adjust based on your content */
+  max-height: 200px; /* Adjust based on your content */
 }
 
 .fade-enlarge-exit {
-  max-height: 500px;
+  max-height: 200px;
   overflow: hidden;
   transition: max-height 0.5s ease-out;
 }
 
 .fade-enlarge-exit-active {
-  max-height: 0;
+  max-height: -200px;
 }
 
 .th-width {
@@ -296,10 +296,6 @@ h3 {
 .td-width {
   width: 50%; 
 }
-}
-
-.test {
-  table-layout: fixed
 }
 
 @keyframes fadeInSlideDown {

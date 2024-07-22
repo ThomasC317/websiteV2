@@ -437,7 +437,7 @@ const Experiences = () => {
               </div>
               <CSSTransition
                 in={isExpanded}
-                timeout={1000}
+                timeout={isExpanded ? 0 : 1000}
                 classNames="fade-enlarge"
                 unmountOnExit
               >
