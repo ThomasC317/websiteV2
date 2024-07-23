@@ -20,164 +20,169 @@ const Experiences = () => {
     {
       title: "Ce site web",
       year: "Juillet 2024",
-      finishYear: 2024,
       company: "Projet Personnel",
-      description: `Création d'un nouveau site Portfolio.<br/>
-    - Recherche d'inspiration pour voir les modes des sites.<br/>
-    - Mise en place des pages/ composants.<br/>
-    - Responsivité.`,
-      tags: ["React", "JavaScript"],
-      previewTags: ["React", "JavaScript"],
+      description: `Création d'un nouveau site Portfolio<br/>
+<br/>
+• Recherche d'inspiration : J'ai dans un premier temps effecuté une veille approfondie pour identifier les tendances actuelles en matière de design de sites web. 
+Cela a impliqué l'exploration de différents portfolios en ligne. 
+L'objectif était de comprendre les éléments de design populaires, les palettes de couleurs, les typographies et les animations qui attirent actuellement l'attention afin de créer un portfolio original.<br/>
+<br/>
+• Mise en place des pages et des composants : J'ai décidé d'avoir 3 pages pour mon site :<br/>
+<div class="px-4">  
+• Page d'accueil <br/>
+  • Mon travail <br/>
+  • À propos<br/>
+   </div>
+<br/>
+• Composants personnalisés : Je me suis donné le challenge de créer des composants & d'en modifier d'autres pour mon site: <br/>
+<div class="px-4">
+  • Command Prompt<br/>
+  • Formulaire de contact<br/>
+  </div>
+<br/>
+• Responsivité : J'ai suivi l'approche Tailwind pour le développement du site, qui consiste à d'abord développer pour petit écran. C'est plus simple dans ce sens là, et gérer le reste de responsivité m'a pris beaucoup moins de temps. <br/>
+<br/>
+`,
+      tags: ["React", "TypeScript", "Framer-motion", "TailwindCS", "Emailjs"]
     },
     {
-      title: "Recherche IA pour l'entreprise",
+      title: "R&D pour l'utilisation de l'ia dans le contexte de l'entreprise",
       company: "Infotel Blagnac",
       year: "Mai 2024 - Maintenant",
-      finishYear: 2024,
-      description: `Recherches pour la mise en place de l'IA dans le contexte de l'entrepise.<br/>
-    - Recherche sur les avancées les plus récentes.<br/>
-    - Analyse des possibilités pour l'entreprise.<br/>
-    - Développement une interface de Chatbot avec une direction artistique proche de celle de l'entreprise.`,
-      tags: ["React", "Python", "NextJs"],
-      previewTags: ["React", "Python"],
+      description: `Recherches pour la mise en place de l'IA dans le contexte de l'entreprise.<br/>
+<br/>
+• Analyse du fonctionnement des modèles.<br/>
+• Recherche sur les avancées les plus récentes : Cette étape consiste à effectuer une veille technologique approfondie pour identifier les dernières innovations en matière d'intelligence artificielle. Cela implique l'étude de publications scientifiques, la consultation de rapports d'experts et des recherches sur les différents modèles afin d'étudier les possibilités de mise en place.<br/>
+<br/>
+• Analyse des possibilités pour l'entreprise : Après avoir recueilli des informations sur les avancées technologiques, une analyse approfondie est réalisée pour déterminer comment ces nouvelles technologies peuvent être appliquées au contexte spécifique de l'entreprise. Cela inclut l'évaluation des besoins actuels, l'identification des opportunités d'amélioration et la proposition de solutions personnalisées.<br/>
+<br/>
+• Développement d'une interface de Chatbot avec une direction artistique proche de celle de l'entreprise : En se basant sur les résultats des recherches et analyses précédentes, une interface de Chatbot est développée. Cette interface est conçue pour refléter l'identité visuelle de l'entreprise, en intégrant des éléments graphiques et des animations en harmonie avec la direction artistique existante. Le Chatbot a pour but principal de générer des tests unitaires par rapport au code qu'on lui donne. D'autres recherches sont en cours pour pouvoir gérer l'édition de fichiers ou l'ajout d'un plugin dans visual studio code.<br/>`,
+      tags: ["React", "Python", "NextJs"]
     },
     {
       title: "MRDB",
       company: "Infotel Blagnac",
       year: "Avril - Mai 2024",
-      finishYear: 2024,
-      description: `Développement d’évolutions sur le projet MRDB.<br/>
-    - Analyse du code déjà présent.<br/>
-    - Analyse des besoins du client.<br/>
-    - Ajout des nouvelles features et tests.`,
-      tags: ["Skywise", "JavaScript", "Pyspark"],
-      previewTags: ["JavaScript", "Python"],
+      description: `Développement d’évolutions sur le projet MRDB :
+<br/>
+• Analyse du code déjà présent : La première étape consiste à examiner en profondeur le code existant du projet MRDB. Cette analyse permet de comprendre la structure actuelle du code, et de repérer les zones à modifier pour intégrer les nouvelles fonctionnalités de manière optimale.<br/>
+<br/>
+• Analyse des besoins du client : En parallèle de l'analyse technique, une étude des besoins du client est réalisée. Cela inclut des réunions avec les parties prenantes, la collecte de leurs exigences spécifiques, et la compréhension de leurs attentes en termes de nouvelles fonctionnalités et d'améliorations.<br/>
+<br/>
+• Ajout des nouvelles features et tests : Sur la base des analyses précédentes, j'ai fait des développements back-end, permettant d'ajouter de nouvelles colonnes aux données retournées au front-end. Chaque nouvelle fonctionnalité est rigoureusement testée pour assurer sa robustesse et son intégration harmonieuse avec le système existant.<br/>`,
+      tags: ["Skywise", "JavaScript", "Pyspark"]
     },
     {
       title: "Athenaa",
       company: "Infotel Blagnac",
       year: "Mars - Avril 2024",
-      finishYear: 2024,
-      description: `Développement d’une application datas retournant des moyennes d’heures et de cycles de vol pour une liste de MSN<br/>
-    - Analyse des datas en entrée.<br/>
-    - Transformation des datas pour retourner les colonnes voulues.<br/>
-    - Importation dans le front et test.`,
-      tags: ["Skywise", "JavaScript", "Pyspark"],
-      previewTags: ["JavaScript", "Python"],
+      description: `Développement d’une application datas retournant des moyennes d’heures et de cycles de vol pour une liste de MSN :<br/>
+<br/>
+• Analyse des datas en entrée, afin de déterminer à partir de quelles données je devrais réaliser les calculs par la suite.<br/>
+<br/>
+• Transformation des datas pour retourner les colonnes voulues. Pour calculer les moyennes requises, j'ai développé des algorithmes spécifiques pour effectuer ces calculs et pour structurer les données envoyées au front. <br/>
+<br/>
+• Importation dans le front et test. Des tests rigoureux sont réalisés pour s'assurer que les données s'affichent correctement et que les fonctionnalités de l'application répondent aux attentes.<br/>
+`,
+      tags: ["Skywise", "JavaScript", "Pyspark"]
     },
     {
       title: "Madness",
       company: "Infotel Blagnac",
       year: "Février - Mars 2024",
-      finishYear: 2024,
       description: `Etude d’une analyse Contour (Outil visuel permettant d’interagir et transformer des datas) pour la rédaction d’une documentation et de spécifications projet :<br/>
-    - Analyse des différentes transformations.<br/>
-    - Proposition d’optimisations sur les transformations.<br/>
-    - Rédaction de documentation.<br/>
-    - Chiffrage pour créer un vrai back au projet.`,
-      tags: ["Skywise", "JavaScript", "Pyspark"],
-      previewTags: ["JavaScript", "Python"],
+    • Analyse des différentes transformations.<br/>
+    • Proposition d’optimisations sur les transformations.<br/>
+    • Rédaction de documentation.<br/>
+    • Chiffrage pour créer un vrai back au projet.`,
+      tags: ["Skywise", "JavaScript", "Pyspark"]
     },
     {
       title: "Airframe Services",
       company: "Infotel Blagnac",
       year: "Décembre - Février 2024",
-      finishYear: 2024,
       description: `Mise en place d’une application Slate permettant le suivi de KPIs mensuels et annuels :<br/>
-    - Création d’une application data en pyspark retournant les informations nécessaires au suivi des KPI<br/>
-    - Mise en place des calculs des KPI avec la valeur mensuelle et annuelle côté Front.<br/>
-    - Optimisation des requêtes (Nombre de lignes retournées, découpage par calcul).<br/>
-    - Création de fichier fusion pour le stockage en dur de données insérables par le client.`,
-      tags: ["Skywise", "JavaScript", "Pyspark"],
-      previewTags: ["JavaScript", "Python"],
+    • Création d’une application data en pyspark retournant les informations nécessaires au suivi des KPI<br/>
+    • Mise en place des calculs des KPI avec la valeur mensuelle et annuelle côté Front.<br/>
+    • Optimisation des requêtes (Nombre de lignes retournées, découpage par calcul).<br/>
+    • Création de fichier fusion pour le stockage en dur de données insérables par le client.`,
+      tags: ["Skywise", "JavaScript", "Pyspark"]
     },
     {
       title: "ASN/AOG",
       company: "Infotel Blagnac",
       year: "Septembre - Décembre 2023",
-      finishYear: 2023,
       description: `Mise à niveau d'une application permettant le suivi des incidents liés aux avions de la flotte du client :<br/>
-    - Mise à niveau de la DB pour les besoins de ma partie.<br/>
-    - Ajout d'une nouvelle partie permettant le filtrage des informations envoyées aux utilisateurs. Grâce à cela, les utilisateurs abonnées à la compagnie "ABC" recevront seulement les mails liés à cette compagnie.<br/>
-    - Gestion de rôles. Les utilisateurs dit "managers" peuvent valider, éditer ou refuser l'ajout d'un incident, et gérer les abonnements des autres utilisateurs. Les utilisateurs basiques peuvent seulement faire la demande pour l'ajout ou la suppression d'incident et l'utilisateur "Lecteur" voit seulement la liste des incidents.`,
-      tags: ["Angular", "C#", "Gitlab", "JIRA", "SQL Server"],
-      previewTags: ["Angular", "C#"],
+    • Mise à niveau de la DB pour les besoins de ma partie.<br/>
+    • Ajout d'une nouvelle partie permettant le filtrage des informations envoyées aux utilisateurs. Grâce à cela, les utilisateurs abonnées à la compagnie "ABC" recevront seulement les mails liés à cette compagnie.<br/>
+    • Gestion de rôles. Les utilisateurs dit "managers" peuvent valider, éditer ou refuser l'ajout d'un incident, et gérer les abonnements des autres utilisateurs. Les utilisateurs basiques peuvent seulement faire la demande pour l'ajout ou la suppression d'incident et l'utilisateur "Lecteur" voit seulement la liste des incidents.`,
+      tags: ["Angular", "C#", "Gitlab", "JIRA", "SQL Server"]
     },
     {
       title: "LP ADV",
       company: "LP Promotion",
       year: "2022 - Mai 2023",
-      finishYear: 2023,
       description: `Refonte de l'outil de l'administration des ventes simplifiant la gestion des étapes d'un dossier :<br/>
-    - Analyse de l'ancienne DB pour produire un schéma pour la nouvelle database, permettant aussi une synchronisation avec les anciennes données.<br/>
-    - Aide à la mise en place des étapes du projet (architecture, création des repos, back, front).<br/>
-    - Interface de filtrage des résidences et lots en fonction de paramètres (nom, type de résidence,... ) via LinQ.<br/>
-    - Intégration fidèles de maquettes faite depuis Figma par la team UX/UI.<br/>
-    - Refonte d'un microservice embarquant la génération, la preview & l'envoi d'un courrier recommandé papier ou numérique (AR24).<br/>
-    - Optimisation des appels à l'API pour réduire la consommation de ressources.<br/>
-    - Tests fonctionnels & Utilisateurs.`,
-      tags: ["Blazor", "C#", "Azure AD", "Docker", "SQL Server"],
-      previewTags: ["Blazor", "C#"],
+    • Analyse de l'ancienne DB pour produire un schéma pour la nouvelle database, permettant aussi une synchronisation avec les anciennes données.<br/>
+    • Aide à la mise en place des étapes du projet (architecture, création des repos, back, front).<br/>
+    • Interface de filtrage des résidences et lots en fonction de paramètres (nom, type de résidence,... ) via LinQ.<br/>
+    • Intégration fidèles de maquettes faite depuis Figma par la team UX/UI.<br/>
+    • Refonte d'un microservice embarquant la génération, la preview & l'envoi d'un courrier recommandé papier ou numérique (AR24).<br/>
+    • Optimisation des appels à l'API pour réduire la consommation de ressources.<br/>
+    • Tests fonctionnels & Utilisateurs.`,
+      tags: ["Blazor", "C#", "Azure AD", "Docker", "SQL Server"]
     },
     {
       title: "LP WORKPLACE",
       company: "LP Promotion",
       year: "Juin - Décembre 2021",
-      finishYear: 2021,
       description: `Création du premier outil de la plateforme LP INSIDE, simplifiant le travail inter service grâce au rassemblement des process,du vocabulaire métier & d'un organigramme sous la même application Web.<br/>
-    - Aide à la mise en place des étapes du projet (architecture, création des repos, back, front).<br/>
-    - Développement d'une page Glossaire avec filtrage des entités par paramètres via LinQ.<br/>
-    - Barre de recherche permettant de lancer une recherche pour trouver des process, des documents ou des employés de l'entreprise.<br/>
-    - Ajout d'un système de favoris permettant de garder certains process ou documents faciles d'accès.<br/>
-    - Tests fonctionnels en continue.<br/>
-    - Tests avec différents utilisateurs.`,
-      tags: ["Blazor", "C#", "Azure AD", "Docker", "SQL Server"],
-      previewTags: ["Blazor", "C#"],
+    • Aide à la mise en place des étapes du projet (architecture, création des repos, back, front).<br/>
+    • Développement d'une page Glossaire avec filtrage des entités par paramètres via LinQ.<br/>
+    • Barre de recherche permettant de lancer une recherche pour trouver des process, des documents ou des employés de l'entreprise.<br/>
+    • Ajout d'un système de favoris permettant de garder certains process ou documents faciles d'accès.<br/>
+    • Tests fonctionnels en continue.<br/>
+    • Tests avec différents utilisateurs.`,
+      tags: ["Blazor", "C#", "Azure AD", "Docker", "SQL Server"]
     },
     {
       title: "Ui Framework",
       company: "LP Promotion",
       year: "Octobre 2020 - Mai 2023",
-      finishYear: 2023,
       description: `Développement d'une librairie Blazor de composants réutilisables et customisables à destination des futurs projets à venir : <br/>
-    - Analyse des projets legacy & WIP pour lister tous les composants à développer/ inclure dans la librairie.<br/>
-    - Remplacement des composants sur les projets récents.<br/>
-    - Mise en place de généricité sur certains composants pour être utilisés dans différents contextes.<br/>
-    - Mise en place de variables CSS pour permettre une customisation des styles pour être en adéquation avec la charte graphique de chaque projet.<br/>
-    - Mise en place d'un site documentation des composants avec différents cas d'utilisations, une liste des paramètres et un tuto pour l'importation dans les projets.`,
-      tags: ["Blazor", "C#", "Azure AD", "SQL Server"],
-      previewTags: ["Blazor", "C#"],
+    • Analyse des projets legacy & WIP pour lister tous les composants à développer/ inclure dans la librairie.<br/>
+    • Remplacement des composants sur les projets récents.<br/>
+    • Mise en place de généricité sur certains composants pour être utilisés dans différents contextes.<br/>
+    • Mise en place de variables CSS pour permettre une customisation des styles pour être en adéquation avec la charte graphique de chaque projet.<br/>
+    • Mise en place d'un site documentation des composants avec différents cas d'utilisations, une liste des paramètres et un tuto pour l'importation dans les projets.`,
+      tags: ["Blazor", "C#", "Azure AD", "SQL Server"]
     },
     {
       title: "LP INSIDE",
       company: "LP Promotion",
       year: "Octobre 2020 - Mai 2023",
-      finishYear: 2023,
       description: `Mise en place d'une plateforme qui va recenser tous les nouveaux & futurs projets sous forme de modules :<br/>
-    - Aide à la mise en place des méthodes agiles (SCRUM) dans le service.<br/>
-    - Passage sous Azure AD pour la gestion des projets.<br/>
-    - Conteneurisation des microservices (Docker).<br/>
-    - Installation de pipelines CI/CD sur chaque projet.<br/>
-    - Process de qualité du code (Policies de branch, conventions de nommage, Quality gate de sonarCloud).<br/>
-    - Communication avec le service UX/UI pour mieux répondre aux besoins des services cibles.<br/>
-    - Architecture de la communication entre les différents microservices & les SPA.`,
-      tags: ["Blazor", "C#", "Azure AD", "Docker", "SQL Server"],
-      previewTags: ["Blazor", "C#"],
+    • Aide à la mise en place des méthodes agiles (SCRUM) dans le service.<br/>
+    • Passage sous Azure AD pour la gestion des projets.<br/>
+    • Conteneurisation des microservices (Docker).<br/>
+    • Installation de pipelines CI/CD sur chaque projet.<br/>
+    • Process de qualité du code (Policies de branch, conventions de nommage, Quality gate de sonarCloud).<br/>
+    • Communication avec le service UX/UI pour mieux répondre aux besoins des services cibles.<br/>
+    • Architecture de la communication entre les différents microservices & les SPA.`,
+      tags: ["Blazor", "C#", "Azure AD", "Docker", "SQL Server"]
     },
     {
       title: "Flux Partenaire V3",
       company: "LP Promotion",
-      finishYear: 2020,
       year: "Octobre 2019 - Septembre 2020",
       description: `Refonte globale d'un projet de génération de flux XML contenant les informations des résidences et des appartements à louer :<br/>
-    - Mise en place d'une architecture microservice multicouches.<br/>
-    - Conception & modélisation d'une API REST.<br/>
-    - Développement d'une interface pour l'administration de l'application. Celle-ci permet d'ajouter ou de supprimer des partenaires, et de lancer l'envoi de flux aux partenaires.<br/>
-    - Ajout d'envoi de flux via FTP ou sFTP.<br/>
-    - Ajout d'une fonctionnalité d'édition des noms de balises des fichiers XML pour répondre aux besoins spécifiques de chaque client.<br/>
-    - Mise en place d'une gestion d'erreur avec vérification des balises et gestion d'erreurs.`,
-      tags: ["JavaScript", "C#", "SQL Server"],
-      previewTags: ["JavaScript", "C#"],
+    • Mise en place d'une architecture microservice multicouches.<br/>
+    • Conception & modélisation d'une API REST.<br/>
+    • Développement d'une interface pour l'administration de l'application. Celle-ci permet d'ajouter ou de supprimer des partenaires, et de lancer l'envoi de flux aux partenaires.<br/>
+    • Ajout d'envoi de flux via FTP ou sFTP.<br/>
+    • Ajout d'une fonctionnalité d'édition des noms de balises des fichiers XML pour répondre aux besoins spécifiques de chaque client.<br/>
+    • Mise en place d'une gestion d'erreur avec vérification des balises et gestion d'erreurs.`,
+      tags: ["JavaScript", "C#", "SQL Server"]
     },
   ];
 
