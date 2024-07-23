@@ -39,7 +39,6 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
     const serviceID = 'service_uyz2ik9';
     const templateID = 'template_d0tm9og';
     const userID = 'v-idG3pMsjd8JrlQl';
@@ -58,7 +57,6 @@ const Contact = () => {
         setModalIsOpen(true);
         setIsSent(true);
       });
- 
   };
 
   const closeModal = () => {

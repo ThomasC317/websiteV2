@@ -392,7 +392,9 @@ const Experiences = () => {
                 <div className="flex items-baseline">
                   <Trema />
                   <h2 className="text-xl sm:text-2xl mb-4 ml-4">Projets</h2>
-                  <Select onChange={handleCompanyChange} className="select-width rounded-3xl text-md sm:text-lg ml-4 px-4 py-2" options={companyOptions} name="company" defaultValue={companyOptions[0]}></Select>
+                  <div onMouseDown={(e) => e.stopPropagation()} onClick={(e) => e.stopPropagation()}>
+                    <Select onChange={handleCompanyChange} className="select-width rounded-3xl text-md sm:text-lg ml-4 px-4 py-2" options={companyOptions} name="company" defaultValue={companyOptions[0]}></Select>
+                  </div>
                 </div>
               </div>
               <div className="container">
