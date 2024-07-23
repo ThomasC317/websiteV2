@@ -1,9 +1,15 @@
 "use client";
-import React, { useState,useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import emailjs from 'emailjs-com';
 import { Button } from "../ui/button";
+import Modal from 'react-modal';
 import { AnimatedButton } from './animatedButton';
-const Contact = ()=> {
+
+const Contact = () => {
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+  const [modalContent, setModalContent] = useState('');
+  const [emailSent, setEmailSent] = useState(false);
+  const appElement = typeof document !== 'undefined' ? document.getElementById('form') : null;
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -14,13 +20,14 @@ const Contact = ()=> {
   const [isSent, setIsSent] = useState(false);
 
   useEffect(() => {
-    if(isSent)
-    {
-    setInterval(() => {
-      setIsSent(false);
-    }, 10000);
-  }
-}, [isSent]);
+    if (isSent) {
+      const timer = setTimeout(() => {
+        setIsSent(false);
+        setModalIsOpen(false);
+      }, 10000);
+      return () => clearTimeout(timer);
+    }
+  }, [isSent]);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -36,20 +43,31 @@ const Contact = ()=> {
     const serviceID = 'service_uyz2ik9';
     const templateID = 'template_d0tm9og';
     const userID = 'v-idG3pMsjd8JrlQl';
+
+    setModalContent("Votre mail a bien été envoyé ! Je reviens vers vous au plus vite !");
     emailjs.send(serviceID, templateID, formData, userID)
       .then(() => {
-        window.alert('Votre mail a bien été envoyé ! Je reviens vers vous au plus vite !');
-        setIsSent(true)
+        setEmailSent(true);
+        setModalContent("Votre mail a bien été envoyé ! Je reviens vers vous au plus vite !");
+        setModalIsOpen(true);
+        setIsSent(true);
+        e.target.reset();
       }, () => {
-        window.alert(`Echec de l'envoi du mail. Veuillez réessayer plus tard.`);
-        setIsSent(true)
+        setEmailSent(false);
+        setModalContent("Échec de l'envoi du mail. Veuillez réessayer plus tard.");
+        setModalIsOpen(true);
+        setIsSent(true);
       });
+ 
   };
 
-
+  const closeModal = () => {
+    setModalIsOpen(false);
+  };
+  
   return (
-    <div className="form-container" onSubmit={handleSubmit}>
-      <form className="contact-form grid gap-4">
+    <div className="form-container" id='form'>
+      <form className="contact-form grid gap-4" onSubmit={handleSubmit}>
         <div className="grid gap-2">
           <label htmlFor="name">Votre Nom</label>
           <input
@@ -92,14 +110,67 @@ const Contact = ()=> {
             placeholder="Donnez plus de détails sur votre offre, demande, etc..."
             className="textarea-field min-h-[150px]"
             onChange={handleChange}
-            style={{resize:'none'}}
+            style={{ resize: 'none' }}
             required
           />
         </div>
-        <AnimatedButton buttonTextColor='white' className='bg-azure-radiance-950 w-full' initialText={"Envoi du message"} changeText={"message envoyé !"} buttonType="submit" clickStatus={isSent} />
+        <AnimatedButton
+          buttonTextColor='white'
+          className='bg-azure-radiance-950 w-full'
+          initialText={"Envoi du message"}
+          changeText={"Message envoyé !"}
+          buttonType="submit"
+          clickStatus={isSent}
+        />
       </form>
+      <Modal
+        isOpen={modalIsOpen}
+        onRequestClose={closeModal}
+        contentLabel="Email Status"
+        appElement={appElement}
+        style={{
+          content: {
+            top: '50%',
+            left: '50%',
+            right: 'auto',
+            bottom: 'auto',
+            transform: 'translate(-50%, -50%)',
+            padding: '20px',
+            borderRadius: '10px',
+            boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
+            zIndex: 1050,
+            maxWidth: '500px',
+            width: '90%',
+            textAlign: 'center'
+          },
+          overlay: {
+            backgroundColor: 'rgba(0, 0, 0, 0.5)',
+            zIndex: 1040
+          },
+        }}
+      >
+        <div style={{ marginBottom: '10px', fontSize: '2em' }}>
+          {emailSent ? '✅' : '❌'}
+        </div>
+        <h2 style={{ margin: '0', marginBottom: '10px' }}>{emailSent ? 'Succès !' : 'Erreur !'}</h2>
+        <p>{modalContent}</p>
+        <button
+          onClick={closeModal}
+          style={{
+            marginTop: '20px',
+            backgroundColor: '#007BFF',
+            color: 'white',
+            border: 'none',
+            borderRadius: '5px',
+            padding: '10px 20px',
+            cursor: 'pointer'
+          }}
+        >
+          Fermer
+        </button>
+      </Modal>
     </div>
   );
-}
+};
 
 export default Contact;
