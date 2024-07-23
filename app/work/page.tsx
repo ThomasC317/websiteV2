@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import Navbar from "@/components/component/navbar";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Footer from "@/components/component/footer/footer";
 import Trema from "@/components/component/trema";
 import ParticleBackground from "@/components/component/particleBackground";
@@ -192,7 +192,7 @@ const Experiences = () => {
 
   const [selectedCompany, setSelectedCompany] = useState("All");
   const [expandedIndices, setExpandedIndices] = useState<number[]>([]);
-
+  const [isSelectMounted, setIsSelectMounted] = useState(false);
   const handleCompanyChange = (e) => {
     setSelectedCompany(e.value);
   };
@@ -208,6 +208,8 @@ const Experiences = () => {
       }
     });
   };
+
+  useEffect(() => setIsSelectMounted(true), []);
 
   return (
     <div className="min-h-screen flex flex-col bg-white">
@@ -392,9 +394,10 @@ const Experiences = () => {
                 <div className="flex items-baseline">
                   <Trema />
                   <h2 className="text-xl sm:text-2xl mb-4 ml-4">Projets</h2>
-                  <div onMouseDown={(e) => e.stopPropagation()} onClick={(e) => e.stopPropagation()}>
+                  {isSelectMounted ? (
                     <Select onChange={handleCompanyChange} className="select-width rounded-3xl text-md sm:text-lg ml-4 px-4 py-2" options={companyOptions} name="company" defaultValue={companyOptions[0]}></Select>
-                  </div>
+                  ) : null
+                  }
                 </div>
               </div>
               <div className="container">
