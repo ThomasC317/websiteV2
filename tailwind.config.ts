@@ -1,10 +1,21 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
+  mode: 'jit',
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
+  safelist: [
+    {
+      pattern: /bg-(azure-radiance|coral-red|gorse|white)-(50|100|200|300|400|500|600|700|800|900|950)/,
+      variants: ['hover', 'focus'],
+    },
+    {
+      pattern: /text-(azure-radiance|coral-red|gorse|white)-(50|100|200|300|400|500|600|700|800|900|950)/,
+      variants: ['hover', 'focus'],
+    },
   ],
   theme: {
     extend: {
