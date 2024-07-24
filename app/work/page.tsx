@@ -8,6 +8,7 @@ import Footer from "@/components/component/footer/footer";
 import Trema from "@/components/component/trema";
 import ParticleBackground from "@/components/component/particleBackground";
 import Select from "react-select";
+import { useTheme } from "@/components/context/themeContext";
 
 const Experiences = () => {
   const handleButtonClick = () => {
@@ -185,6 +186,7 @@ const Experiences = () => {
   const [selectedCompany, setSelectedCompany] = useState("All");
   const [expandedIndices, setExpandedIndices] = useState<number[]>([]);
   const [isSelectMounted, setIsSelectMounted] = useState(false);
+  const { color, setColor } = useTheme();
   const handleCompanyChange = (e) => {
     setSelectedCompany(e.value);
   };
@@ -226,9 +228,9 @@ const Experiences = () => {
                 <div className="flex md:flex-row flex-col gap-4 sm:items-center">
                   <Button
                     variant="outline"
-                    className="w-full sm:w-auto text-white rounded-3xl flex items-center justify-center px-6 py-6 text-lg sm:text-2xl border-0"
+                    className={`w-full sm:w-auto bg-${color}-950 text-${color}-50 rounded-3xl flex items-center justify-center px-6 py-6 text-lg sm:text-2xl border-0`}
                     onClick={handleButtonClick}
-                    style={{ color: "white", backgroundColor: "#172e54" }}
+                    
                   >
                     Plus d'infos & Contact
                     <svg

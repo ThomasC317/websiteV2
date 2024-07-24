@@ -1,13 +1,11 @@
-import type { Metadata } from "next";
+"use client";
+
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { ThemeProvider } from "@/components/context/themeContext";
+import { metadata } from "./metadata";
 
 const inter = Inter({ subsets: ["latin"] });
-
-export const metadata: Metadata = {
-  title: "Thomas CERDERA - Portfolio",
-  description: "Thomas CERDERA - Portfolio, site fait en REACT et NextJs",
-};
 
 export default function RootLayout({
   children,
@@ -15,8 +13,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
-    </html>
+    <ThemeProvider>
+      <html lang="en">
+        <head>
+          <title>{metadata.title}</title>
+          <meta name="description" content={metadata.description} />
+        </head>
+        <body className={inter.className}>{children}</body>
+      </html>
+    </ThemeProvider>
   );
 }

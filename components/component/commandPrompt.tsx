@@ -3,12 +3,13 @@ import { Properties } from 'csstype';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPaperPlane, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { comma } from 'postcss/lib/list';
+import { useTheme } from "@/components/context/themeContext";
 
 const CommandPrompt = () => {
   const [input, setInput] = useState('');
   const [output, setOutput] = useState<any[]>([]);
   const [currentTime, setCurrentTime] = useState('');
-
+  const { color, setColor } = useTheme();
   type Styles = {
     container: Properties;
     outputContainer: Properties;
@@ -28,7 +29,6 @@ const CommandPrompt = () => {
       flexDirection: 'column',
       justifyContent: 'space-between',
       fontFamily: 'monospace',
-      backgroundColor: '#1e1e1e',
       color: '#dcdcdc',
       padding: '20px',
       borderRadius: '10px',
@@ -58,7 +58,6 @@ const CommandPrompt = () => {
     input: {
       flex: 1,
       padding: '10px',
-      backgroundColor: '#000',
       color: '#fff',
       border: '1px solid #00ff00',
       borderRadius: '5px',
@@ -193,7 +192,6 @@ const CommandPrompt = () => {
         > - facts <br />
         > - clear <br />
         > - commands <br />`;
-      
       default:
         return `> Commande non trouvée ! : ${command} <br/> <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExY3k0cGh4MjV4bzNjM3VuN2hpcjU0NGhuMHRyenN6MDBwZmVxdHQ1bCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/14uQ3cOFteDaU/giphy.webp" alt="unknown command gif" />`;
     }
@@ -209,7 +207,7 @@ const CommandPrompt = () => {
   };
 
   return (
-    <div style={styles.container}>
+    <div style={styles.container} className={`bg-${color}-950`}>
       <div style={styles.outputContainer}>
         <div style={styles.output}>
           <div style={styles.outputEntry}>
@@ -227,6 +225,7 @@ const CommandPrompt = () => {
       <form onSubmit={handleInputSubmit} style={styles.form}>
         <div style={{ position: 'relative', width: '100%' }}>
           <input
+          className={`bg-${color}-950`}
             type="text"
             value={input}
             onChange={handleInputChange}

@@ -5,8 +5,11 @@ import Typical from "react-typical";
 import Navbar from "@/components/component/navbar";
 import CommandPrompt from "@/components/component/commandPrompt";
 import React, { useState, useEffect } from "react";
+import { useTheme } from "@/components/context/themeContext";
 
 const Home = () => {
+  const { color, setColor } = useTheme();
+  console.log(color)
   const handleButtonClick = () => {
     window.location.href = "./work";
   };
@@ -14,7 +17,7 @@ const Home = () => {
     <div className="min-h-screen">
       <Navbar isOnMainPage={true} />
       <main className="flex xl:flex-row flex-col items-center md:justify-center justify-between py-12 xl:mt-16 px-2">
-      <div className="w-full max-w-4xl bg-white bg-opacity-80 p-8 md:p-12 lg:p-16 rounded-lg shadow-lg mt-24 mx-4 xl:mt-0">
+      <div className={`w-full max-w-4xl bg-${color}-50 p-8 md:p-12 lg:p-16 rounded-lg shadow-lg mt-24 mx-4 xl:mt-0`}>
         <div className="flex flex-col gap-8">
           <div className="space-y-4 text-center sm:text-left">
             <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
@@ -47,9 +50,8 @@ const Home = () => {
           <div className="flex flex-col sm:flex-row gap-4 sm:items-center">
             <Button
               variant="outline"
-              className="w-full sm:w-auto bg-azure-radiance-950 text-white rounded-3xl flex items-center justify-center px-6 py-6 text-2xl border-0"
+              className={`w-full sm:w-auto bg-${color}-950 text-${color}-50 rounded-3xl flex items-center justify-center px-6 py-6 text-2xl border-0`}
               onClick={handleButtonClick}
-              style={{ color: "white", backgroundColor: "#172e54" }}
             >
               Mon travail
               <svg
@@ -69,7 +71,7 @@ const Home = () => {
             </Button>
             <Button
               variant="outline"
-              className="w-full sm:w-auto bg-azure-radiance-950 text-white rounded-3xl flex items-center justify-center px-6 py-6 text-2xl border border-azure-radiance-950"
+              className="w-full sm:w-auto text-white rounded-3xl flex items-center justify-center px-6 py-6 text-2xl border border-azure-radiance-950"
               style={{
                 color: "black",
                 backgroundColor: "white",

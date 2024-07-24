@@ -273,14 +273,14 @@ h3 {
 }
 
 .th-width {
-  width: 15%; 
+  width: 10%; 
 }
 
 .td-width {
   width: 75%; 
 }
 
-@media only screen and (max-width: 1500px) {
+@media only screen and (max-width: 1600px) {
   .th-width {
     width: 20%; 
    }
