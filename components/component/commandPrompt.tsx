@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Properties } from 'csstype';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPaperPlane, faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { comma } from 'postcss/lib/list';
 
 const CommandPrompt = () => {
   const [input, setInput] = useState('');
@@ -112,10 +113,8 @@ const CommandPrompt = () => {
   };
 
   useEffect(() => {
-    // Set the initial time once the component is mounted on the client
     setCurrentTime(getFormattedDate());
 
-    // Initialize output with the list of commands on component mount
     setOutput(prevOutput => {
       if (!prevOutput.some(entry => entry.command === 'command')) {
         return [...prevOutput, { command: 'command', result: getCommandResult('command') }];
@@ -123,13 +122,12 @@ const CommandPrompt = () => {
       return prevOutput;
     });
 
-    // Set interval to update current time every second
     const interval = setInterval(() => {
       setCurrentTime(getFormattedDate());
     }, 1000);
 
     return () => {
-      clearInterval(interval); // Cleanup interval on component unmount
+      clearInterval(interval);
     };
   }, []);
 
@@ -146,41 +144,68 @@ const CommandPrompt = () => {
   };
 
   const getCommandResult = (command) => {
-    switch (command) {
+    switch (command.toLowerCase()) {
       case 'hello':
         return '> Hello, World!';
       case 'presentation':
-        return `> Je m'appelle Thomas, j'ai 27 ans et je suis Ingénieur développeur. \n > J'aime la photographie, la musique, le cinéma, les voyages...`;
+      case 'présentation':
+        return `> Je m'appelle Thomas, j'ai 27 ans et je suis Ingénieur développeur. <br /> > J'aime la photographie, la musique, le cinéma, les voyages...`;
       case 'experiences':
-        return `> Je suis actuellement chez Infotel en tant qu'ingénieur développeur, et ceci depuis Septembre 2023. Avant cela j'ai travaillé pour LP Promotion, 2 ans en tant qu'alternant en Ingénierie logicielle et Chiefferie de projet, et deux ans en CDI en tant qu'ingénieur développeur. Vous pouvez trouver plus de détails dans la partie "Mon Travail"`;
+      case 'expériences':
+        return `> Je suis actuellement chez Infotel en tant qu'ingénieur développeur, et ceci depuis Septembre 2023. Avant cela j'ai travaillé pour LP Promotion, 2 ans en tant qu'alternant en Ingénierie logicielle et Chiefferie de projet, et deux ans en CDI en tant qu'ingénieur développeur. Vous pouvez trouver plus de détails dans la partie "<a href='./work' style='color: #00ff00; text-decoration: underline;'>Mon Travail</a>"`;
       case 'technologies':
+      case 'technos':
         return `> J'ai récemment découvert le React, avec du Next.js et j'ai beaucoup apprécié, d'où la création de ce site. En dehors de ça, je maîtrise (plus ou moins) l'Angular, les technologies .NET... Vous pouvez trouver plus de détails dans la partie "Mon Travail".`;
       case 'animals':
-        return `> J'ai actuellement un chat, qui s'appelle Tia ! Elle a deux ans !`;
+      case 'animaux':
+        return `> J'ai actuellement un chat, qui s'appelle Tia ! Elle a deux ans ! <br/> <img src="././tia.jpg" alt="tia"/>`;
       case 'travels':
-        return `> Le dernier voyage que j'ai fait était l'année dernière, je suis parti en Norvège ! \n > Vous pouvez trouver plus de détails dans la partie "Blog".`;
+      case 'voyages':
+        return `> Le dernier voyage que j'ai fait était l'année dernière, je suis parti en Norvège ! Sinon j'ai déjà été en Croatie, en Espagne, en Italie...`;
       case 'contact':
-        return `> Vous pouvez trouver toutes les infos pour me contacter dans la partie "Contact".`;
+        return `> Vous pouvez trouver toutes les infos pour me contacter dans la partie "<a href='./about' style='color: #00ff00; text-decoration: underline;'>À propos</a>"`;
+      case 'hack':
+        return `> Je ne suis pas un vrai terminal, vous ne pouvez pas me hacker ! <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExanJ4aWxvc212cWJydzFtcnduZ2o4MWc0MnA2amtxZGk4NWNnb240MCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/132E7fAngjFxII/200.webp" alt="no no no`;
+      case 'kill':
+        setOutput([]); // Clear the output
+        return `<img src="https://media.giphy.com/media/uC8SQoaY5EHhC/giphy.gif" alt="fun gif" />`;
+      case 'facts':
+        return `> Voici quelques facts à propos de moi : <br/>
+        ✅ Je suis un Développeur web ! <br />
+        ✅ J'adore les océans et l'espace ! <br /> 
+        ✅ Je suis fan d'animaux ! <br />
+        ✅ J'adore me faire des petits plats ! <br />`;
+      case 'clear':
+        setOutput([]);
+        return `Clean du prompt ! <br /><img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExamgxMW5mNnhkcThvcHdjYXAwZ2ZicjM4aXQxMzgwZnpoMXQweGphNSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/lvNwcFPKl3ujS/giphy.webp" alt="clean` 
       case 'command':
-        return `> Voici la liste des commandes : \n > - hello \n > - presentation \n > - experiences \n > - technologies \n > - animals \n > - travels \n > - contact`;
+      case 'commands':
+        return `> Voici la liste des commandes : <br /> 
+        > - hello <br /> 
+        > - présentation <br /> 
+        > - expériences <br /> 
+        > - technologies <br /> 
+        > - animaux <br /> 
+        > - voyages <br /> 
+        > - contact <br />
+        > - hack <br /> 
+        > - kill <br />
+        > - facts <br />
+        > - clear <br />
+        > - commands <br />`;
+      
       default:
-        return `> Commande non reconnue: ${command}`;
+        return `> Commande non trouvée ! : ${command} <br/> <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExY3k0cGh4MjV4bzNjM3VuN2hpcjU0NGhuMHRyenN6MDBwZmVxdHQ1bCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/14uQ3cOFteDaU/giphy.webp" alt="unknown command gif" />`;
     }
   };
 
   const processCommand = (command) => {
     const result = getCommandResult(command);
-    // Update the output state
     setOutput((prevOutput) => [...prevOutput, { command, result }]);
   };
 
   const renderOutput = (text) => {
-    return text.split('\n').map((item, index) => (
-      <React.Fragment key={index}>
-        {item}
-        <br />
-      </React.Fragment>
-    ));
+    return <span dangerouslySetInnerHTML={{ __html: text }} />;
   };
 
   return (

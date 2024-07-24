@@ -7,9 +7,7 @@ import React, { useEffect, useState } from "react";
 import Footer from "@/components/component/footer/footer";
 import Trema from "@/components/component/trema";
 import ParticleBackground from "@/components/component/particleBackground";
-
-import { CSSTransition } from "react-transition-group";
-import Select from 'react-select';
+import Select from "react-select";
 
 const Experiences = () => {
   const handleButtonClick = () => {
@@ -28,7 +26,7 @@ const Experiences = () => {
 • Développement du Portfolio & responsivité. <br/>
 • Développement de composants customisés (CommandPrompt, formulaire de contact).
 `,
-      tags: ["React", "TypeScript", "Framer-motion", "TailwindCS", "Emailjs"]
+      tags: ["React", "TypeScript", "Framer-motion", "TailwindCS", "Emailjs"],
     },
     {
       title: "R&D IA dans le contexte de l'entreprise",
@@ -41,7 +39,7 @@ const Experiences = () => {
 • Veille technologique sur les avancées les plus récentes & analyse des besoins pour la mise en place.<br/>
 • Développement d'un MOC chatbot en react/nextjs suivant la charte graphique de l'entreprise.<br/>
 • Analyse pour l'installation et l'apprentissage d'un modèle.<br/>`,
-      tags: ["React", "Python", "NextJs"]
+      tags: ["React", "Python", "NextJs"],
     },
     {
       title: "MRDB",
@@ -54,7 +52,7 @@ const Experiences = () => {
 • Analyse des besoins du client.<br/>
 • Transformation des datas pour le calcul des nouvelles datas envoyés au front. <br/>
 • Communication avec le client pour l'évolution des besoins.`,
-      tags: ["Skywise", "JavaScript", "Pyspark"]
+      tags: ["Skywise", "JavaScript", "Pyspark"],
     },
     {
       title: "Athenaa",
@@ -68,7 +66,7 @@ const Experiences = () => {
 <br/>
 • Récupération des datas côté front et insertion des nouvelles datas dans un diagramme, affichant le suivi par mois sur les 48 derniers mois.<br/>
 • Communication avec le client pour l'évolution des besoins.`,
-      tags: ["Skywise", "JavaScript", "Pyspark"]
+      tags: ["Skywise", "JavaScript", "Pyspark"],
     },
     {
       title: "Madness",
@@ -79,7 +77,7 @@ const Experiences = () => {
     • Proposition d’optimisations sur les transformations.<br/>
     • Rédaction de documentation.<br/>
     • Chiffrage pour le développement d'un back-end au projet.`,
-      tags: ["Skywise", "JavaScript", "Pyspark"]
+      tags: ["Skywise", "JavaScript", "Pyspark"],
     },
     {
       title: "Airframe Services",
@@ -91,7 +89,7 @@ const Experiences = () => {
     • Optimisation des requêtes (Nombre de lignes retournées, découpage par calcul).<br/>
     • Création de fichier fusion pour le stockage en dur de données insérables par le client.
     • Communication avec le client pour l'évolution des besoins.`,
-      tags: ["Skywise", "JavaScript", "Pyspark"]
+      tags: ["Skywise", "JavaScript", "Pyspark"],
     },
     {
       title: "ASN/AOG",
@@ -105,7 +103,7 @@ const Experiences = () => {
     • Développement d'une fonctionnalité d'administration d'abonnements, permettant le filtrage des informations affichées aux utilisateurs sur la page principale.<br/>
     • Développement d'une gestion de rôles. Les utilisateurs dit "managers" peuvent valider, éditer ou refuser l'ajout d'un incident, et gérer les abonnements des autres utilisateurs. Les utilisateurs basiques peuvent seulement faire la demande pour l'ajout ou la suppression d'incident et l'utilisateur "Lecteur" voit seulement la liste des incidents.<br/>
     • Modification de l'interface existante selon les besoins des utilisateurs.`,
-      tags: ["Angular", "C#", "Gitlab", "JIRA", "SQL Server"]
+      tags: ["Angular", "C#", "Gitlab", "JIRA", "SQL Server"],
     },
     {
       title: "LP ADV",
@@ -119,7 +117,7 @@ const Experiences = () => {
     • Refonte d'un microservice embarquant la génération, la preview & l'envoi d'un courrier recommandé papier ou numérique (AR24).<br/>
     • Optimisation des appels à l'API pour réduire la consommation de ressources.<br/>
     • Tests fonctionnels & Utilisateurs.`,
-      tags: ["Blazor", "C#", "Azure AD", "Docker", "SQL Server"]
+      tags: ["Blazor", "C#", "Azure AD", "Docker", "SQL Server"],
     },
     {
       title: "LP WORKPLACE",
@@ -132,7 +130,7 @@ const Experiences = () => {
     • Ajout d'un système de favoris permettant de garder certains process ou documents faciles d'accès.<br/>
     • Tests fonctionnels en continue.<br/>
     • Tests avec différents utilisateurs.`,
-      tags: ["Blazor", "C#", "Azure AD", "Docker", "SQL Server"]
+      tags: ["Blazor", "C#", "Azure AD", "Docker", "SQL Server"],
     },
     {
       title: "Ui Framework",
@@ -144,7 +142,7 @@ const Experiences = () => {
     • Mise en place de généricité sur certains composants pour être utilisés dans différents contextes.<br/>
     • Mise en place de variables CSS pour permettre une customisation des styles pour être en adéquation avec la charte graphique de chaque projet.<br/>
     • Mise en place d'un site documentation des composants avec différents cas d'utilisations, une liste des paramètres et un tuto pour l'importation dans les projets.`,
-      tags: ["Blazor", "C#", "Azure AD", "SQL Server"]
+      tags: ["Blazor", "C#", "Azure AD", "SQL Server"],
     },
     {
       title: "LP INSIDE",
@@ -158,7 +156,7 @@ const Experiences = () => {
     • Process de qualité du code (Policies de branch, conventions de nommage, Quality gate de sonarCloud).<br/>
     • Communication avec le service UX/UI pour mieux répondre aux besoins des services cibles.<br/>
     • Architecture de la communication entre les différents microservices & les SPA.`,
-      tags: ["Blazor", "C#", "Azure AD", "Docker", "SQL Server"]
+      tags: ["Blazor", "C#", "Azure AD", "Docker", "SQL Server"],
     },
     {
       title: "Flux Partenaire V3",
@@ -171,17 +169,17 @@ const Experiences = () => {
     • Ajout d'envoi de flux via FTP ou sFTP.<br/>
     • Ajout d'une fonctionnalité d'édition des noms de balises des fichiers XML pour répondre aux besoins spécifiques de chaque client.<br/>
     • Mise en place d'une gestion d'erreur avec vérification des balises et gestion d'erreurs.`,
-      tags: ["JavaScript", "C#", "SQL Server"]
+      tags: ["JavaScript", "C#", "SQL Server"],
     },
   ];
 
-  const companyNames = projects.map((project) =>project.company);
+  const companyNames = projects.map((project) => project.company);
   const uniqueCompanyNames = [...new Set(companyNames)];
   const companyOptions = uniqueCompanyNames.map((company) => ({
     value: company,
     label: company,
   }));
-  companyOptions.unshift({value:"All", label:"Toute les entreprises"})
+  companyOptions.unshift({ value: "All", label: "Toute les entreprises" });
   const date = new Date();
 
   const [selectedCompany, setSelectedCompany] = useState("All");
@@ -317,7 +315,7 @@ const Experiences = () => {
                       <td className="td-width py-2 px-2 text-sm xl:text-lg">
                         C#, Typescript.
                       </td>
-                    </tr> 
+                    </tr>
                     <tr>
                       <th className="th-width py-2 text-sm xl:text-lg text-azure-radiance-500">
                         Versionning:
@@ -389,87 +387,99 @@ const Experiences = () => {
                   <Trema />
                   <h2 className="text-xl sm:text-2xl mb-4 ml-4">Projets</h2>
                   {isSelectMounted ? (
-                    <Select onChange={handleCompanyChange} className="select-width rounded-3xl text-md sm:text-lg ml-4 px-4 py-2" options={companyOptions} name="company" defaultValue={companyOptions[0]}></Select>
-                  ) : null
-                  }
+                    <Select
+                      onChange={handleCompanyChange}
+                      className="select-width rounded-3xl text-md sm:text-lg ml-4 px-4 py-2"
+                      options={companyOptions}
+                      name="company"
+                      defaultValue={companyOptions[0]}
+                    ></Select>
+                  ) : null}
                 </div>
               </div>
               <div className="container">
-      {projects.map((project, index) => {
-        if (project.company !== selectedCompany && selectedCompany !== "All") {
-          return null;
-        }
+                {projects.map((project, index) => {
+                  if (
+                    project.company !== selectedCompany &&
+                    selectedCompany !== "All"
+                  ) {
+                    return null;
+                  }
 
-        const isExpanded = expandedIndices.includes(index);
+                  const isExpanded = expandedIndices.includes(index);
 
-        return (
-          <div
-            key={index}
-            className={`bg-hover-transition px-4 py-2 ${
-              isExpanded ? "border-b" : ""
-            } border-color-lightgray cursor-pointer relative`}
-            onClick={() => handleToggle(index)}
-          >
-            <div className="relative">
-              <div className="block lg:grid lg:grid-cols-5 lg:gap-4 w-full">
-                <div className="block lg:col-span-1 text-xs sm:text-sm lg:text-lg font-medium">
-                  {project.title}
-                </div>
-                <div className="block lg:col-span-1 text-xs sm:text-sm lg:text-lg">
-                  {project.year}
-                </div>
-                <div className="block lg:col-span-1 text-xs sm:text-sm lg:text-lg">
-                  {project.company}
-                </div>
-                <div className="block lg:col-span-2 mt-2 lg:mt-0">
-                  <div className="flex flex-wrap gap-2">
-                    {project.tags.map((tech, techIndex) => (
-                      <span
-                        key={techIndex}
-                        className="bg-azure-radiance-500 px-2 py-1 rounded-lg text-xs sm:text-sm lg:text-md font-medium text-gray-200"
+                  return (
+                    <div
+                      key={index}
+                      className={`bg-hover-transition px-4 py-2 ${
+                        isExpanded ? "border-b" : ""
+                      } border-color-lightgray cursor-pointer relative`}
+                      onClick={() => handleToggle(index)}
+                    >
+                      <div className="relative">
+                        <div className="block lg:grid lg:grid-cols-5 lg:gap-4 w-full">
+                          <div className="block lg:col-span-1 text-xs sm:text-sm lg:text-lg font-medium">
+                            {project.title}
+                          </div>
+                          <div className="block lg:col-span-1 text-xs sm:text-sm lg:text-lg">
+                            {project.year}
+                          </div>
+                          <div className="block lg:col-span-1 text-xs sm:text-sm lg:text-lg">
+                            {project.company}
+                          </div>
+                          <div className="block lg:col-span-2 mt-2 lg:mt-0">
+                            <div className="flex flex-wrap gap-2">
+                              {project.tags.map((tech, techIndex) => (
+                                <span
+                                  key={techIndex}
+                                  className="bg-azure-radiance-500 px-2 py-1 rounded-lg text-xs sm:text-sm lg:text-md font-medium text-gray-200"
+                                >
+                                  {tech}
+                                </span>
+                              ))}
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          className={`expanded-card ${
+                            isExpanded ? "expanded" : "collapsed"
+                          }`}
+                        >
+                          <p
+                            className="text-gray-700 text-xs sm:text-md lg:text-lg mt-2"
+                            dangerouslySetInnerHTML={{
+                              __html: project.description,
+                            }}
+                          />
+                        </div>
+                      </div>
+                      <div
+                        className="absolute right-0 transform -translate-x-1/2 -translate-y-1/2 transition-transform"
+                        style={{ top: "22px" }}
                       >
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
-                </div>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          className={`h-6 w-6 cursor-pointer ${
+                            isExpanded ? "rotate-180" : "rotate-0"
+                          }`}
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                          onClick={() => handleToggle(index)}
+                          style={{ transition: "transform 0.3s ease" }}
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M19 9l-7 7-7-7"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  );
+                })}
               </div>
-              <div className={`expanded-card ${isExpanded ? 'expanded' : 'collapsed'}`}>
-                <p
-                  className="text-gray-700 text-xs sm:text-md lg:text-lg mt-2"
-                  dangerouslySetInnerHTML={{
-                    __html: project.description,
-                  }}
-                />
-              </div>
-            </div>
-            <div
-              className="absolute right-0 transform -translate-x-1/2 -translate-y-1/2 transition-transform"
-              style={{ top: "22px" }}
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className={`h-6 w-6 cursor-pointer ${
-                  isExpanded ? "rotate-180" : "rotate-0"
-                }`}
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                onClick={() => handleToggle(index)}
-                style={{ transition: "transform 0.3s ease" }}
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M19 9l-7 7-7-7"
-                />
-              </svg>
-            </div>
-          </div>
-        );
-      })}
-    </div>
               <div className="py-4">
                 <div className="flex items-baseline">
                   <Trema />
@@ -515,7 +525,7 @@ const Experiences = () => {
                           href="https://www.sonarsource.com/"
                           className="underline-link text-azure-radiance-500"
                         >
-                        Sonarlint/Cloud
+                          Sonarlint/Cloud
                         </a>
                       </th>
                       <td className="td-width py-2 px-2 text-sm xl:text-lg">
