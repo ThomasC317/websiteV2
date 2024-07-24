@@ -31,7 +31,7 @@ const Experiences = () => {
       tags: ["React", "TypeScript", "Framer-motion", "TailwindCS", "Emailjs"]
     },
     {
-      title: "R&D pour l'utilisation de l'ia dans le contexte de l'entreprise",
+      title: "R&D IA dans le contexte de l'entreprise",
       company: "Infotel Blagnac",
       year: "Mai 2024 - Maintenant",
       description: `Recherches pour la mise en place de l'IA dans le contexte de l'entreprise :<br/>
@@ -434,21 +434,14 @@ const Experiences = () => {
                   </div>
                 </div>
               </div>
-              <CSSTransition
-                in={isExpanded}
-                timeout={isExpanded ? 0 : 1000}
-                classNames="fade-enlarge"
-                unmountOnExit
-              >
-                <div className="py-4 expanded-card">
-                  <p
-                    className="text-gray-700 text-xs sm:text-md lg:text-lg mt-2"
-                    dangerouslySetInnerHTML={{
-                      __html: project.description,
-                    }}
-                  />
-                </div>
-              </CSSTransition>
+              <div className={`expanded-card ${isExpanded ? 'expanded' : 'collapsed'}`}>
+                <p
+                  className="text-gray-700 text-xs sm:text-md lg:text-lg mt-2"
+                  dangerouslySetInnerHTML={{
+                    __html: project.description,
+                  }}
+                />
+              </div>
             </div>
             <div
               className="absolute right-0 transform -translate-x-1/2 -translate-y-1/2 transition-transform"
