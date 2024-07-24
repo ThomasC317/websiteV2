@@ -1,5 +1,4 @@
 .footer {
-  background-color: white;
   border-top: 1px solid #ccc;
   padding: 20px 0;
   text-align: center;
@@ -34,15 +33,5 @@
   gap: 10px;
 }
 
-.footer-right a {
-  color: black;
-  transition: color 0.3s ease;
-}
 
-.footer-right a:hover {
-  color: #0073b1; /* LinkedIn color */
-}
 
-.footer-right a:nth-child(2):hover {
-  color: #333; /* GitHub color */
-}

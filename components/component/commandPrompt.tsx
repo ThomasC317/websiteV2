@@ -9,7 +9,7 @@ const CommandPrompt = () => {
   const [input, setInput] = useState('');
   const [output, setOutput] = useState<any[]>([]);
   const [currentTime, setCurrentTime] = useState('');
-  const { color, setColor } = useTheme();
+  const { color } = useTheme();
   type Styles = {
     container: Properties;
     outputContainer: Properties;

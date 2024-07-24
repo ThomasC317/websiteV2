@@ -186,7 +186,7 @@ const Experiences = () => {
   const [selectedCompany, setSelectedCompany] = useState("All");
   const [expandedIndices, setExpandedIndices] = useState<number[]>([]);
   const [isSelectMounted, setIsSelectMounted] = useState(false);
-  const { color, setColor } = useTheme();
+  const { color } = useTheme();
   const handleCompanyChange = (e) => {
     setSelectedCompany(e.value);
   };
@@ -206,7 +206,7 @@ const Experiences = () => {
   useEffect(() => setIsSelectMounted(true), []);
 
   return (
-    <div className="min-h-screen flex flex-col bg-white">
+    <div className={`min-h-screen flex flex-col bg-${color}-50`}>
       <Navbar isOnMainPage={false} />
       <div className="flex-grow" style={{ position: "relative" }}>
         <ParticleBackground />
@@ -228,7 +228,7 @@ const Experiences = () => {
                 <div className="flex md:flex-row flex-col gap-4 sm:items-center">
                   <Button
                     variant="outline"
-                    className={`w-full sm:w-auto bg-${color}-950 text-${color}-50 rounded-3xl flex items-center justify-center px-6 py-6 text-lg sm:text-2xl border-0`}
+                    className={`w-full sm:w-auto bg-${color}-950 text-${color}-50 rounded-3xl flex items-center justify-center px-6 py-6 text-lg sm:text-2xl border-0 hover:bg-${color}-950 hover:text-${color}-50`}
                     onClick={handleButtonClick}
                     
                   >
@@ -249,10 +249,8 @@ const Experiences = () => {
                     </svg>
                   </Button>
                   <Button
-                    className="w-full sm:w-auto bg-azure-radiance-950 text-white rounded-3xl flex items-center justify-center px-6 py-6 text-lg sm:text-2xl border border-azure-radiance-950"
+                    className={`w-full sm:w-auto text-white rounded-3xl flex items-center justify-center px-6 py-6 text-lg sm:text-2xl border border-azure-radiance-950 hover:text-${color}-50 hover:bg-${color}-500`}
                     style={{
-                      color: "black",
-                      backgroundColor: "white",
                       borderWidth: "1px",
                     }}
                   >
@@ -279,7 +277,7 @@ const Experiences = () => {
                 <table className="w-full text-left table-fixed">
                   <thead>
                     <tr>
-                      <th className="th-width py-2 text-sm xl:text-lg text-azure-radiance-500">
+                      <th className={`th-width py-2 text-sm xl:text-lg text-${color}-800`}>
                         Frontend:
                       </th>
                       <td className="td-width py-2 px-2 text-sm xl:text-lg">
@@ -287,7 +285,7 @@ const Experiences = () => {
                       </td>
                     </tr>
                     <tr>
-                      <th className="th-width py-2 text-sm xl:text-lg text-azure-radiance-500">
+                      <th className={`th-width py-2 text-sm xl:text-lg text-${color}-800`}>
                         Backend:
                       </th>
                       <td className="td-width py-2 px-2 text-sm xl:text-lg">
@@ -295,7 +293,7 @@ const Experiences = () => {
                       </td>
                     </tr>
                     <tr>
-                      <th className="th-width py-2 text-sm xl:text-lg text-azure-radiance-500">
+                      <th className={`th-width py-2 text-sm xl:text-lg text-${color}-800`}>
                         UI/Styling/Animations:
                       </th>
                       <td className="td-width py-2 px-2 text-sm xl:text-lg">
@@ -303,7 +301,7 @@ const Experiences = () => {
                       </td>
                     </tr>
                     <tr>
-                      <th className="th-width py-2 text-sm xl:text-lg text-azure-radiance-500">
+                      <th className={`th-width py-2 text-sm xl:text-lg text-${color}-800`}>
                         Databases:
                       </th>
                       <td className="td-width py-2 px-2 text-sm xl:text-lg">
@@ -311,7 +309,7 @@ const Experiences = () => {
                       </td>
                     </tr>
                     <tr>
-                      <th className="th-width py-2 text-sm xl:text-lg text-azure-radiance-500">
+                      <th className={`th-width py-2 text-sm xl:text-lg text-${color}-800`}>
                         Langages de programmation:
                       </th>
                       <td className="td-width py-2 px-2 text-sm xl:text-lg">
@@ -319,7 +317,7 @@ const Experiences = () => {
                       </td>
                     </tr>
                     <tr>
-                      <th className="th-width py-2 text-sm xl:text-lg text-azure-radiance-500">
+                      <th className={`th-width py-2 text-sm xl:text-lg text-${color}-800`}>
                         Versionning:
                       </th>
                       <td className="td-width py-2 px-2 text-sm xl:text-lg">
@@ -339,7 +337,7 @@ const Experiences = () => {
                 <table className="w-full text-left table-fixed">
                   <thead>
                     <tr>
-                      <th className="th-width py-2 text-sm xl:text-lg text-azure-radiance-500">
+                      <th className={`th-width py-2 text-sm xl:text-lg text-${color}-800`}>
                         Méthodologies:
                       </th>
                       <td className="td-width py-2 px-2 text-sm xl:text-lg">
@@ -347,7 +345,7 @@ const Experiences = () => {
                       </td>
                     </tr>
                     <tr>
-                      <th className="th-width py-2 text-sm xl:text-lg text-azure-radiance-500">
+                      <th className={`th-width py-2 text-sm xl:text-lg text-${color}-800`}>
                         Documentation:
                       </th>
                       <td className="td-width py-2 px-2 text-sm xl:text-lg">
@@ -356,7 +354,7 @@ const Experiences = () => {
                       </td>
                     </tr>
                     <tr>
-                      <th className="th-width py-2 text-sm xl:text-lg text-azure-radiance-500">
+                      <th className={`th-width py-2 text-sm xl:text-lg text-${color}-800`}>
                         Optimisation:
                       </th>
                       <td className="td-width py-2 px-2 text-sm xl:text-lg">
@@ -364,7 +362,7 @@ const Experiences = () => {
                       </td>
                     </tr>
                     <tr>
-                      <th className="th-width py-2  text-sm xl:text-lg text-azure-radiance-500">
+                      <th className={`th-width py-2 text-sm xl:text-lg text-${color}-800`}>
                         Esprit d’analyse:
                       </th>
                       <td className="td-width py-2 px-2 text-sm xl:text-lg">
@@ -372,7 +370,7 @@ const Experiences = () => {
                       </td>
                     </tr>
                     <tr>
-                      <th className="th-width py-2 text-sm xl:text-lg text-azure-radiance-500">
+                      <th className={`th-width py-2 text-sm xl:text-lg text-${color}-800`}>
                         Travail:
                       </th>
                       <td className="td-width py-2 px-2 text-sm xl:text-lg">
@@ -391,7 +389,7 @@ const Experiences = () => {
                   {isSelectMounted ? (
                     <Select
                       onChange={handleCompanyChange}
-                      className="select-width rounded-3xl text-md sm:text-lg ml-4 px-4 py-2"
+                      className={`select-width bg-${color}-50 rounded-3xl text-md sm:text-lg ml-4 px-4 py-2`}
                       options={companyOptions}
                       name="company"
                       defaultValue={companyOptions[0]}
@@ -413,7 +411,7 @@ const Experiences = () => {
                   return (
                     <div
                       key={index}
-                      className={`bg-hover-transition px-4 py-2 ${
+                      className={`bg-hover-transition hover:bg-${color}-100 px-4 py-2 ${
                         isExpanded ? "border-b" : ""
                       } border-color-lightgray cursor-pointer relative`}
                       onClick={() => handleToggle(index)}
@@ -434,7 +432,7 @@ const Experiences = () => {
                               {project.tags.map((tech, techIndex) => (
                                 <span
                                   key={techIndex}
-                                  className="bg-azure-radiance-500 px-2 py-1 rounded-lg text-xs sm:text-sm lg:text-md font-medium text-gray-200"
+                                  className={`bg-${color}-800 px-2 py-1 rounded-lg text-xs sm:text-sm lg:text-md font-medium text-white-50`}
                                 >
                                   {tech}
                                 </span>
@@ -496,7 +494,7 @@ const Experiences = () => {
                         {" "}
                         <a
                           href="https://code.visualstudio.com/"
-                          className="underline-link text-azure-radiance-500"
+                          className={`underline-link text-${color}-800 hover:text-${color}-500`}
                         >
                           VS Code
                         </a>
@@ -510,7 +508,7 @@ const Experiences = () => {
                       <th className="th-width py-2 whitespace-nowrap text-sm xl:text-lg">
                         <a
                           href="https://github.com/"
-                          className="underline-link text-azure-radiance-500"
+                          className={`underline-link text-${color}-800 hover:text-${color}-500`}
                         >
                           GitHub
                         </a>
@@ -525,7 +523,7 @@ const Experiences = () => {
                       <th className="th-width py-2 whitespace-nowrap text-sm xl:text-lg">
                         <a
                           href="https://www.sonarsource.com/"
-                          className="underline-link text-azure-radiance-500"
+                          className={`underline-link text-${color}-800 hover:text-${color}-500`}
                         >
                           Sonarlint/Cloud
                         </a>
@@ -540,7 +538,7 @@ const Experiences = () => {
                       <th className="th-width py-2 whitespace-nowrap text-sm xl:text-lg">
                         <a
                           href="https://azure.microsoft.com/fr-fr/products/devops"
-                          className="underline-link text-azure-radiance-500"
+                          className={`underline-link text-${color}-800 hover:text-${color}-500`}
                         >
                           Azure DevOps
                         </a>
@@ -556,7 +554,7 @@ const Experiences = () => {
                       <th className="th-width py-2 whitespace-nowrap text-sm xl:text-lg">
                         <a
                           href="https://www.google.com/intl/fr/drive/"
-                          className="underline-link text-azure-radiance-500"
+                          className={`underline-link text-${color}-800 hover:text-${color}-500`}
                         >
                           Google Workspace
                         </a>
@@ -570,7 +568,7 @@ const Experiences = () => {
                       <th className="th-width py-2 whitespace-nowrap text-sm xl:text-lg">
                         <a
                           href="https://www.canva.com/"
-                          className="underline-link text-azure-radiance-500"
+                          className={`underline-link text-${color}-800 hover:text-${color}-500`}
                         >
                           Canva
                         </a>
@@ -586,7 +584,7 @@ const Experiences = () => {
                       <th className="th-width py-2 whitespace-nowrap text-sm xl:text-lg">
                         <a
                           href="https://v0.dev/"
-                          className="underline-link text-azure-radiance-500"
+                          className={`underline-link text-${color}-800 hover:text-${color}-500`}
                         >
                           V0 Dev
                         </a>

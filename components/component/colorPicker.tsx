@@ -13,10 +13,10 @@ const ColorPicker: React.FC = () => {
 //     onColorChange(color);
 //   };
 
-  const { setColor } = useTheme();
+  const { color,setColor } = useTheme();
 
   return (
-    <div className="flex gap-5 w-[112px] items-center bg-white border rounded-3xl p-1.5">
+    <div className={`flex gap-5 w-[112px] items-center bg-${color}-50 border rounded-3xl p-1.5`}>
       <div className="relative w-full h-7">
         <button
           id="red"

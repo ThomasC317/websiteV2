@@ -4,11 +4,13 @@ import emailjs from 'emailjs-com';
 import { Button } from "../ui/button";
 import Modal from 'react-modal';
 import { AnimatedButton } from './animatedButton';
+import { useTheme } from "@/components/context/themeContext";
 
 const Contact = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [modalContent, setModalContent] = useState('');
   const [emailSent, setEmailSent] = useState(false);
+  const { color } = useTheme();
   const appElement = typeof document !== 'undefined' ? document.getElementById('form') : null;
   const [formData, setFormData] = useState({
     name: '',
@@ -73,7 +75,7 @@ const Contact = () => {
             id="name"
             placeholder="Entrez votre nom ici"
             onChange={handleChange}
-            className="input-field"
+            className={`input-field bg-${color}-50 placeholder-${color}-950`}
             required
           />
         </div>
@@ -85,7 +87,7 @@ const Contact = () => {
             type="email"
             placeholder="Entrez votre mail ici"
             onChange={handleChange}
-            className="input-field"
+            className={`input-field bg-${color}-50 placeholder-${color}-950`}
             required
           />
         </div>
@@ -96,7 +98,7 @@ const Contact = () => {
             id="subject"
             placeholder="Décrivez de façon brève la raison de votre message"
             onChange={handleChange}
-            className="input-field"
+            className={`input-field bg-${color}-50 placeholder-${color}-950`}
             required
           />
         </div>
@@ -106,7 +108,7 @@ const Contact = () => {
             name="message"
             id="message"
             placeholder="Donnez plus de détails sur votre offre, demande, etc..."
-            className="textarea-field min-h-[150px]"
+            className={`textarea-field min-h-[150px] bg-${color}-50 placeholder-${color}-950`}
             onChange={handleChange}
             style={{ resize: 'none' }}
             required
@@ -114,7 +116,7 @@ const Contact = () => {
         </div>
         <AnimatedButton
           buttonTextColor='white'
-          className='bg-azure-radiance-950 w-full'
+          className={`w-full bg-${color}-950`}
           initialText={"Envoi du message"}
           changeText={"Message envoyé !"}
           buttonType="submit"

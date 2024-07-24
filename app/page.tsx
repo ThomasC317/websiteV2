@@ -71,12 +71,7 @@ const Home = () => {
             </Button>
             <Button
               variant="outline"
-              className="w-full sm:w-auto text-white rounded-3xl flex items-center justify-center px-6 py-6 text-2xl border border-azure-radiance-950"
-              style={{
-                color: "black",
-                backgroundColor: "white",
-                borderWidth: "1px",
-              }}
+              className={`w-full sm:w-auto bg-${color}-50 rounded-3xl flex items-center justify-center px-6 py-6 text-2xl border border-azure-radiance-950`}
             >
               Télécharger mon CV
               <svg
@@ -92,7 +87,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="w-full max-w-2xl bg-white bg-opacity-80 p-8 md:p-12 lg:p-16 rounded-lg shadow-lg mt-12 mx-4">
+      <div className={`w-full max-w-2xl bg-${color}-50 p-8 md:p-12 lg:p-16 rounded-lg shadow-lg mt-12 mx-4`}>
         <div className="space-y-8">
           <CommandPrompt />
         </div>
