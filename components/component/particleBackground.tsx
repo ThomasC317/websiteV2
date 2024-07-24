@@ -54,7 +54,7 @@ const ParticleBackground = () => {
             distance: 150,
             enable: true,
             opacity: 0.5,
-            width: 0.5,
+            width: 0.1,
           },
           collisions: {
             enable: true,
@@ -74,7 +74,7 @@ const ParticleBackground = () => {
               enable: true,
               area: 800,
             },
-            value: 10,
+            value: 20,
           },
           opacity: {
             value: 0.2,
@@ -84,7 +84,7 @@ const ParticleBackground = () => {
           },
           size: {
             random: true,
-            value: 5,
+            value: 2,
           },
         },
         detectRetina: true,

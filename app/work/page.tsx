@@ -21,27 +21,12 @@ const Experiences = () => {
       title: "Ce site web",
       year: "Juillet 2024",
       company: "Projet Personnel",
-      description: `Création d'un nouveau site Portfolio<br/>
-<br/>
-• Recherche d'inspiration : J'ai dans un premier temps effecuté une veille approfondie pour identifier les tendances actuelles en matière de design de sites web. 
-Cela a impliqué l'exploration de différents portfolios en ligne. 
-L'objectif était de comprendre les éléments de design populaires, les palettes de couleurs, les typographies et les animations qui attirent actuellement l'attention afin de créer un portfolio original.<br/>
-<br/>
-• Mise en place des pages et des composants : J'ai décidé d'avoir 3 pages pour mon site :<br/>
-<div class="px-4">  
-• Page d'accueil <br/>
-  • Mon travail <br/>
-  • À propos<br/>
-   </div>
-<br/>
-• Composants personnalisés : Je me suis donné le challenge de créer des composants & d'en modifier d'autres pour mon site: <br/>
-<div class="px-4">
-  • Command Prompt<br/>
-  • Formulaire de contact<br/>
-  </div>
-<br/>
-• Responsivité : J'ai suivi l'approche Tailwind pour le développement du site, qui consiste à d'abord développer pour petit écran. C'est plus simple dans ce sens là, et gérer le reste de responsivité m'a pris beaucoup moins de temps. <br/>
-<br/>
+      description: `Création d'un nouveau site Portfolio :<br/><br/>
+• Recherche d'inspiration sur une liste conséquente de Portfolio pour imaginer un Portfolio original. <br/>
+• Création d'un design sur Canva. <br/>
+• Recherche de composants React pour simplifier les développements.<br/>
+• Développement du Portfolio & responsivité. <br/>
+• Développement de composants customisés (CommandPrompt, formulaire de contact).
 `,
       tags: ["React", "TypeScript", "Framer-motion", "TailwindCS", "Emailjs"]
     },
@@ -49,14 +34,13 @@ L'objectif était de comprendre les éléments de design populaires, les palette
       title: "R&D pour l'utilisation de l'ia dans le contexte de l'entreprise",
       company: "Infotel Blagnac",
       year: "Mai 2024 - Maintenant",
-      description: `Recherches pour la mise en place de l'IA dans le contexte de l'entreprise.<br/>
+      description: `Recherches pour la mise en place de l'IA dans le contexte de l'entreprise :<br/>
 <br/>
 • Analyse du fonctionnement des modèles.<br/>
-• Recherche sur les avancées les plus récentes : Cette étape consiste à effectuer une veille technologique approfondie pour identifier les dernières innovations en matière d'intelligence artificielle. Cela implique l'étude de publications scientifiques, la consultation de rapports d'experts et des recherches sur les différents modèles afin d'étudier les possibilités de mise en place.<br/>
-<br/>
-• Analyse des possibilités pour l'entreprise : Après avoir recueilli des informations sur les avancées technologiques, une analyse approfondie est réalisée pour déterminer comment ces nouvelles technologies peuvent être appliquées au contexte spécifique de l'entreprise. Cela inclut l'évaluation des besoins actuels, l'identification des opportunités d'amélioration et la proposition de solutions personnalisées.<br/>
-<br/>
-• Développement d'une interface de Chatbot avec une direction artistique proche de celle de l'entreprise : En se basant sur les résultats des recherches et analyses précédentes, une interface de Chatbot est développée. Cette interface est conçue pour refléter l'identité visuelle de l'entreprise, en intégrant des éléments graphiques et des animations en harmonie avec la direction artistique existante. Le Chatbot a pour but principal de générer des tests unitaires par rapport au code qu'on lui donne. D'autres recherches sont en cours pour pouvoir gérer l'édition de fichiers ou l'ajout d'un plugin dans visual studio code.<br/>`,
+• Analyse des possibilités pour la mise en place dans le contexte de l'entreprise.<br/>
+• Veille technologique sur les avancées les plus récentes & analyse des besoins pour la mise en place.<br/>
+• Développement d'un MOC chatbot en react/nextjs suivant la charte graphique de l'entreprise.<br/>
+• Analyse pour l'installation et l'apprentissage d'un modèle.<br/>`,
       tags: ["React", "Python", "NextJs"]
     },
     {
@@ -64,68 +48,73 @@ L'objectif était de comprendre les éléments de design populaires, les palette
       company: "Infotel Blagnac",
       year: "Avril - Mai 2024",
       description: `Développement d’évolutions sur le projet MRDB :
+<br/><br/>
+• Analyse des datasets déjà créés pour l'identification de la mise à niveau à réaliser.<br/>
 <br/>
-• Analyse du code déjà présent : La première étape consiste à examiner en profondeur le code existant du projet MRDB. Cette analyse permet de comprendre la structure actuelle du code, et de repérer les zones à modifier pour intégrer les nouvelles fonctionnalités de manière optimale.<br/>
-<br/>
-• Analyse des besoins du client : En parallèle de l'analyse technique, une étude des besoins du client est réalisée. Cela inclut des réunions avec les parties prenantes, la collecte de leurs exigences spécifiques, et la compréhension de leurs attentes en termes de nouvelles fonctionnalités et d'améliorations.<br/>
-<br/>
-• Ajout des nouvelles features et tests : Sur la base des analyses précédentes, j'ai fait des développements back-end, permettant d'ajouter de nouvelles colonnes aux données retournées au front-end. Chaque nouvelle fonctionnalité est rigoureusement testée pour assurer sa robustesse et son intégration harmonieuse avec le système existant.<br/>`,
+• Analyse des besoins du client.<br/>
+• Transformation des datas pour le calcul des nouvelles datas envoyés au front. <br/>
+• Communication avec le client pour l'évolution des besoins.`,
       tags: ["Skywise", "JavaScript", "Pyspark"]
     },
     {
       title: "Athenaa",
       company: "Infotel Blagnac",
       year: "Mars - Avril 2024",
-      description: `Développement d’une application datas retournant des moyennes d’heures et de cycles de vol pour une liste de MSN :<br/>
+      description: `Développement d’une application back-end retournant des moyennes d’heures et de cycles de vol pour une liste de MSN :<br/>
 <br/>
-• Analyse des datas en entrée, afin de déterminer à partir de quelles données je devrais réaliser les calculs par la suite.<br/>
+• Analyse des datasets déjà créés pour l'identification de la mise à niveau à réaliser.<br/>
 <br/>
-• Transformation des datas pour retourner les colonnes voulues. Pour calculer les moyennes requises, j'ai développé des algorithmes spécifiques pour effectuer ces calculs et pour structurer les données envoyées au front. <br/>
+• Transformation des datas pour le calcul des moyennes requises. <br/>
 <br/>
-• Importation dans le front et test. Des tests rigoureux sont réalisés pour s'assurer que les données s'affichent correctement et que les fonctionnalités de l'application répondent aux attentes.<br/>
-`,
+• Récupération des datas côté front et insertion des nouvelles datas dans un diagramme, affichant le suivi par mois sur les 48 derniers mois.<br/>
+• Communication avec le client pour l'évolution des besoins.`,
       tags: ["Skywise", "JavaScript", "Pyspark"]
     },
     {
       title: "Madness",
       company: "Infotel Blagnac",
       year: "Février - Mars 2024",
-      description: `Etude d’une analyse Contour (Outil visuel permettant d’interagir et transformer des datas) pour la rédaction d’une documentation et de spécifications projet :<br/>
-    • Analyse des différentes transformations.<br/>
+      description: `Etude d’une analyse Contour (Outil visuel permettant d’interagir et transformer des datas) pour la rédaction d’une documentation et de spécifications projet :<br/><br/>
+    • Analyse de la transformation des datas.<br/>
     • Proposition d’optimisations sur les transformations.<br/>
     • Rédaction de documentation.<br/>
-    • Chiffrage pour créer un vrai back au projet.`,
+    • Chiffrage pour le développement d'un back-end au projet.`,
       tags: ["Skywise", "JavaScript", "Pyspark"]
     },
     {
       title: "Airframe Services",
       company: "Infotel Blagnac",
       year: "Décembre - Février 2024",
-      description: `Mise en place d’une application Slate permettant le suivi de KPIs mensuels et annuels :<br/>
-    • Création d’une application data en pyspark retournant les informations nécessaires au suivi des KPI<br/>
-    • Mise en place des calculs des KPI avec la valeur mensuelle et annuelle côté Front.<br/>
+      description: `Mise en place d’une application Slate permettant le suivi de KPIs mensuels et annuels :<br/><br/>
+    • Création d’une application data retournant les informations nécessaires au suivi des KPIs.<br/>
+    • Intégration des calculs des différents KPIs côté front-end.<br/>
     • Optimisation des requêtes (Nombre de lignes retournées, découpage par calcul).<br/>
-    • Création de fichier fusion pour le stockage en dur de données insérables par le client.`,
+    • Création de fichier fusion pour le stockage en dur de données insérables par le client.
+    • Communication avec le client pour l'évolution des besoins.`,
       tags: ["Skywise", "JavaScript", "Pyspark"]
     },
     {
       title: "ASN/AOG",
       company: "Infotel Blagnac",
       year: "Septembre - Décembre 2023",
-      description: `Mise à niveau d'une application permettant le suivi des incidents liés aux avions de la flotte du client :<br/>
-    • Mise à niveau de la DB pour les besoins de ma partie.<br/>
-    • Ajout d'une nouvelle partie permettant le filtrage des informations envoyées aux utilisateurs. Grâce à cela, les utilisateurs abonnées à la compagnie "ABC" recevront seulement les mails liés à cette compagnie.<br/>
-    • Gestion de rôles. Les utilisateurs dit "managers" peuvent valider, éditer ou refuser l'ajout d'un incident, et gérer les abonnements des autres utilisateurs. Les utilisateurs basiques peuvent seulement faire la demande pour l'ajout ou la suppression d'incident et l'utilisateur "Lecteur" voit seulement la liste des incidents.`,
+      description: `Mise à niveau d'une application permettant le suivi des incidents liés aux avions de la flotte du client :<br/><br/>
+    • Analyse des tâches réalisés, et du restant à faire.<br/>
+    • Développement d'une fonctionnalité permettant le suivi des incidents sur des avions.<br/>
+    • Développement d'une fonctionnalité de création d'incident pour un avion donné.<br/>
+    • Développement d'une fonctionnalité d'administration des incidents en création ou en édition.<br/>
+    • Développement d'une fonctionnalité d'administration d'abonnements, permettant le filtrage des informations affichées aux utilisateurs sur la page principale.<br/>
+    • Développement d'une gestion de rôles. Les utilisateurs dit "managers" peuvent valider, éditer ou refuser l'ajout d'un incident, et gérer les abonnements des autres utilisateurs. Les utilisateurs basiques peuvent seulement faire la demande pour l'ajout ou la suppression d'incident et l'utilisateur "Lecteur" voit seulement la liste des incidents.<br/>
+    • Modification de l'interface existante selon les besoins des utilisateurs.`,
       tags: ["Angular", "C#", "Gitlab", "JIRA", "SQL Server"]
     },
     {
       title: "LP ADV",
       company: "LP Promotion",
       year: "2022 - Mai 2023",
-      description: `Refonte de l'outil de l'administration des ventes simplifiant la gestion des étapes d'un dossier :<br/>
+      description: `Refonte de l'outil de l'administration des ventes simplifiant la gestion des étapes d'un dossier :<br/><br/>
     • Analyse de l'ancienne DB pour produire un schéma pour la nouvelle database, permettant aussi une synchronisation avec les anciennes données.<br/>
     • Aide à la mise en place des étapes du projet (architecture, création des repos, back, front).<br/>
-    • Interface de filtrage des résidences et lots en fonction de paramètres (nom, type de résidence,... ) via LinQ.<br/>
+    • Développement d'une fonctionnalité de filtrage des résidences et lots en fonction de paramètres (nom, type de résidence,... ).<br/>
     • Intégration fidèles de maquettes faite depuis Figma par la team UX/UI.<br/>
     • Refonte d'un microservice embarquant la génération, la preview & l'envoi d'un courrier recommandé papier ou numérique (AR24).<br/>
     • Optimisation des appels à l'API pour réduire la consommation de ressources.<br/>
@@ -136,7 +125,7 @@ L'objectif était de comprendre les éléments de design populaires, les palette
       title: "LP WORKPLACE",
       company: "LP Promotion",
       year: "Juin - Décembre 2021",
-      description: `Création du premier outil de la plateforme LP INSIDE, simplifiant le travail inter service grâce au rassemblement des process,du vocabulaire métier & d'un organigramme sous la même application Web.<br/>
+      description: `Création du premier outil de la plateforme LP INSIDE, simplifiant le travail inter service grâce au rassemblement des process,du vocabulaire métier & d'un organigramme sous la même application Web.<br/><br/>
     • Aide à la mise en place des étapes du projet (architecture, création des repos, back, front).<br/>
     • Développement d'une page Glossaire avec filtrage des entités par paramètres via LinQ.<br/>
     • Barre de recherche permettant de lancer une recherche pour trouver des process, des documents ou des employés de l'entreprise.<br/>
@@ -149,7 +138,7 @@ L'objectif était de comprendre les éléments de design populaires, les palette
       title: "Ui Framework",
       company: "LP Promotion",
       year: "Octobre 2020 - Mai 2023",
-      description: `Développement d'une librairie Blazor de composants réutilisables et customisables à destination des futurs projets à venir : <br/>
+      description: `Développement d'une librairie Blazor de composants réutilisables et customisables à destination des futurs projets à venir : <br/><br/>
     • Analyse des projets legacy & WIP pour lister tous les composants à développer/ inclure dans la librairie.<br/>
     • Remplacement des composants sur les projets récents.<br/>
     • Mise en place de généricité sur certains composants pour être utilisés dans différents contextes.<br/>
@@ -161,7 +150,7 @@ L'objectif était de comprendre les éléments de design populaires, les palette
       title: "LP INSIDE",
       company: "LP Promotion",
       year: "Octobre 2020 - Mai 2023",
-      description: `Mise en place d'une plateforme qui va recenser tous les nouveaux & futurs projets sous forme de modules :<br/>
+      description: `Mise en place d'une plateforme qui va recenser tous les nouveaux & futurs projets sous forme de modules :<br/><br/>
     • Aide à la mise en place des méthodes agiles (SCRUM) dans le service.<br/>
     • Passage sous Azure AD pour la gestion des projets.<br/>
     • Conteneurisation des microservices (Docker).<br/>
@@ -175,7 +164,7 @@ L'objectif était de comprendre les éléments de design populaires, les palette
       title: "Flux Partenaire V3",
       company: "LP Promotion",
       year: "Octobre 2019 - Septembre 2020",
-      description: `Refonte globale d'un projet de génération de flux XML contenant les informations des résidences et des appartements à louer :<br/>
+      description: `Refonte globale d'un projet de génération de flux XML contenant les informations des résidences et des appartements à louer :<br/><br/>
     • Mise en place d'une architecture microservice multicouches.<br/>
     • Conception & modélisation d'une API REST.<br/>
     • Développement d'une interface pour l'administration de l'application. Celle-ci permet d'ajouter ou de supprimer des partenaires, et de lancer l'envoi de flux aux partenaires.<br/>
