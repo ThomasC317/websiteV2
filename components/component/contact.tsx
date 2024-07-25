@@ -9,7 +9,6 @@ import { useTheme } from "@/components/context/themeContext";
 const Contact = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [modalContent, setModalContent] = useState('');
-  const [emailSent, setEmailSent] = useState(false);
   const { color } = useTheme();
   const appElement = typeof document !== 'undefined' ? document.getElementById('form') : null;
   const [formData, setFormData] = useState({
@@ -48,13 +47,11 @@ const Contact = () => {
     setModalContent("Votre mail a bien été envoyé ! Je reviens vers vous au plus vite !");
     emailjs.send(serviceID, templateID, formData, userID)
       .then(() => {
-        setEmailSent(true);
         setModalContent("Votre mail a bien été envoyé ! Je reviens vers vous au plus vite !");
         setModalIsOpen(true);
         setIsSent(true);
         e.target.reset();
       }, () => {
-        setEmailSent(false);
         setModalContent("Échec de l'envoi du mail. Veuillez réessayer plus tard.");
         setModalIsOpen(true);
         setIsSent(true);
@@ -148,23 +145,24 @@ const Contact = () => {
             zIndex: 1040
           },
         }}
+
       >
         <div style={{ marginBottom: '10px', fontSize: '2em' }}>
-          {emailSent ? '✅' : '❌'}
+          {isSent ? '✅' : '❌'}
         </div>
-        <h2 style={{ margin: '0', marginBottom: '10px' }}>{emailSent ? 'Succès !' : 'Erreur !'}</h2>
+        <h2 style={{ margin: '0', marginBottom: '10px' }}>{isSent ? 'Succès !' : 'Erreur !'}</h2>
         <p>{modalContent}</p>
         <button
           onClick={closeModal}
           style={{
             marginTop: '20px',
-            backgroundColor: '#007BFF',
             color: 'white',
             border: 'none',
             borderRadius: '5px',
             padding: '10px 20px',
             cursor: 'pointer'
           }}
+          className={`w-full bg-${color}-950`}
         >
           Fermer
         </button>
