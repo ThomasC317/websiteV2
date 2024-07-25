@@ -28,20 +28,12 @@ body {
   background-color: rgba(255, 255, 255, 0.8);
 }
 
-.bg-opacity-90 {
-  background-color: rgba(255, 255, 255, 0.9);
-}
-
 .bg-white {
   background-color: white;
 }
 
 .bg-transparent {
   background-color: transparent;
-}
-
-.techno-align {
-  align-items: first baseline;
 }
 
 .border-color-lightgray {

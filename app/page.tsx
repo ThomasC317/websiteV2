@@ -9,7 +9,6 @@ import { useTheme } from "@/components/context/themeContext";
 import Footer from "@/components/component/footer/footer";
 const Home = () => {
   const { color } = useTheme();
-  console.log(color);
   const handleButtonClick = () => {
     window.location.href = "./work";
   };

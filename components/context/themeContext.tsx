@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState, ReactNode } from 'react';
+import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react';
 
 // Define the context type
 interface ThemeContextType {
@@ -11,7 +11,16 @@ const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
 // Create a provider component
 const ThemeProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
-  const [color, setColor] = useState<string>('white'); // Default color
+  // Set initial color from local storage or default to 'white'
+  const [color, setColor] = useState<string>(() => {
+    const savedColor = localStorage.getItem('themeColor');
+    return savedColor ? savedColor : 'white';
+  });
+
+  // Update local storage whenever the color changes
+  useEffect(() => {
+    localStorage.setItem('themeColor', color);
+  }, [color]);
 
   return (
     <ThemeContext.Provider value={{ color, setColor }}>
@@ -29,4 +38,4 @@ const useTheme = () => {
   return context;
 };
 
-export {ThemeProvider, useTheme}
+export { ThemeProvider, useTheme };
