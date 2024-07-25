@@ -9,6 +9,7 @@ import Trema from "@/components/component/trema";
 import ParticleBackground from "@/components/component/particleBackground";
 import Select from "react-select";
 import { useTheme } from "@/components/context/themeContext";
+import CustomSelect from "@/components/component/customSelect";
 
 const Experiences = () => {
   const handleButtonClick = () => {
@@ -18,7 +19,7 @@ const Experiences = () => {
   const projects = [
     {
       title: "Ce site web",
-      year: "Juillet 2024",
+      year: "Jui 2024",
       company: "Projet Personnel",
       description: `Création d'un nouveau site Portfolio :<br/><br/>
 • Recherche d'inspiration sur une liste conséquente de Portfolio pour imaginer un Portfolio original. <br/>
@@ -30,7 +31,7 @@ const Experiences = () => {
       tags: ["React", "TypeScript", "Framer-motion", "TailwindCS", "Emailjs"],
     },
     {
-      title: "R&D IA dans le contexte de l'entreprise",
+      title: "R&D IA",
       company: "Infotel Blagnac",
       year: "Mai 2024 - Maintenant",
       description: `Recherches pour la mise en place de l'IA dans le contexte de l'entreprise :<br/>
@@ -72,7 +73,7 @@ const Experiences = () => {
     {
       title: "Madness",
       company: "Infotel Blagnac",
-      year: "Février - Mars 2024",
+      year: "Fév - Mars 2024",
       description: `Etude d’une analyse Contour (Outil visuel permettant d’interagir et transformer des datas) pour la rédaction d’une documentation et de spécifications projet :<br/><br/>
     • Analyse de la transformation des datas.<br/>
     • Proposition d’optimisations sur les transformations.<br/>
@@ -83,7 +84,7 @@ const Experiences = () => {
     {
       title: "Airframe Services",
       company: "Infotel Blagnac",
-      year: "Décembre - Février 2024",
+      year: "Déc - Fév 2024",
       description: `Mise en place d’une application Slate permettant le suivi de KPIs mensuels et annuels :<br/><br/>
     • Création d’une application data retournant les informations nécessaires au suivi des KPIs.<br/>
     • Intégration des calculs des différents KPIs côté front-end.<br/>
@@ -95,7 +96,7 @@ const Experiences = () => {
     {
       title: "ASN/AOG",
       company: "Infotel Blagnac",
-      year: "Septembre - Décembre 2023",
+      year: "Sept - Déc 2023",
       description: `Mise à niveau d'une application permettant le suivi des incidents liés aux avions de la flotte du client :<br/><br/>
     • Analyse des tâches réalisés, et du restant à faire.<br/>
     • Développement d'une fonctionnalité permettant le suivi des incidents sur des avions.<br/>
@@ -123,7 +124,7 @@ const Experiences = () => {
     {
       title: "LP WORKPLACE",
       company: "LP Promotion",
-      year: "Juin - Décembre 2021",
+      year: "Juin - Déc 2021",
       description: `Création du premier outil de la plateforme LP INSIDE, simplifiant le travail inter service grâce au rassemblement des process,du vocabulaire métier & d'un organigramme sous la même application Web.<br/><br/>
     • Aide à la mise en place des étapes du projet (architecture, création des repos, back, front).<br/>
     • Développement d'une page Glossaire avec filtrage des entités par paramètres via LinQ.<br/>
@@ -136,7 +137,7 @@ const Experiences = () => {
     {
       title: "Ui Framework",
       company: "LP Promotion",
-      year: "Octobre 2020 - Mai 2023",
+      year: "Oct 2020 - Mai 2023",
       description: `Développement d'une librairie Blazor de composants réutilisables et customisables à destination des futurs projets à venir : <br/><br/>
     • Analyse des projets legacy & WIP pour lister tous les composants à développer/ inclure dans la librairie.<br/>
     • Remplacement des composants sur les projets récents.<br/>
@@ -148,7 +149,7 @@ const Experiences = () => {
     {
       title: "LP INSIDE",
       company: "LP Promotion",
-      year: "Octobre 2020 - Mai 2023",
+      year: "Oct 2020 - Mai 2023",
       description: `Mise en place d'une plateforme qui va recenser tous les nouveaux & futurs projets sous forme de modules :<br/><br/>
     • Aide à la mise en place des méthodes agiles (SCRUM) dans le service.<br/>
     • Passage sous Azure AD pour la gestion des projets.<br/>
@@ -162,7 +163,7 @@ const Experiences = () => {
     {
       title: "Flux Partenaire V3",
       company: "LP Promotion",
-      year: "Octobre 2019 - Septembre 2020",
+      year: "Oct 2019 - Sept 2020",
       description: `Refonte globale d'un projet de génération de flux XML contenant les informations des résidences et des appartements à louer :<br/><br/>
     • Mise en place d'une architecture microservice multicouches.<br/>
     • Conception & modélisation d'une API REST.<br/>
@@ -180,13 +181,14 @@ const Experiences = () => {
     value: company,
     label: company,
   }));
-  companyOptions.unshift({ value: "All", label: "Toute les entreprises" });
+  companyOptions.unshift({ value: "All", label: "Toutes les entreprises" });
   const date = new Date();
 
   const [selectedCompany, setSelectedCompany] = useState("All");
   const [expandedIndices, setExpandedIndices] = useState<number[]>([]);
   const [isSelectMounted, setIsSelectMounted] = useState(false);
   const { color } = useTheme();
+
   const handleCompanyChange = (e) => {
     setSelectedCompany(e.value);
   };
@@ -387,13 +389,10 @@ const Experiences = () => {
                   <Trema />
                   <h2 className="text-xl sm:text-2xl mb-4 ml-4">Projets</h2>
                   {isSelectMounted ? (
-                    <Select
-                      onChange={handleCompanyChange}
-                      className={`select-width bg-${color}-50 rounded-3xl text-md sm:text-lg ml-4 px-4 py-2`}
-                      options={companyOptions}
-                      name="company"
-                      defaultValue={companyOptions[0]}
-                    ></Select>
+                    <CustomSelect
+                      handleCompanyChange={handleCompanyChange}
+                      companyOptions={companyOptions}
+                      ></CustomSelect>
                   ) : null}
                 </div>
               </div>
