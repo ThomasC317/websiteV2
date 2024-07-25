@@ -251,7 +251,7 @@ const Experiences = () => {
                     </svg>
                   </Button>
                   <Button
-                    className={`w-full sm:w-auto text-white rounded-3xl flex items-center justify-center px-6 py-6 text-lg sm:text-2xl border border-azure-radiance-950 hover:text-${color}-50 hover:bg-${color}-500`}
+                    className={`w-full sm:w-auto text-white rounded-3xl flex items-center justify-center px-6 py-6 text-lg sm:text-2xl border border-azure-radiance-950 hover:bg-${color}-200 hover:text-${color}-950`}
                     style={{
                       borderWidth: "1px",
                     }}

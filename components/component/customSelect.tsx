@@ -19,15 +19,14 @@ const CustomSelect = ({ handleCompanyChange, companyOptions }) => {
       boxShadow: `0 0 0 1px ${colorMap[color]?.[100]}`,
       '&:hover': {
         borderColor: colorMap[color]?.[950],
-        backgroundColor: colorMap[color]?.[500],
-        color: 'white' ,
+        backgroundColor: colorMap[color]?.[200],
       },
       '&:focus': {
         borderColor: colorMap[color]?.[950],
-        backgroundColor: colorMap[color]?.[500],
+        backgroundColor: colorMap[color]?.[200],
         boxShadow: `0 0 0 2px ${colorMap[color]?.[500]}`,
       },
-      padding: '0.5rem 1rem',
+      padding: '0.25rem 0.5rem',
       borderRadius: '1.5rem', // rounded-3xl
     }),
     menu: (provided) => ({
@@ -45,23 +44,14 @@ const CustomSelect = ({ handleCompanyChange, companyOptions }) => {
     placeholder: (provided, state) => ({
         ...provided,
         color: state.isFocused ? hexColor : '#4b5563',
-        '&:hover': {
-          color: 'white', // Change placeholder text color to white on hover
-        },
       }),
     input: (provided, state) => ({
         ...provided,
         color: '#4b5563',
-        '&:hover': {
-          color: 'white', // Change input text color to white on hover
-        },
       }),
     singleValue: (provided, state) => ({
       ...provided,
       color: state.isFocused ? '#4b5563' : "",
-      '&:hover': {
-        color: 'white', // Change text color to white on hover
-      },
     }),
   };
 

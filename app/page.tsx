@@ -50,7 +50,7 @@ const Home = () => {
           <div className="flex flex-col sm:flex-row gap-4 sm:items-center">
             <Button
               variant="outline"
-              className={`w-full sm:w-auto bg-${color}-950 text-${color}-50 rounded-3xl flex items-center justify-center px-6 py-6 text-2xl border-0`}
+              className={`w-full sm:w-auto bg-${color}-950 text-${color}-50 rounded-3xl flex items-center justify-center px-6 py-6 text-2xl border-0 hover:bg-${color}-950 hover:text-${color}-50`}
               onClick={handleButtonClick}
             >
               Mon travail
@@ -71,7 +71,7 @@ const Home = () => {
             </Button>
             <Button
               variant="outline"
-              className={`w-full sm:w-auto bg-${color}-50 rounded-3xl flex items-center justify-center px-6 py-6 text-2xl border border-azure-radiance-950`}
+              className={`w-full sm:w-auto text-white rounded-3xl flex items-center justify-center px-6 py-6 text-lg sm:text-2xl border border-azure-radiance-950 hover:bg-${color}-200`}
             >
               Télécharger mon CV
               <svg
