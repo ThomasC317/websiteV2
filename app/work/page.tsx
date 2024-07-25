@@ -217,7 +217,7 @@ const Experiences = () => {
           style={{ position: "relative", zIndex: 1 }}
         >
           <div>
-            <div className="px-4 sm:px-8">
+            <div className="lg:px-8">
               <div className="text-lg sm:text-2xl">
                 Ingénieur développeur Full-stack situé sur Toulouse, France.
                 <br />

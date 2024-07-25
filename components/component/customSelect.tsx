@@ -56,7 +56,7 @@ const CustomSelect = ({ handleCompanyChange, companyOptions }) => {
   };
 
   return (
-    <div className={`select-width rounded-3xl text-md sm:text-lg ml-4 px-4 py-2`}>
+    <div className={`select-width rounded-3xl ml-4 lg:px-4 py-2`}>
       <Select
         onChange={handleCompanyChange}
         styles={customStyles}
