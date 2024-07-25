@@ -13,13 +13,18 @@ const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 const ThemeProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
   // Set initial color from local storage or default to 'white'
   const [color, setColor] = useState<string>(() => {
-    const savedColor = localStorage.getItem('themeColor');
-    return savedColor ? savedColor : 'white';
+    if (typeof window !== 'undefined') {
+      const savedColor = localStorage.getItem('themeColor');
+      return savedColor ? savedColor : 'white';
+    }
+    return 'white';
   });
 
   // Update local storage whenever the color changes
   useEffect(() => {
-    localStorage.setItem('themeColor', color);
+    if (typeof window !== 'undefined') {
+      localStorage.setItem('themeColor', color);
+    }
   }, [color]);
 
   return (
