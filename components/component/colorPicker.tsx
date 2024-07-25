@@ -1,27 +1,16 @@
 import React from 'react';
 import { useTheme } from '../context/themeContext';
 
-// Define the type for button click handler
-// type ColorPickerProps = {
-//   onColorChange: (color: string) => void;
-// };
-
-// Functional React component
 const ColorPicker: React.FC = () => {
-  // Handler for button click
-//   const handleColorChange = (color: string) => {
-//     onColorChange(color);
-//   };
-
   const { color,setColor } = useTheme();
 
   return (
-    <div className={`flex gap-5 w-[112px] items-center bg-${color}-50 border rounded-3xl p-1.5`}>
+    <div className={`flex gap-2 lg:w-[112px] items-center bg-${color}-50 border rounded-3xl p-3 lg:p-1.5`}>
       <div className="relative w-full h-7">
         <button
           id="red"
           title="Red Color"
-          className="size-7 p-0.5 top-0 absolute"
+          className="size-7 p-0.5 top-0 lg:absolute"
           style={{ left: '0px', right: 'unset' }}
           type="button"
           onClick={() => setColor('coral-red')}
@@ -39,7 +28,7 @@ const ColorPicker: React.FC = () => {
         <button
           id="yellow"
           title="Yellow Color"
-          className="size-7 p-0.5 top-0 absolute"
+          className="size-7 p-0.5 top-0 lg:absolute"
           style={{ left: '16px', right: 'unset' }}
           type="button"
           onClick={() => setColor('gorse')}
@@ -57,7 +46,7 @@ const ColorPicker: React.FC = () => {
         <button
           id="blue"
           title="Blue Color"
-          className="size-7 p-0.5 top-0 absolute"
+          className="size-7 p-0.5 top-0 lg:absolute"
           style={{ left: '32px', right: 'unset' }}
           type="button"
           onClick={() => setColor('azure-radiance')}
