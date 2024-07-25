@@ -66,110 +66,101 @@ const Contact = () => {
   };
   
   return (
-    <div className="form-container" id='form'>
-      <form className="contact-form grid gap-4" onSubmit={handleSubmit}>
-        <div className="grid gap-2">
-          <label htmlFor="name">Votre Nom</label>
-          <input
-            name="name"
-            id="name"
-            placeholder="Entrez votre nom ici"
-            onChange={handleChange}
-            className={`input-field bg-${color}-50 placeholder-${color}-950`}
-            required
-          />
-        </div>
-        <div className="grid gap-2">
-          <label htmlFor="email">Votre Email</label>
-          <input
-            name="email"
-            id="email"
-            type="email"
-            placeholder="Entrez votre mail ici"
-            onChange={handleChange}
-            className={`input-field bg-${color}-50 placeholder-${color}-950`}
-            required
-          />
-        </div>
-        <div className="grid gap-2">
-          <label htmlFor="subject">Sujet du contact</label>
-          <input
-            name="subject"
-            id="subject"
-            placeholder="Décrivez de façon brève la raison de votre message"
-            onChange={handleChange}
-            className={`input-field bg-${color}-50 placeholder-${color}-950`}
-            required
-          />
-        </div>
-        <div className="grid gap-2">
-          <label htmlFor="message">Message</label>
-          <textarea
-            name="message"
-            id="message"
-            placeholder="Donnez plus de détails sur votre offre, demande, etc..."
-            className={`textarea-field min-h-[150px] bg-${color}-50 placeholder-${color}-950`}
-            onChange={handleChange}
-            style={{ resize: 'none' }}
-            required
-          />
-        </div>
-        <AnimatedButton
-          buttonTextColor='white'
-          className={`w-full bg-${color}-950`}
-          initialText={"Envoi du message"}
-          changeText={"Message envoyé !"}
-          buttonType="submit"
-          clickStatus={isSent}
-        />
-      </form>
-      <Modal
-        isOpen={modalIsOpen}
-        onRequestClose={closeModal}
-        contentLabel="Email Status"
-        appElement={appElement}
-        style={{
-          content: {
-            top: '50%',
-            left: '50%',
-            right: 'auto',
-            bottom: 'auto',
-            transform: 'translate(-50%, -50%)',
-            padding: '20px',
-            borderRadius: '10px',
-            boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
-            zIndex: 1050,
-            maxWidth: '500px',
-            width: '90%',
-            textAlign: 'center'
-          },
-          overlay: {
-            backgroundColor: 'rgba(0, 0, 0, 0.5)',
-            zIndex: 1040
-          },
-        }}
-      >
-        <div style={{ marginBottom: '10px', fontSize: '2em' }}>
-          {emailSent ? '✅' : '❌'}
-        </div>
-        <h2 style={{ margin: '0', marginBottom: '10px' }}>{emailSent ? 'Succès !' : 'Erreur !'}</h2>
-        <p>{modalContent}</p>
-        <button
-          onClick={closeModal}
-          style={{
-            marginTop: '20px',
-            backgroundColor: '#007BFF',
-            color: 'white',
-            border: 'none',
-            borderRadius: '5px',
-            padding: '10px 20px',
-            cursor: 'pointer'
-          }}
-        >
-          Fermer
-        </button>
-      </Modal>
+<div className="form-container" id="form">
+  <form className="contact-form grid gap-4" onSubmit={handleSubmit}>
+    <div className="grid gap-2">
+      <label htmlFor="name">Votre Nom</label>
+      <input
+        name="name"
+        id="name"
+        placeholder="Entrez votre nom ici"
+        onChange={handleChange}
+        className={`input-field bg-${color}-50 placeholder-${color}-950`}
+        required
+      />
     </div>
+    <div className="grid gap-2">
+      <label htmlFor="email">Votre Email</label>
+      <input
+        name="email"
+        id="email"
+        type="email"
+        placeholder="Entrez votre mail ici"
+        onChange={handleChange}
+        className={`input-field bg-${color}-50 placeholder-${color}-950`}
+        required
+      />
+    </div>
+    <div className="grid gap-2">
+      <label htmlFor="subject">Sujet du contact</label>
+      <input
+        name="subject"
+        id="subject"
+        placeholder="Décrivez de façon brève la raison de votre message"
+        onChange={handleChange}
+        className={`input-field bg-${color}-50 placeholder-${color}-950`}
+        required
+      />
+    </div>
+    <div className="grid gap-2">
+      <label htmlFor="message">Message</label>
+      <textarea
+        name="message"
+        id="message"
+        placeholder="Donnez plus de détails sur votre offre, demande, etc..."
+        className={`textarea-field min-h-[150px] bg-${color}-50 placeholder-${color}-950`}
+        onChange={handleChange}
+        style={{ resize: 'none' }}
+        required
+      />
+    </div>
+    <AnimatedButton
+      buttonTextColor="white"
+      className={`w-full bg-${color}-950`}
+      initialText="Envoi du message"
+      changeText="Message envoyé !"
+      buttonType="submit"
+      clickStatus={isSent}
+    />
+  </form>
+
+  <Modal
+    isOpen={modalIsOpen}
+    onRequestClose={closeModal}
+    contentLabel="Email Status"
+    appElement={appElement}
+    style={{
+      content: {
+        top: '50%',
+        left: '50%',
+        transform: 'translate(-50%, -50%)',
+        padding: '20px',
+        borderRadius: '10px',
+        boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
+        zIndex: 1050,
+        maxWidth: '500px',
+        width: '90%',
+        textAlign: 'center'
+      },
+      overlay: {
+        backgroundColor: 'rgba(0, 0, 0, 0.5)',
+        zIndex: 1040
+      }
+    }}
+  >
+    <div className="mb-2 text-3xl">
+      {emailSent ? '✅' : '❌'}
+    </div>
+    <h2 className="text-xl mb-2">{emailSent ? 'Succès !' : 'Erreur !'}</h2>
+    <p>{modalContent}</p>
+    <button
+      onClick={closeModal}
+      className="mt-4 bg-blue-500 text-white border-none rounded px-4 py-2 cursor-pointer"
+    >
+      Fermer
+    </button>
+  </Modal>
+</div>
   );
 };
 

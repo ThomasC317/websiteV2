@@ -92,8 +92,6 @@ body {
 }
 
 .contact-form {
-
-  padding: 20px;
   max-width: 500px;
   width: 100%;
 }
@@ -328,5 +326,9 @@ h3 {
 .expanded-card.expanded {
   max-height: 1000px; 
   opacity: 1;
+}
+
+.button-hover {
+  transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 

@@ -7,7 +7,6 @@ import React, { useEffect, useState } from "react";
 import Footer from "@/components/component/footer/footer";
 import Trema from "@/components/component/trema";
 import ParticleBackground from "@/components/component/particleBackground";
-import Select from "react-select";
 import { useTheme } from "@/components/context/themeContext";
 import CustomSelect from "@/components/component/customSelect";
 
@@ -208,15 +207,11 @@ const Experiences = () => {
   useEffect(() => setIsSelectMounted(true), []);
 
   return (
-    <div className={`min-h-screen flex flex-col bg-${color}-50`}>
+    <div className={`min-h-screen flex flex-col `}>
       <Navbar isOnMainPage={false} />
-      <div className="flex-grow" style={{ position: "relative" }}>
+      <div className={`flex-grow relative bg-${color}-50`}>
         <ParticleBackground />
-        <main
-          className="mx-auto px-6 sm:px-12 lg:px-24 py-12 my-16"
-          style={{ position: "relative", zIndex: 1 }}
-        >
-          <div>
+        <main className={`w-full  mx-auto px-4 sm:px-8 lg:px-24 py-12 mt-16 relative z-10`}>
             <div className="lg:px-8">
               <div className="text-lg sm:text-2xl">
                 Ingénieur développeur Full-stack situé sur Toulouse, France.
@@ -230,7 +225,7 @@ const Experiences = () => {
                 <div className="flex md:flex-row flex-col gap-4 sm:items-center">
                   <Button
                     variant="outline"
-                    className={`w-full sm:w-auto bg-${color}-950 text-${color}-50 rounded-3xl flex items-center justify-center px-6 py-6 text-lg sm:text-2xl border-0 hover:bg-${color}-950 hover:text-${color}-50`}
+                    className={`w-full sm:w-auto bg-${color}-950 text-${color}-50 rounded-3xl flex items-center justify-center p-6 text-lg sm:text-2xl border-0 hover:bg-${color}-950 hover:text-${color}-50`}
                     onClick={handleButtonClick}
                     
                   >
@@ -251,7 +246,7 @@ const Experiences = () => {
                     </svg>
                   </Button>
                   <Button
-                    className={`w-full sm:w-auto text-white rounded-3xl flex items-center justify-center px-6 py-6 text-lg sm:text-2xl border border-azure-radiance-950 hover:bg-${color}-200 hover:text-${color}-950`}
+                    className={`w-full sm:w-auto text-white rounded-3xl flex items-center justify-center p-6 text-lg sm:text-2xl border border-azure-radiance-950 hover:bg-${color}-200 hover:text-${color}-950 button-hover`}
                     style={{
                       borderWidth: "1px",
                     }}
@@ -597,7 +592,6 @@ const Experiences = () => {
                 </table>
               </div>
             </div>
-          </div>
         </main>
         <Footer />
       </div>
