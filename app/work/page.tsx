@@ -49,7 +49,6 @@ const Experiences = () => {
       description: `Développement d’évolutions sur le projet MRDB :
 <br/><br/>
 • Analyse des datasets déjà créés pour l'identification de la mise à niveau à réaliser.<br/>
-<br/>
 • Analyse des besoins du client.<br/>
 • Transformation des datas pour le calcul des nouvelles datas envoyés au front. <br/>
 • Communication avec le client pour l'évolution des besoins.`,
@@ -62,9 +61,7 @@ const Experiences = () => {
       description: `Développement d’une application back-end retournant des moyennes d’heures et de cycles de vol pour une liste de MSN :<br/>
 <br/>
 • Analyse des datasets déjà créés pour l'identification de la mise à niveau à réaliser.<br/>
-<br/>
-• Transformation des datas pour le calcul des moyennes requises. <br/>
-<br/>
+• Transformation des datas pour le calcul des moyennes requises.<br/>
 • Récupération des datas côté front et insertion des nouvelles datas dans un diagramme, affichant le suivi par mois sur les 48 derniers mois.<br/>
 • Communication avec le client pour l'évolution des besoins.`,
       tags: ["Skywise", "JavaScript", "Pyspark"],
@@ -102,8 +99,7 @@ const Experiences = () => {
     • Développement d'une fonctionnalité de création d'incident pour un avion donné.<br/>
     • Développement d'une fonctionnalité d'administration des incidents en création ou en édition.<br/>
     • Développement d'une fonctionnalité d'administration d'abonnements, permettant le filtrage des informations affichées aux utilisateurs sur la page principale.<br/>
-    • Développement d'une gestion de rôles. Les utilisateurs dit "managers" peuvent valider, éditer ou refuser l'ajout d'un incident, et gérer les abonnements des autres utilisateurs. Les utilisateurs basiques peuvent seulement faire la demande pour l'ajout ou la suppression d'incident et l'utilisateur "Lecteur" voit seulement la liste des incidents.<br/>
-    • Modification de l'interface existante selon les besoins des utilisateurs.`,
+    • Développement d'une gestion de rôles sur les différentes fonctionnalités spécifiées précédement.`,
       tags: ["Angular", "C#", "Gitlab", "JIRA", "SQL Server"],
     },
     {

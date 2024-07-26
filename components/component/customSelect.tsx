@@ -11,7 +11,7 @@ const CustomSelect = ({ handleCompanyChange, companyOptions }) => {
   const hexColor = colorMap[color]?.[950] || '#007fff'; // Fallback color
   console.log(hexColor)
   const customStyles = {
-    control: (provided, state) => ({
+    control: (provided) => ({
       ...provided,
       fontWeight:'bold',
       backgroundColor: colorMap[color]?.[50],
