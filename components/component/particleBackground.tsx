@@ -8,10 +8,7 @@ const ParticleBackground = () => {
     const particlesInit = useCallback(async (engine) => {
         await loadSlim(engine);
       }, []);
-
-
-    
-
+      
   return (
     <Particles
       id="tsparticles"
