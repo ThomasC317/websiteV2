@@ -39,6 +39,10 @@ const Navbar: React.FC<MyComponentProps> = ({ isOnMainPage = null }) => {
     };
   }, []);
 
+  const openPdf = () => {
+    window.open("/CV_CERDERA_Thomas_2024.pdf");
+  };
+
   return (
 <header className={`w-full bg-${color}-50 absolute top-0 left-0 z-50`}>
   <div className="max-w-7xl mx-auto px-8 py-8 flex items-center justify-between">
@@ -56,7 +60,7 @@ const Navbar: React.FC<MyComponentProps> = ({ isOnMainPage = null }) => {
       <ColorPicker />
       <Button
         variant="outline"
-        className={`absolute w-full sm:w-auto bg-${color}-50  text-white rounded-3xl flex items-center justify-center px-6 py-6 xl:text-lg text-sm border hover:bg-${color}-200 button-hover`} style={{ borderWidth: '1px',right:"10rem"}}
+        className={`absolute w-full sm:w-auto bg-${color}-50  text-white rounded-3xl flex items-center justify-center px-6 py-6 xl:text-lg text-sm border hover:bg-${color}-200 button-hover`} style={{ borderWidth: '1px',right:"10rem"}} onClick={openPdf}
       >
         Télécharger mon CV
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 256 256">
@@ -98,7 +102,7 @@ const Navbar: React.FC<MyComponentProps> = ({ isOnMainPage = null }) => {
         <ColorPicker />
         <Button
           variant="outline"
-          className={`w-full sm:w-auto bg-${color}-50 text-white rounded-3xl flex items-center justify-center p-6 xl:text-lg text-sm border hover:bg-${color}-200 button-hover`} style={{ borderWidth: "1px" }}
+          className={`w-full sm:w-auto bg-${color}-50 text-white rounded-3xl flex items-center justify-center p-6 xl:text-lg text-sm border hover:bg-${color}-200 button-hover`} style={{ borderWidth: "1px" }} onClick={openPdf}
         >
           Télécharger mon CV
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 256 256">

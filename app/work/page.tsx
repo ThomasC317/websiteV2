@@ -188,6 +188,9 @@ const Experiences = () => {
     setSelectedCompany(e.value);
   };
 
+  const openPdf = () => {
+    window.open("/CV_CERDERA_Thomas_2024.pdf");
+  };
   const handleToggle = (index: number) => {
     setExpandedIndices((prev) => {
       if (prev.includes(index)) {
@@ -245,7 +248,8 @@ const Experiences = () => {
                     className={`w-full sm:w-auto text-white rounded-3xl flex items-center justify-center p-6 text-lg sm:text-2xl border border-azure-radiance-950 hover:bg-${color}-200 hover:text-${color}-950 button-hover`}
                     style={{
                       borderWidth: "1px",
-                    }}
+                    }} 
+                    onClick={openPdf}
                   >
                     Télécharger mon CV
                     <svg

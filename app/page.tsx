@@ -12,6 +12,10 @@ const Home = () => {
   const handleButtonClick = () => {
     window.location.href = "./work";
   };
+
+  const openPdf = () => {
+    window.open("/CV_CERDERA_Thomas_2024.pdf");
+  };
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar isOnMainPage={true} />
@@ -70,7 +74,7 @@ const Home = () => {
               </Button>
               <Button
                 variant="outline"
-                className={`w-full sm:w-auto bg-${color}-950 text-${color}-50 rounded-3xl flex items-center justify-center p-6 text-lg sm:text-2xl border-0 hover:bg-${color}-950 hover:text-${color}-50 `}
+                className={`w-full sm:w-auto bg-${color}-950 text-${color}-50 rounded-3xl flex items-center justify-center p-6 text-lg sm:text-2xl border-0 hover:bg-${color}-950 hover:text-${color}-50 `} onClick={openPdf}
               >
                 Télécharger mon CV
                 <svg
