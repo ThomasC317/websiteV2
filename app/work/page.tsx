@@ -17,12 +17,24 @@ const Experiences = () => {
 
   const projects = [
     {
+      title: "Tales of Arcanum",
+      year: "Août 2024 - Maintenant",
+      company: "Projet Personnel",
+      description: `Création d'un Clicker game avec des aspects RPG fantasy :<br/><br/>
+• Listage des tâches à réaliser, suivi via Trello. <br/>
+• Recherche d'inspiration pour proposer des fonctionnalités intéressantes. <br/>
+• Développement du lore du jeu.<br/>
+• Architecture du projet web & back. <br/>
+• Développement du jeu.
+`,
+      tags: ["React", "TypeScript", "Framer-motion", "TailwindCS", "Emailjs", "NodeJS", "Express"],
+    },
+    {
       title: "Ce site web",
       year: "Jui 2024",
       company: "Projet Personnel",
       description: `Création d'un nouveau site Portfolio :<br/><br/>
 • Recherche d'inspiration sur une liste conséquente de Portfolio pour imaginer un Portfolio original. <br/>
-• Création d'un design sur Canva. <br/>
 • Recherche de composants React pour simplifier les développements.<br/>
 • Développement du Portfolio & responsivité. <br/>
 • Développement de composants customisés (CommandPrompt, formulaire de contact).
